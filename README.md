@@ -89,3 +89,4 @@ No installation or build process is required.
 ## Author
 
 Designed and developed by **Felipe S. Belphman**, Junior Front-End Developer based in Dublin, Ireland.
+
