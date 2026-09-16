@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="termsPage.meta.title">Terms of Service | Felipe S Bephman</title>
+    <meta name="description" data-i18n-content="termsPage.meta.description" content="Terms governing the use of Felipe S Bephman’s portfolio and initial professional enquiries.">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
+            <a class="navigation__brand" href="./index.html#home">
+                <img src="assets/images/profile-photo.png" alt="Portrait of Felipe S Bephman" data-i18n-alt="common.images.portrait">
+                <span>Felipe S Bephman</span>
+            </a>
+            <button class="navigation__toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="common.navigation.open" aria-expanded="false"
+                aria-controls="navigation-menu">
+                <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
+            </button>
+            <ul class="navigation__menu" id="navigation-menu">
+                <li><a href="./index.html#work" data-i18n="nav.work">Work</a></li>
+                <li><a href="./index.html#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="./index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a></li>
+                <li><a href="./index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li class="language-switcher">
+                    <button class="language-switcher__trigger" type="button" aria-label="Select language"
+                        data-i18n-aria-label="language.select" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="language-menu">
+                        <img class="language-switcher__flag" data-language-current-flag
+                            src="assets/images/flags/flag-en.svg" alt="" aria-hidden="true">
+
+                        <span class="language-switcher__current" data-language-current>
+                            EN
+                        </span>
+
+                        <span class="language-switcher__chevron" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="language-switcher__menu" id="language-menu" role="menu" aria-hidden="true">
+                        <button class="language-switcher__option is-active" type="button" data-language="en"
+                            role="menuitem" aria-pressed="true">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-en.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>English</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                EN
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="pt-BR" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-pt-br.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Português</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                PT
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="es" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-es.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Español</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                ES
+                            </span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="navigation__contact" type="button" data-contact-open aria-controls="contact-modal"
+                aria-expanded="false">
+                <span class="navigation__contact-default" data-i18n="nav.contact">Contact</span>
+
+                <span class="navigation__contact-hover" data-i18n="nav.contactMe">Contact Me</span>
+
+                <img class="navigation__contact-icon navigation__contact-icon--default"
+                    src="assets/images/mail-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--hover"
+                    src="assets/images/mail-opened-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--whatsapp"
+                    src="assets/images/nav-whatsapp-icon.svg" alt="" aria-hidden="true">
+            </button>
+        </nav>
+    </header>
+
+    <main class="privacy-page">
+        <article class="privacy-policy" aria-labelledby="terms-title">
+            <div class="privacy-policy__container">
+                <header class="privacy-policy__header">
+                    <h1 class="privacy-policy__title" id="terms-title" data-i18n="termsPage.title">
+                        Terms of Service
+                    </h1>
+
+                    <p class="privacy-policy__updated">
+                        <span data-i18n="common.legal.updated">Last updated:</span>
+                        <time datetime="2026-09-15" data-i18n="common.legal.date">15 September 2026</time>
+                    </p>
+                </header>
+
+                <div class="privacy-policy__content">
+                    <section>
+                        <h2 data-i18n="common.legal.introduction">1. Introduction</h2>
+
+                        <p data-i18n="termsPage.introduction.scope">
+                            These Terms of Service govern your use of the
+                            portfolio website operated by Felipe S Bephman
+                            and any initial enquiry you make regarding
+                            freelance services or professional opportunities.
+                        </p>
+
+                        <p data-i18n="termsPage.introduction.acceptance">
+                            By using this website, you agree to these terms.
+                            If you do not agree, please do not use the website.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.purpose.title">2. Purpose of This Website</h2>
+
+                        <p data-i18n="termsPage.purpose.intro">This website is intended to:</p>
+
+                        <ul>
+                            <li data-i18n="termsPage.purpose.portfolio">Present my professional portfolio and skills</li>
+                            <li data-i18n="termsPage.purpose.examples">Show examples of previous and personal work</li>
+                            <li data-i18n="termsPage.purpose.enquiries">Support employment and collaboration enquiries</li>
+                            <li data-i18n="termsPage.purpose.freelance">Allow potential clients to request freelance work</li>
+                        </ul>
+
+                        <p data-i18n="termsPage.purpose.information">
+                            Information displayed on this website is provided
+                            for general professional and informational purposes.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.employment.title">3. Employment Opportunities</h2>
+
+                        <p data-i18n="termsPage.employment.enquiries">
+                            Messages relating to employment, interviews, or
+                            recruitment do not create an employment relationship
+                            or guarantee acceptance of an opportunity.
+                        </p>
+
+                        <p data-i18n="termsPage.employment.agreement">
+                            Any employment relationship will be subject to a
+                            separate written employment agreement and applicable
+                            employment law.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.freelance.title">4. Freelance Enquiries and Projects</h2>
+
+                        <h3 data-i18n="termsPage.freelance.enquiryTitle">4.1 Initial enquiries</h3>
+
+                        <p data-i18n="termsPage.freelance.enquiry">
+                            Contacting me through email or WhatsApp is an initial
+                            enquiry only. It does not create a binding service
+                            agreement or require either party to proceed.
+                        </p>
+
+                        <h3 data-i18n="termsPage.freelance.agreementTitle">4.2 Project agreement</h3>
+
+                        <p data-i18n="termsPage.freelance.agreementIntro">
+                            Before freelance work begins, the project details
+                            should be confirmed in writing. Depending on the
+                            project, this may include:
+                        </p>
+
+                        <ul>
+                            <li data-i18n="termsPage.freelance.scope">Project scope and deliverables</li>
+                            <li data-i18n="termsPage.freelance.timeline">Estimated timeline</li>
+                            <li data-i18n="termsPage.freelance.fees">Fees and payment schedule</li>
+                            <li data-i18n="termsPage.freelance.revisions">Number and scope of revisions</li>
+                            <li data-i18n="termsPage.freelance.responsibilities">Client responsibilities</li>
+                            <li data-i18n="termsPage.freelance.ownership">Ownership and licensing terms</li>
+                            <li data-i18n="termsPage.freelance.cancellation">Cancellation conditions</li>
+                        </ul>
+
+                        <p data-i18n="termsPage.freelance.binding">
+                            A project becomes binding only when both parties
+                            accept the applicable proposal, quotation, or
+                            written agreement.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.services.title">5. Services</h2>
+
+                        <p data-i18n="termsPage.services.scope">
+                            Services may include front-end development,
+                            responsive websites, user-interface implementation,
+                            HTML, CSS, JavaScript, React, Next.js, and related
+                            digital work agreed for a specific project.
+                        </p>
+
+                        <p data-i18n="termsPage.services.deliverables">
+                            The exact services and deliverables will be described
+                            in the written proposal or project agreement.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.client.title">6. Client Responsibilities</h2>
+
+                        <p data-i18n="termsPage.client.intro">For freelance projects, clients are responsible for:</p>
+
+                        <ul>
+                            <li data-i18n="termsPage.client.requirements">Providing accurate project requirements</li>
+                            <li data-i18n="termsPage.client.materials">Supplying required content and materials</li>
+                            <li data-i18n="termsPage.client.permissions">
+                                Confirming they have permission to use supplied
+                                text, images, trademarks, and other assets
+                            </li>
+                            <li data-i18n="termsPage.client.feedback">Providing feedback and approvals on time</li>
+                            <li data-i18n="termsPage.client.review">Reviewing deliverables before final approval</li>
+                            <li data-i18n="termsPage.client.payment">Paying agreed fees according to the project terms</li>
+                        </ul>
+
+                        <p data-i18n="termsPage.client.delays">
+                            Delays in receiving required content, access,
+                            feedback, or approval may affect the project timeline.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.payment.title">7. Fees and Payment</h2>
+
+                        <p data-i18n="termsPage.payment.website">
+                            This website does not process payments and does not
+                            advertise a fixed subscription service.
+                        </p>
+
+                        <p data-i18n="termsPage.payment.agreement">
+                            Freelance fees, deposits, currencies, payment dates,
+                            and accepted payment methods will be agreed
+                            individually in writing before work begins.
+                        </p>
+
+                        <p data-i18n="termsPage.payment.additional">
+                            Additional work outside the agreed scope may require
+                            a revised quotation or separate written approval.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.timelines.title">8. Timelines and Revisions</h2>
+
+                        <p data-i18n="termsPage.timelines.estimates">
+                            Project timelines are estimates unless a written
+                            agreement expressly states otherwise. Timelines may
+                            change when project requirements change or required
+                            feedback and materials are delayed.
+                        </p>
+
+                        <p data-i18n="termsPage.timelines.revisions">
+                            The number of revisions and what qualifies as a
+                            revision will be defined for each project. Requests
+                            outside the agreed scope may be treated as additional
+                            work.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.property.title">9. Intellectual Property</h2>
+
+                        <h3 data-i18n="termsPage.property.portfolioTitle">9.1 Portfolio content</h3>
+
+                        <p data-i18n="termsPage.property.portfolio">
+                            Unless otherwise stated, the original content,
+                            design, code, text, and presentation of this
+                            portfolio belong to Felipe S Bephman or are used
+                            under an applicable licence.
+                        </p>
+
+                        <p data-i18n="termsPage.property.permission">
+                            You may view the portfolio for personal or
+                            professional evaluation, but you may not copy,
+                            republish, sell, or misrepresent its content
+                            without permission.
+                        </p>
+
+                        <h3 data-i18n="termsPage.property.deliverablesTitle">9.2 Freelance deliverables</h3>
+
+                        <p data-i18n="termsPage.property.deliverables">
+                            Ownership and licensing of freelance deliverables
+                            will be defined in the relevant project agreement.
+                            Unless otherwise agreed, ownership transfer is
+                            conditional on full payment of the agreed fees.
+                        </p>
+
+                        <p data-i18n="termsPage.property.thirdParty">
+                            Third-party materials, libraries, fonts, software,
+                            and open-source components remain subject to their
+                            respective licences.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.confidentiality.title">10. Confidentiality</h2>
+
+                        <p data-i18n="termsPage.confidentiality.care">
+                            Information clearly identified as confidential will
+                            be handled with reasonable care and used only for the
+                            relevant enquiry or project, except where disclosure
+                            is required by law.
+                        </p>
+
+                        <p data-i18n="termsPage.confidentiality.agreement">
+                            Additional confidentiality requirements should be
+                            documented in a separate written agreement.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.acceptable.title">11. Acceptable Use</h2>
+
+                        <p data-i18n="termsPage.acceptable.intro">You must not:</p>
+
+                        <ul>
+                            <li data-i18n="termsPage.acceptable.unlawful">Use the website for unlawful purposes</li>
+                            <li data-i18n="termsPage.acceptable.security">Attempt to interfere with website security</li>
+                            <li data-i18n="termsPage.acceptable.malicious">Introduce malicious code or automated attacks</li>
+                            <li data-i18n="termsPage.acceptable.impersonation">Impersonate another person or organisation</li>
+                            <li data-i18n="termsPage.acceptable.content">Copy or misuse portfolio content</li>
+                            <li data-i18n="termsPage.acceptable.messages">Send abusive, fraudulent, or misleading messages</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.thirdParty.title">12. Third-Party Services and Links</h2>
+
+                        <p data-i18n="termsPage.thirdParty.services">
+                            This website may link to third-party platforms,
+                            including WhatsApp, GitHub, LinkedIn, and other
+                            websites. Those services operate under their own
+                            terms and privacy policies.
+                        </p>
+
+                        <p data-i18n="termsPage.thirdParty.responsibility">
+                            I am not responsible for the availability, security,
+                            content, or practices of third-party services.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.availability.title">13. Website Availability</h2>
+
+                        <p data-i18n="termsPage.availability.accuracy">
+                            I aim to keep the website accurate and available,
+                            but I do not guarantee uninterrupted operation or
+                            that all information will always be complete,
+                            current, or error-free.
+                        </p>
+
+                        <p data-i18n="termsPage.availability.maintenance">
+                            The website may be changed, suspended, or removed
+                            when maintenance or updates are required.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.liability.title">14. Limitation of Liability</h2>
+
+                        <p data-i18n="termsPage.liability.indirect">
+                            To the extent permitted by law, I am not responsible
+                            for indirect or consequential loss arising solely
+                            from use of, or inability to use, this website or
+                            third-party links.
+                        </p>
+
+                        <p data-i18n="termsPage.liability.rights">
+                            Nothing in these terms excludes or limits any
+                            responsibility or legal right that cannot lawfully
+                            be excluded or limited.
+                        </p>
+
+                        <p data-i18n="termsPage.liability.projects">
+                            Liability relating to a freelance project will be
+                            governed by the separate project agreement and
+                            applicable law.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.privacy.title">15. Privacy</h2>
+
+                        <p>
+                            <span data-i18n="termsPage.privacy.description">Personal information is handled according to the</span>
+                            <a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.changes.title">16. Changes to These Terms</h2>
+
+                        <p data-i18n="termsPage.changes.description">
+                            These terms may be updated when the website,
+                            services, or legal requirements change. The date
+                            at the top of the page identifies the latest version.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.law.title">17. Governing Law</h2>
+
+                        <p data-i18n="termsPage.law.description">
+                            These website terms are governed by the laws of
+                            Ireland. Any mandatory rights available under
+                            applicable law remain unaffected.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 data-i18n="termsPage.contact.title">18. Contact</h2>
+
+                        <p data-i18n="termsPage.contact.description">
+                            For questions about these terms or a freelance
+                            enquiry, contact:
+                        </p>
+
+                        <address>
+                            <strong>Felipe S Bephman</strong><br>
+                            <span data-i18n="common.legal.email">Email:</span>
+                            <a href="mailto:felipesbelphman@gmail.com">
+                                felipesbelphman@gmail.com
+                            </a>
+                        </address>
+                    </section>
+
+                    <p class="privacy-policy__notice" data-i18n="termsPage.notice">
+                        By using this website, you acknowledge that you have
+                        read and understood these Terms of Service.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <h2 class="site-footer__title">
+                <span data-i18n="footer.titleOne">Let’s design</span>
+                <span data-i18n="footer.titleTwo">Incredible work together.</span>
+            </h2>
+
+            <div class="site-footer__contact">
+                <div class="site-footer__email">
+                    <h3 data-i18n="footer.email">Email</h3>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+
+                <div class="site-footer__social">
+                    <h3 data-i18n="footer.social">Social</h3>
+
+                    <div class="site-footer__social-links">
+                        <a href="#" aria-label="Instagram">
+                            <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                            target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                            <img src="assets/images/footer-whatsapp-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="Dribbble">
+                            <img src="assets/images/footer-dribbble-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="assets/images/footer-linkedin-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer__divider">
+                <img class="site-footer__divider-line" src="assets/images/footer-line-left.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-icon" src="assets/images/footer-brand-icon.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-line" src="assets/images/footer-line-right.svg" alt=""
+                    aria-hidden="true">
+            </div>
+
+            <div class="site-footer__bottom">
+                <nav class="site-footer__menu" aria-label="Footer navigation" data-i18n-aria-label="footer.navigationLabel">
+                    <h3 data-i18n="footer.menu">Menu</h3>
+
+                    <div class="site-footer__menu-links">
+                        <div>
+                            <a href="./index.html#home" data-i18n="nav.home">Home</a>
+                            <a href="./index.html#work" data-i18n="nav.work">Work</a>
+                            <a href="./index.html#skills" data-i18n="nav.skills">Skills</a>
+                            <a href="./index.html#about" data-i18n="nav.about">About</a>
+                        </div>
+
+                        <div>
+                            <a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a>
+                            <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+                            <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="site-footer__legal">
+                    <h3 data-i18n="footer.legal">Legal</h3>
+
+                    <div class="site-footer__legal-links">
+                        <a href="./terms-of-service.html" data-i18n="footer.terms">Terms of service</a>
+                        <a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <p class="site-footer__copyright">
+                    © 2026 Felipe Belphman
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
+        <button class="contact-modal__backdrop" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close"></button>
+
+        <section class="contact-page__panel" aria-labelledby="contact-page-title">
+            <button class="contact-page__close" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close">
+                &times;
+            </button>
+
+            <header class="contact-page__header">
+                <h2 id="contact-page-title" data-i18n="contact.title">
+                    Let’s build something useful.
+                </h2>
+
+                <p data-i18n="contact.description">
+                    Tell me about your project or contact me directly.
+                </p>
+            </header>
+
+            <div class="contact-page__profile">
+                <div class="contact-page__avatar">
+                    <img src="assets/images/about-photo.png" alt="Felipe S Belphman">
+
+                    <span class="contact-page__status" aria-label="Available" data-i18n-aria-label="contact.available"></span>
+                </div>
+
+                <div class="contact-page__profile-text">
+                    <strong>Felipe S Belphman</strong>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="contact-form__row">
+                    <label class="contact-form__field">
+                        <span data-i18n="contact.name">Name</span>
+
+                        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.name" autocomplete="name" required>
+                    </label>
+
+                    <label class="contact-form__field">
+                        <span data-i18n="footer.email">Email</span>
+
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="footer.email" autocomplete="email" required>
+                    </label>
+                </div>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.project">Tell me about your project</span>
+
+                    <textarea name="message" rows="5"
+                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant." data-i18n-placeholder="contact.messagePlaceholder"
+                        required></textarea>
+                </label>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.help">How can I help?</span>
+
+                    <select name="helpType" required>
+                        <option value="" selected disabled data-i18n="contact.options.prompt">
+                            Select an option
+                        </option>
+
+                        <option value="front-end-development" data-i18n="contact.options.development">
+                            Front-end development
+                        </option>
+
+                        <option value="figma-to-code" data-i18n="contact.options.figma">
+                            Figma to code
+                        </option>
+
+                        <option value="responsive-website" data-i18n="contact.options.responsive">
+                            Responsive website
+                        </option>
+
+                        <option value="job-opportunity" data-i18n="contact.options.job">
+                            Junior job opportunity
+                        </option>
+
+                        <option value="other" data-i18n="contact.options.other">
+                            Other
+                        </option>
+                    </select>
+                </label>
+
+                <button class="contact-form__submit" type="submit">
+                    <img src="assets/images/contact-message-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.send">Send Message</span>
+                </button>
+
+                <a class="contact-form__whatsapp"
+                    href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                    <img src="assets/images/contact-whatsapp-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.whatsapp">Message on WhatsApp</span>
+                </a>
+
+                <p class="contact-form__note" data-i18n="contact.reply">
+                    I’ll reply as soon as possible.
+                </p>
+            </form>
+        </section>
+    </div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

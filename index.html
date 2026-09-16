@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="homePage.meta.title">Felipe S Bephman | Front-end Developer</title>
+    <meta name="description" data-i18n-content="homePage.meta.description" content="Felipe’s front-end development portfolio: selected projects, skills and contact information.">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
+            <a class="navigation__brand" href="#home">
+                <img src="assets/images/profile-photo.png" alt="Portrait of Felipe S Bephman" data-i18n-alt="common.images.portrait">
+                <span>Felipe S Bephman</span>
+            </a>
+            <button class="navigation__toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="common.navigation.open" aria-expanded="false"
+                aria-controls="navigation-menu">
+                <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
+            </button>
+            <ul class="navigation__menu" id="navigation-menu">
+                <li>
+                    <a href="#work" data-i18n="nav.work">Work</a>
+                </li>
+
+                <li>
+                    <a href="#skills" data-i18n="nav.skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                </li>
+
+                <li>
+                    <a href="#how-i-work" data-i18n="nav.howIWork">How I Work</a>
+                </li>
+
+                <li>
+                    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                </li>
+
+                <li class="language-switcher">
+                    <button class="language-switcher__trigger" type="button" aria-label="Select language"
+                        data-i18n-aria-label="language.select" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="language-menu">
+                        <img class="language-switcher__flag" data-language-current-flag
+                            src="assets/images/flags/flag-en.svg" alt="" aria-hidden="true">
+
+                        <span class="language-switcher__current" data-language-current>
+                            EN
+                        </span>
+
+                        <span class="language-switcher__chevron" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="language-switcher__menu" id="language-menu" role="menu" aria-hidden="true">
+                        <button class="language-switcher__option is-active" type="button" data-language="en"
+                            role="menuitem" aria-pressed="true">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-en.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>English</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                EN
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="pt-BR" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-pt-br.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Português</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                PT
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="es" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-es.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Español</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                ES
+                            </span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="navigation__contact" type="button" data-contact-open aria-controls="contact-modal"
+                aria-expanded="false">
+                <span class="navigation__contact-default" data-i18n="nav.contact">
+                    Contact
+                </span>
+
+                <span class="navigation__contact-hover" data-i18n="nav.contactMe">
+                    Contact Me
+                </span>
+
+                <img class="navigation__contact-icon navigation__contact-icon--default"
+                    src="assets/images/mail-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--hover"
+                    src="assets/images/mail-opened-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--whatsapp"
+                    src="assets/images/nav-whatsapp-icon.svg" alt="" aria-hidden="true">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <p class="hero__availability">
+                    <span class="hero__status-dot" aria-hidden="true"></span>
+
+                    <span data-i18n="hero.availability">
+                        Open to junior front-end opportunities
+                    </span>
+                </p>
+
+                <h1 class="hero__title">
+                    <span class="hero__title-muted">
+                        <span class="hero__word" style="--word-index: 0;" data-i18n="hero.titleWordOne">
+                            Front-end
+                        </span>
+
+                        <span class="hero__word" style="--word-index: 1;" data-i18n="hero.titleWordTwo">
+                            developer
+                        </span>
+                    </span>
+
+                    <span class="hero__title-strong">
+                        <span class="hero__word" style="--word-index: 2;" data-i18n="hero.titleWordThree">
+                            building
+                        </span>
+
+                        <span class="hero__word" style="--word-index: 3;" data-i18n="hero.titleWordFour">
+                            real-world
+                        </span>
+
+                        <span class="hero__word" style="--word-index: 4;" data-i18n="hero.titleWordFive">
+                            products.
+                        </span>
+                    </span>
+                </h1>
+
+                <div class="hero__description">
+                    <p>
+                        <span data-i18n="hero.description">
+                            I build responsive and accessible web applications with React,
+                            TypeScript and Next.js.
+                        </span>
+
+                        <span class="hero__description-highlight" data-i18n="hero.descriptionHighlight">
+                            I turn product ideas and interface designs into clear,
+                            reliable experiences for real users.
+                        </span>
+                    </p>
+                </div>
+
+                <p class="hero__location">
+                    <img src="assets/images/location-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="hero.location">
+                        Dublin, Ireland · Open to opportunities across Europe
+                    </span>
+                </p>
+
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#work">
+                        <span data-i18n="hero.viewWork">
+                            View selected work
+                        </span>
+
+                        <img src="assets/images/view-work-icon.svg" alt="" aria-hidden="true">
+                    </a>
+
+                    <a class="button button--secondary" href="https://github.com/felipesbelphman-web" target="_blank"
+                        rel="noopener noreferrer">
+                        <span>GitHub</span>
+
+                        <img src="assets/images/github-icon.svg" alt="" aria-hidden="true">
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <img src="assets/images/hero-projects.png" alt="Preview of Felipe's selected web development projects" data-i18n-alt="homePage.images.projects">
+            </div>
+        </section>
+
+        <section class="technology-slider" aria-label="My daily technology stack"
+            data-i18n-aria-label="stack.ariaLabel">
+            <div class="technology-slider__intro">
+                <p class="technology-slider__eyebrow">
+                    <img class="technology-slider__status-dot" src="assets/images/stack-status.svg" alt=""
+                        aria-hidden="true">
+                    <span data-i18n="stack.eyebrow">
+                        MY DAILY STACK
+                    </span>
+                </p>
+
+                <p class="technology-slider__title">
+                    <img src="assets/images/tools-icon.svg" alt="" aria-hidden="true">
+                    <span data-i18n="stack.title">
+                        Tools I use to build useful products
+                    </span>
+                </p>
+            </div>
+
+            <div class="technology-slider__viewport">
+                <div class="technology-slider__track">
+                    <div class="technology-slider__group">
+                        <div class="technology-slider__item">
+                            <img src="assets/images/nextjs-logo.svg" alt="" aria-hidden="true">
+                            <span>Next.js</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/react-logo.svg" alt="" aria-hidden="true">
+                            <span>React</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/typescript-logo.svg" alt="" aria-hidden="true">
+                            <span>TypeScript</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/tailwind-logo.svg" alt="" aria-hidden="true">
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="technology-slider__item">
+                        <img src="assets/images/figma-logo.svg" alt="" aria-hidden="true">
+                        <span>Figma</span>
+                    </div>
+
+                    <div class="technology-slider__item">
+                        <img src="assets/images/framer-logo.svg" alt="" aria-hidden="true">
+                        <span>Framer</span>
+                    </div>
+
+                    <div class="technology-slider__group" aria-hidden="true">
+                        <div class="technology-slider__item">
+                            <img src="assets/images/nextjs-logo.svg" alt="">
+                            <span>Next.js</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/react-logo.svg" alt="">
+                            <span>React</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/typescript-logo.svg" alt="">
+                            <span>TypeScript</span>
+                        </div>
+
+                        <div class="technology-slider__item">
+                            <img src="assets/images/tailwind-logo.svg" alt="">
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="work" aria-labelledby="projects-title">
+            <div class="projects__container">
+                <h2 class="projects__title" id="projects-title">
+                    <span class="projects__title-word" data-i18n="projects.titleWordOne">
+                        Latest
+                    </span>
+
+                    <span class="projects__title-word" data-i18n="projects.titleWordTwo">
+                        Projects
+                    </span>
+                </h2>
+
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <img src="assets/images/project-moneypilot.png"
+                                alt="MoneyPilot financial dashboard interface" data-i18n-alt="moneyPilotPage.images.interface">
+                        </div>
+
+                        <div class="project-card__footer">
+                            <h3 class="project-card__title">Money Pilot</h3>
+
+                            <a class="project-card__link" href="./moneypilot.html">
+                                <span data-i18n="projects.viewProject">
+                                    View Project
+                                </span>
+                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <img src="assets/images/project-black-bull-mobile.png"
+                                alt="Black Bull mobile restaurant interface" data-i18n-alt="blackBullMobilePage.images.mobile">
+                        </div>
+
+                        <div class="project-card__footer">
+                            <h3 class="project-card__title">Black Bull Mobile</h3>
+
+                            <a class="project-card__link" href="./black-bull-mobile.html">
+                                <span data-i18n="projects.viewProject">
+                                    View Project
+                                </span>
+                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <img src="assets/images/project-pet-id.png" alt="Pet ID digital identification interface" data-i18n-alt="petIdPage.images.interface">
+                        </div>
+
+                        <div class="project-card__footer">
+                            <h3 class="project-card__title">Pet ID</h3>
+
+                            <a class="project-card__link" href="./pet-id.html">
+                                <span data-i18n="projects.viewProject">
+                                    View Project
+                                </span>
+                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <img src="assets/images/project-black-bull.png"
+                                alt="Black Bull digital restaurant menu interface" data-i18n-alt="blackBullPage.images.interface">
+                        </div>
+
+                        <div class="project-card__footer">
+                            <h3 class="project-card__title">Black Bull</h3>
+
+                            <a class="project-card__link" href="./black-bull.html">
+                                <span data-i18n="projects.viewProject">
+                                    View Project
+                                </span>
+                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <a class="projects__all-link" href="./projects.html">
+                    <span class="projects__all-text" data-i18n="projects.viewAll">
+                        View all my projects
+                    </span>
+
+                    <span class="projects__all-icon" aria-hidden="true">
+                        <img class="projects__all-arrow projects__all-arrow--current"
+                            src="assets/images/arrow-up-right.svg" alt="">
+
+                        <img class="projects__all-arrow projects__all-arrow--next"
+                            src="assets/images/arrow-up-right.svg" alt="">
+                    </span>
+                </a>
+            </div>
+        </section>
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+            <div class="skills__container">
+                <div class="skills__intro">
+                    <h2 class="skills__title" id="skills-title">
+                        <span class="skills__title-muted" data-i18n="skills.titleLineOne">
+                            Skills I use
+                        </span>
+
+                        <span data-i18n="skills.titleLineTwo">
+                            to build useful
+                        </span>
+
+                        <span data-i18n="skills.titleLineThree">
+                            web products
+                        </span>
+                    </h2>
+
+                    <div class="skills__stack">
+                        <h3 class="skills__stack-title" data-i18n="skills.stackTitle">
+                            My tech stack
+                        </h3>
+                        <div class="skills__logos">
+                            <div class="skills__logos-track">
+                                <div class="skills__logos-group">
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/figma-logo.svg" alt="Figma">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/framer-logo.svg" alt="Framer">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/github-icon.svg" alt="GitHub">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/skills-git-logo.svg" alt="Git">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/react-logo.svg" alt="React">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/nextjs-logo.svg" alt="Next.js">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/skills-html5-logo.svg" alt="HTML5">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/skills-javascript-logo.svg" alt="JavaScript">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/tailwind-logo.svg" alt="Tailwind CSS">
+                                    </div>
+
+                                    <div class="skills__logo-tile">
+                                        <img src="assets/images/skills-css3-logo.svg" alt="CSS3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills__capabilities">
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-code-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.frontEnd">
+                            Front-end Development
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-mobile-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.responsiveApps">
+                            Responsive Web Apps
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-desktop-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.landingPages">
+                            Landing Pages
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-database-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.apiIntegration">
+                            API Integration
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-dashboard-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.dashboardInterfaces">
+                            Dashboard Interfaces
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-figma-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.figmaToCode">
+                            Figma to Code
+                        </p>
+                    </div>
+
+                    <div class="skills__capability">
+                        <div class="skills__capability-icon">
+                            <img src="assets/images/skills-branch-icon.svg" alt="" aria-hidden="true">
+                        </div>
+
+                        <p data-i18n="skills.versionControl">
+                            Version Control
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="about__container">
+                <h2 class="about__title" id="about-title">
+                    <span class="about__title-muted" data-i18n="about.titleMuted">
+                        Building useful products
+                    </span>
+
+                    <span data-i18n="about.titleStrong">
+                        that solve real problems.
+                    </span>
+                </h2>
+
+                <div class="about__content">
+                    <div class="about__profile">
+                        <div class="about__photo-wrapper">
+                            <img class="about__photo" src="assets/images/about-photo.png" alt="Felipe Santos Belphman">
+
+                            <div class="about__socials" aria-label="Social media links"
+                                data-i18n-aria-label="about.socialLinks">
+                                <a href="#" aria-label="Instagram">
+                                    <img src="assets/images/instagram-icon.svg" alt="" aria-hidden="true">
+                                </a>
+
+                                <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp"
+                                    data-i18n-aria-label="about.whatsappLabel">
+                                    <img src="assets/images/whatsapp-icon.svg" alt="" aria-hidden="true">
+                                </a>
+
+                                <a href="#" aria-label="Dribbble">
+                                    <img src="assets/images/dribbble-icon.svg" alt="" aria-hidden="true">
+                                </a>
+
+                                <a href="#" aria-label="LinkedIn">
+                                    <img src="assets/images/linkedin-icon.svg" alt="" aria-hidden="true">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="about__identity">
+                            <h3>Felipe Santos Belphman</h3>
+
+                            <p data-i18n="about.role">
+                                Junior Front-End Developer
+                            </p>
+                        </div>
+
+                        <div class="about__history">
+                            <h3 class="about__history-title" data-i18n="about.historyTitle">
+                                My work history
+                            </h3>
+
+                            <div class="about__history-list">
+                                <div class="about__history-item">
+                                    <strong>2024</strong>
+
+                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
+
+                                    <span data-i18n="about.movedDublin">
+                                        Moved to Dublin
+                                    </span>
+                                </div>
+
+                                <div class="about__history-item">
+                                    <strong>2026</strong>
+
+                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
+
+                                    <span data-i18n="about.buildingProjects">
+                                        Building MoneyPilot &amp; Black Bull Steak House
+                                    </span>
+                                </div>
+
+                                <div class="about__history-item">
+                                    <strong data-i18n="about.now">
+                                        Now
+                                    </strong>
+
+                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
+
+                                    <span data-i18n="about.openOpportunities">
+                                        Open to junior opportunities
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__summary">
+                        <div class="about__text">
+                            <p>
+                                <span class="about__text-highlight" data-i18n="about.summaryOneHighlight">
+                                    I’m a front-end developer based in Dublin,
+                                </span>
+
+                                <span class="about__text-muted" data-i18n="about.summaryOneMuted">
+                                    focused on turning ideas and Figma designs into clear,
+                                    responsive web experiences.
+                                </span>
+                            </p>
+
+                            <p>
+                                <span class="about__text-highlight" data-i18n="about.summaryTwoHighlight">
+                                    I learn by building products with a real purpose.
+                                </span>
+
+                                <span class="about__text-muted" data-i18n="about.summaryTwoMuted">
+                                    MoneyPilot helps people understand their finances,
+                                    while Black Bull explores a better digital restaurant
+                                    experience.
+                                </span>
+                            </p>
+
+                            <p>
+                                <span class="about__text-highlight" data-i18n="about.summaryThreeHighlight">
+                                    I care about the small details, responsive layouts,
+                                </span>
+
+                                <span class="about__text-muted" data-i18n="about.summaryThreeMuted">
+                                    accessible structure, clear components and
+                                    maintainable code. My goal is to join a team where
+                                    I can contribute, learn and grow.
+                                </span>
+                            </p>
+                        </div>
+
+                        <img class="about__signature" src="assets/images/about-signature.png"
+                            alt="Felipe S Belphman signature" data-i18n-alt="common.images.signature">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work-process" id="how-i-work" aria-labelledby="work-process-title">
+            <div class="work-process__container">
+                <header class="work-process__header">
+                    <h2 class="work-process__title" id="work-process-title">
+                        <span class="work-process__title-muted" data-i18n="workProcess.titleMuted">
+                            From an idea.
+                        </span>
+
+                        <span data-i18n="workProcess.titleStrong">
+                            To a working product.
+                        </span>
+                    </h2>
+
+                    <p class="work-process__intro">
+                        <span class="work-process__intro-highlight" data-i18n="workProcess.introHighlight">
+                            Clear process, thoughtful execution.
+                        </span>
+
+                        <span data-i18n="workProcess.introText">
+                            I turn Figma designs and product ideas
+                            into responsive, maintainable web experiences.
+                        </span>
+                    </p>
+                </header>
+
+                <div class="work-process__steps">
+                    <article class="work-process__step">
+                        <img class="work-process__step-icon" src="assets/images/process-understand-icon.svg" alt=""
+                            aria-hidden="true">
+
+                        <div class="work-process__step-content">
+                            <h3 data-i18n="workProcess.understandTitle">
+                                Understand
+                            </h3>
+
+                            <p data-i18n="workProcess.understandText">
+                                Learn the goal, the user and the problem
+                                before writing code.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="work-process__step">
+                        <img class="work-process__step-icon" src="assets/images/process-build-icon.svg" alt=""
+                            aria-hidden="true">
+
+                        <div class="work-process__step-content">
+                            <h3 data-i18n="workProcess.buildTitle">
+                                Build
+                            </h3>
+
+                            <p data-i18n="workProcess.buildText">
+                                Create responsive interfaces with React,
+                                Next.js and TypeScript.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="work-process__step">
+                        <img class="work-process__step-icon" src="assets/images/process-improve-icon.svg" alt=""
+                            aria-hidden="true">
+
+                        <div class="work-process__step-content">
+                            <h3 data-i18n="workProcess.improveTitle">
+                                Improve
+                            </h3>
+
+                            <p data-i18n="workProcess.improveText">
+                                Test, refine and document each decision
+                                as the product grows.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="faq__container">
+                <header class="faq__header">
+                    <p class="faq__eyebrow" data-i18n="faq.eyebrow">
+                        FREQUENTLY ASKED QUESTIONS
+                    </p>
+
+                    <h2 class="faq__title" id="faq-title">
+                        <span class="faq__title-muted" data-i18n="faq.titleMuted">
+                            Your questions
+                        </span>
+
+                        <span data-i18n="faq.titleStrong">
+                            answered.
+                        </span>
+                    </h2>
+                </header>
+
+                <div class="faq__body">
+                    <aside class="faq__contact-card">
+                        <img class="faq__avatar" src="assets/images/faq-avatar.png" alt="Felipe Santos Belphman">
+
+                        <h3 class="faq__contact-title">
+                            <span class="faq__contact-title-muted" data-i18n="faq.contactMuted">
+                                Still not sure?
+                            </span>
+
+                            <span data-i18n="faq.contactStrong">
+                                Book a free discovery call.
+                            </span>
+                        </h3>
+
+                        <div class="faq__contact-content">
+                            <p data-i18n="faq.contactText">
+                                Learn more about how I work and how I can
+                                help you and your business take the next step.
+                            </p>
+
+                            <a class="faq__schedule-button"
+                                href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                                target="_blank" rel="noopener noreferrer" aria-label="Send Felipe a message on WhatsApp"
+                                data-i18n-aria-label="faq.whatsappLabel">
+                                <span data-i18n="faq.sendMessage">
+                                    Send me a message
+                                </span>
+
+                                <img src="assets/images/nav-whatsapp-icon.svg" alt="" aria-hidden="true">
+                            </a>
+                        </div>
+                    </aside>
+
+                    <div class="faq__accordion">
+                        <div class="faq__item faq__item--open">
+                            <button class="faq__question" type="button" aria-expanded="true"
+                                aria-controls="faq-answer-1">
+                                <span data-i18n="faq.questionOne">
+                                    Are you available for a junior front-end role?
+                                </span>
+
+                                <img src="assets/images/faq-collapse-icon.svg" alt="" aria-hidden="true">
+                            </button>
+
+                            <div class="faq__answer" id="faq-answer-1">
+                                <p data-i18n="faq.answerOne">
+                                    Yes. I’m based in Dublin and open to junior
+                                    opportunities across Ireland and Europe.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__question" type="button" aria-expanded="false"
+                                aria-controls="faq-answer-2">
+                                <span data-i18n="faq.questionTwo">
+                                    Which technologies do you work with?
+                                </span>
+
+                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
+                            </button>
+
+                            <div class="faq__answer" id="faq-answer-2">
+                                <p data-i18n="faq.answerTwo">
+                                    I work with HTML, CSS, JavaScript, TypeScript,
+                                    React, Next.js, Tailwind CSS, Git and GitHub.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__question" type="button" aria-expanded="false"
+                                aria-controls="faq-answer-3">
+                                <span data-i18n="faq.questionThree">
+                                    Can you turn Figma designs into code?
+                                </span>
+
+                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
+                            </button>
+
+                            <div class="faq__answer" id="faq-answer-3">
+                                <p data-i18n="faq.answerThree">
+                                    Yes. I translate Figma designs into responsive,
+                                    accessible interfaces while preserving the intended
+                                    layout and visual details.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__question" type="button" aria-expanded="false"
+                                aria-controls="faq-answer-4">
+                                <span data-i18n="faq.questionFour">
+                                    What are you building right now?
+                                </span>
+
+                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
+                            </button>
+
+                            <div class="faq__answer" id="faq-answer-4">
+                                <p data-i18n="faq.answerFour">
+                                    I’m currently building MoneyPilot, a personal finance
+                                    platform, and Black Bull, a digital restaurant
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <button class="faq__question" type="button" aria-expanded="false"
+                                aria-controls="faq-answer-5">
+                                <span data-i18n="faq.questionFive">
+                                    Are your projects responsive and accessible?
+                                </span>
+
+                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
+                            </button>
+
+                            <div class="faq__answer" id="faq-answer-5">
+                                <p data-i18n="faq.answerFive">
+                                    Yes. I build mobile-first layouts with semantic HTML,
+                                    keyboard-friendly interactions and adaptable
+                                    components.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="final-cta" id="contact" aria-labelledby="final-cta-title">
+            <div class="final-cta__card">
+                <div class="final-cta__content">
+                    <div class="final-cta__intro">
+                        <div class="final-cta__heading">
+                            <p class="final-cta__eyebrow" data-i18n="finalCta.eyebrow">
+                                OPEN TO JUNIOR OPPORTUNITIES
+                            </p>
+
+                            <h2 class="final-cta__title" id="final-cta-title">
+                                <span data-i18n="finalCta.titleOne">
+                                    Let’s build something
+                                </span>
+
+                                <span class="final-cta__title-accent" data-i18n="finalCta.titleAccent">
+                                    useful together.
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="final-cta__action">
+                            <p class="final-cta__description" data-i18n="finalCta.description">
+                                I’m ready to contribute, learn and build thoughtful
+                                web experiences with a collaborative team.
+                            </p>
+
+                            <div class="final-cta__buttons">
+                                <a class="final-cta__button final-cta__button--work" href="#work">
+                                    <span data-i18n="finalCta.viewWork">
+                                        View my work
+                                    </span>
+
+                                    <img src="assets/images/cta-devices-icon.svg" alt="" aria-hidden="true">
+                                </a>
+
+                                <a class="final-cta__button final-cta__button--github"
+                                    href="https://github.com/felipesbelphman-web" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span>GitHub</span>
+
+                                    <img src="assets/images/github-icon.svg" alt="" aria-hidden="true">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-cta__opportunities">
+                        <h3 class="final-cta__opportunities-title" data-i18n="finalCta.opportunitiesTitle">
+                            Ready to contribute
+                        </h3>
+
+                        <ul class="final-cta__opportunities-list">
+                            <li>
+                                <img src="assets/images/cta-opportunity-icon.svg" alt="" aria-hidden="true">
+
+                                <span data-i18n="finalCta.juniorOpportunity">
+                                    Junior front-end opportunities
+                                </span>
+                            </li>
+
+                            <li>
+                                <img src="assets/images/cta-figma-icon.svg" alt="" aria-hidden="true">
+
+                                <span data-i18n="finalCta.figmaCode">
+                                    Figma to production code
+                                </span>
+                            </li>
+
+                            <li>
+                                <img src="assets/images/cta-responsive-icon.svg" alt="" aria-hidden="true">
+
+                                <span data-i18n="finalCta.responsive">
+                                    Responsive web experiences
+                                </span>
+                            </li>
+
+                            <li>
+                                <img src="assets/images/cta-components-icon.svg" alt="" aria-hidden="true">
+
+                                <span data-i18n="finalCta.components">
+                                    Clear, maintainable components
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="final-cta__location">
+                            <img src="assets/images/cta-location-icon.svg" alt="" aria-hidden="true">
+
+                            <p>
+                                <strong data-i18n="finalCta.location">
+                                    Dublin, Ireland
+                                </strong>
+
+                                <span aria-hidden="true">•</span>
+
+                                <strong data-i18n="finalCta.openEurope">
+                                    Open across Europe
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="final-cta__gradient" src="assets/images/cta-gradient.svg" alt="" aria-hidden="true">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <h2 class="site-footer__title">
+                <span data-i18n="footer.titleOne">
+                    Let’s design
+                </span>
+
+                <span data-i18n="footer.titleTwo">
+                    Incredible work together.
+                </span>
+            </h2>
+
+            <div class="site-footer__contact">
+                <div class="site-footer__email">
+                    <h3 data-i18n="footer.email">
+                        Email
+                    </h3>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+
+                <div class="site-footer__social">
+                    <h3 data-i18n="footer.social">
+                        Social
+                    </h3>
+
+                    <div class="site-footer__social-links">
+                        <a href="#" aria-label="Instagram">
+                            <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                            target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp"
+                            data-i18n-aria-label="footer.whatsappLabel">
+                            <img src="assets/images/footer-whatsapp-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="Dribbble">
+                            <img src="assets/images/footer-dribbble-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="assets/images/footer-linkedin-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer__divider">
+                <img class="site-footer__divider-line" src="assets/images/footer-line-left.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-icon" src="assets/images/footer-brand-icon.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-line" src="assets/images/footer-line-right.svg" alt=""
+                    aria-hidden="true">
+            </div>
+
+            <div class="site-footer__bottom">
+                <nav class="site-footer__menu" aria-label="Footer navigation"
+                    data-i18n-aria-label="footer.navigationLabel">
+                    <h3 data-i18n="footer.menu">
+                        Menu
+                    </h3>
+
+                    <div class="site-footer__menu-links">
+                        <div>
+                            <a href="#home" data-i18n="nav.home">
+                                Home
+                            </a>
+
+                            <a href="#work" data-i18n="nav.work">
+                                Work
+                            </a>
+
+                            <a href="#skills" data-i18n="nav.skills">
+                                Skills
+                            </a>
+
+                            <a href="#about" data-i18n="nav.about">
+                                About
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#how-i-work" data-i18n="nav.howIWork">
+                                How I Work
+                            </a>
+
+                            <a href="#faq" data-i18n="nav.faq">
+                                FAQ
+                            </a>
+
+                            <a href="#contact" data-i18n="nav.contact">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="site-footer__legal">
+                    <h3 data-i18n="footer.legal">
+                        Legal
+                    </h3>
+
+                    <div class="site-footer__legal-links">
+                        <a href="./terms-of-service.html" data-i18n="footer.terms">
+                            Terms of service
+                        </a>
+
+                        <a href="./privacy-policy.html" data-i18n="footer.privacy">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+
+                <p class="site-footer__copyright">
+                    © 2026 Felipe Belphman
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
+        <button class="contact-modal__backdrop" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close"></button>
+
+        <section class="contact-page__panel" aria-labelledby="contact-page-title">
+            <button class="contact-page__close" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close">
+                &times;
+            </button>
+
+            <header class="contact-page__header">
+                <h2 id="contact-page-title" data-i18n="contact.title">
+                    Let’s build something useful.
+                </h2>
+
+                <p data-i18n="contact.description">
+                    Tell me about your project or contact me directly.
+                </p>
+            </header>
+
+            <div class="contact-page__profile">
+                <div class="contact-page__avatar">
+                    <img src="assets/images/about-photo.png" alt="Felipe S Belphman">
+
+                    <span class="contact-page__status" aria-label="Available" data-i18n-aria-label="contact.available"></span>
+                </div>
+
+                <div class="contact-page__profile-text">
+                    <strong>Felipe S Belphman</strong>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="contact-form__row">
+                    <label class="contact-form__field">
+                        <span data-i18n="contact.name">Name</span>
+
+                        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.name" autocomplete="name" required>
+                    </label>
+
+                    <label class="contact-form__field">
+                        <span data-i18n="footer.email">Email</span>
+
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="footer.email" autocomplete="email" required>
+                    </label>
+                </div>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.project">Tell me about your project</span>
+
+                    <textarea name="message" rows="5"
+                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant." data-i18n-placeholder="contact.messagePlaceholder"
+                        required></textarea>
+                </label>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.help">How can I help?</span>
+
+                    <select name="helpType" required>
+                        <option value="" selected disabled data-i18n="contact.options.prompt">
+                            Select an option
+                        </option>
+
+                        <option value="front-end-development" data-i18n="contact.options.development">
+                            Front-end development
+                        </option>
+
+                        <option value="figma-to-code" data-i18n="contact.options.figma">
+                            Figma to code
+                        </option>
+
+                        <option value="responsive-website" data-i18n="contact.options.responsive">
+                            Responsive website
+                        </option>
+
+                        <option value="job-opportunity" data-i18n="contact.options.job">
+                            Junior job opportunity
+                        </option>
+
+                        <option value="other" data-i18n="contact.options.other">
+                            Other
+                        </option>
+                    </select>
+                </label>
+
+                <button class="contact-form__submit" type="submit">
+                    <img src="assets/images/contact-message-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.send">Send Message</span>
+                </button>
+
+                <a class="contact-form__whatsapp"
+                    href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                    <img src="assets/images/contact-whatsapp-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.whatsapp">Message on WhatsApp</span>
+                </a>
+
+                <p class="contact-form__note" data-i18n="contact.reply">
+                    I’ll reply as soon as possible.
+                </p>
+            </form>
+        </section>
+    </div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

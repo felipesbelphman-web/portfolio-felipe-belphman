@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="petIdPage.meta.title">Pet ID Case Study | Felipe S Bephman</title>
+    <meta name="description" data-i18n-content="petIdPage.meta.description" content="A digital identification experience designed to make important pet information easy to access and help people reconnect lost pets with their guardians.">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
+            <a class="navigation__brand" href="./index.html#home">
+                <img src="assets/images/profile-photo.png" alt="Portrait of Felipe S Bephman" data-i18n-alt="common.images.portrait">
+                <span>Felipe S Bephman</span>
+            </a>
+            <button class="navigation__toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="common.navigation.open" aria-expanded="false"
+                aria-controls="navigation-menu">
+                <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
+            </button>
+            <ul class="navigation__menu" id="navigation-menu">
+                <li><a href="./index.html#work" data-i18n="nav.work">Work</a></li>
+                <li><a href="./index.html#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="./index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a></li>
+                <li><a href="./index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li class="language-switcher">
+                    <button class="language-switcher__trigger" type="button" aria-label="Select language"
+                        data-i18n-aria-label="language.select" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="language-menu">
+                        <img class="language-switcher__flag" data-language-current-flag
+                            src="assets/images/flags/flag-en.svg" alt="" aria-hidden="true">
+
+                        <span class="language-switcher__current" data-language-current>
+                            EN
+                        </span>
+
+                        <span class="language-switcher__chevron" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="language-switcher__menu" id="language-menu" role="menu" aria-hidden="true">
+                        <button class="language-switcher__option is-active" type="button" data-language="en"
+                            role="menuitem" aria-pressed="true">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-en.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>English</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                EN
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="pt-BR" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-pt-br.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Português</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                PT
+                            </span>
+                        </button>
+
+                        <button class="language-switcher__option" type="button" data-language="es" role="menuitem"
+                            aria-pressed="false">
+                            <span class="language-switcher__option-label">
+                                <img class="language-switcher__flag" src="assets/images/flags/flag-es.svg" alt=""
+                                    aria-hidden="true">
+
+                                <span>Español</span>
+                            </span>
+
+                            <span class="language-switcher__option-code">
+                                ES
+                            </span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <button class="navigation__contact" type="button" data-contact-open aria-controls="contact-modal"
+                aria-expanded="false">
+                <span class="navigation__contact-default" data-i18n="nav.contact">Contact</span>
+
+                <span class="navigation__contact-hover" data-i18n="nav.contactMe">Contact Me</span>
+
+                <img class="navigation__contact-icon navigation__contact-icon--default"
+                    src="assets/images/mail-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--hover"
+                    src="assets/images/mail-opened-icon.svg" alt="" aria-hidden="true">
+
+                <img class="navigation__contact-icon navigation__contact-icon--whatsapp"
+                    src="assets/images/nav-whatsapp-icon.svg" alt="" aria-hidden="true">
+            </button>
+        </nav>
+    </header>
+    <main class="case-study">
+    <section class="case-study__hero" aria-labelledby="case-study-title">
+        <div class="case-study__container">
+            <a class="case-study__back" href="./projects.html">
+                <span aria-hidden="true">←</span>
+                <span data-i18n="common.caseStudies.allProjects">All projects</span>
+            </a>
+
+            <p class="case-study__eyebrow" data-i18n="petIdPage.hero.eyebrow">
+                Pet technology — Digital identification
+            </p>
+
+            <h1 class="case-study__title" id="case-study-title">
+                Pet ID
+            </h1>
+
+            <p class="case-study__intro" data-i18n="petIdPage.hero.intro">
+                A digital identification experience designed to make
+                important pet information easy to access and help people
+                reconnect lost pets with their guardians.
+            </p>
+
+            <dl class="case-study__meta">
+                <div>
+                    <dt data-i18n="common.caseStudies.role">Role</dt>
+                    <dd data-i18n="common.caseStudies.roleValue">Product Design &amp; Front-end Development</dd>
+                </div>
+
+                <div>
+                    <dt data-i18n="common.caseStudies.type">Type</dt>
+                    <dd data-i18n="petIdPage.details.type">Digital Pet Identification</dd>
+                </div>
+
+                <div>
+                    <dt data-i18n="common.caseStudies.stack">Stack</dt>
+                    <dd>HTML, CSS, JavaScript</dd>
+                </div>
+
+                <div>
+                    <dt data-i18n="common.caseStudies.status">Status</dt>
+                    <dd data-i18n="petIdPage.details.status">Concept project</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <section class="case-study__cover" aria-label="Pet ID project preview" data-i18n-aria-label="petIdPage.images.preview">
+        <div class="case-study__container">
+            <div class="case-study__cover-frame">
+                <img
+                    src="assets/images/project-pet-id.png"
+                    alt="Pet ID digital identification interface" data-i18n-alt="petIdPage.images.interface"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study__section">
+        <div class="case-study__container case-study__two-columns">
+            <h2 data-i18n="common.caseStudies.project">The project</h2>
+
+            <div class="case-study__copy">
+                <p data-i18n="petIdPage.project.overview">
+                    Pet ID explores a simple digital profile where important
+                    information about a pet can be presented clearly and
+                    accessed from different devices.
+                </p>
+
+                <p data-i18n="petIdPage.project.approach">
+                    The experience is designed around quick identification,
+                    clear contact information, and an interface that remains
+                    easy to understand during a stressful situation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study__section case-study__section--muted">
+        <div class="case-study__container case-study__two-columns">
+            <h2 data-i18n="common.caseStudies.challenge">The challenge</h2>
+
+            <div class="case-study__copy">
+                <p data-i18n="petIdPage.challenge.urgency">
+                    When a pet is lost, information needs to be communicated
+                    quickly. A complicated interface or unclear contact
+                    details can delay communication with the guardian.
+                </p>
+
+                <p data-i18n="petIdPage.challenge.accessibility">
+                    The challenge was to organize essential information in a
+                    friendly, accessible, and mobile-first experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study__section">
+        <div class="case-study__container case-study__two-columns">
+            <h2 data-i18n="common.caseStudies.solution">The solution</h2>
+
+            <div class="case-study__copy">
+                <p data-i18n="petIdPage.solution.priorities">
+                    The interface prioritizes the pet’s identity, guardian
+                    contact options, and important details using clear
+                    hierarchy and responsive components.
+                </p>
+
+                <p data-i18n="petIdPage.solution.upcoming">
+                    Additional project information, user flows, screens, and
+                    device mockups will be added when the final case study
+                    assets are prepared.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="case-study__next" aria-label="Next project" data-i18n-aria-label="common.caseStudies.next">
+        <div class="case-study__container">
+            <p data-i18n="common.caseStudies.next">Next project</p>
+
+            <a href="./black-bull.html">
+                <span>Black Bull</span>
+                <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </nav>
+</main>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <h2 class="site-footer__title">
+                <span data-i18n="footer.titleOne">Let’s design</span>
+                <span data-i18n="footer.titleTwo">Incredible work together.</span>
+            </h2>
+
+            <div class="site-footer__contact">
+                <div class="site-footer__email">
+                    <h3 data-i18n="footer.email">Email</h3>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+
+                <div class="site-footer__social">
+                    <h3 data-i18n="footer.social">Social</h3>
+
+                    <div class="site-footer__social-links">
+                        <a href="#" aria-label="Instagram">
+                            <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                            target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                            <img src="assets/images/footer-whatsapp-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="Dribbble">
+                            <img src="assets/images/footer-dribbble-icon.svg" alt="" aria-hidden="true">
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="assets/images/footer-linkedin-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer__divider">
+                <img class="site-footer__divider-line" src="assets/images/footer-line-left.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-icon" src="assets/images/footer-brand-icon.svg" alt=""
+                    aria-hidden="true">
+
+                <img class="site-footer__divider-line" src="assets/images/footer-line-right.svg" alt=""
+                    aria-hidden="true">
+            </div>
+
+            <div class="site-footer__bottom">
+                <nav class="site-footer__menu" aria-label="Footer navigation" data-i18n-aria-label="footer.navigationLabel">
+                    <h3 data-i18n="footer.menu">Menu</h3>
+
+                    <div class="site-footer__menu-links">
+                        <div>
+                            <a href="./index.html#home" data-i18n="nav.home">Home</a>
+                            <a href="./index.html#work" data-i18n="nav.work">Work</a>
+                            <a href="./index.html#skills" data-i18n="nav.skills">Skills</a>
+                            <a href="./index.html#about" data-i18n="nav.about">About</a>
+                        </div>
+
+                        <div>
+                            <a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a>
+                            <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
+                            <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="site-footer__legal">
+                    <h3 data-i18n="footer.legal">Legal</h3>
+
+                    <div class="site-footer__legal-links">
+                        <a href="./terms-of-service.html" data-i18n="footer.terms">Terms of service</a>
+                        <a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <p class="site-footer__copyright">
+                    © 2026 Felipe Belphman
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
+        <button class="contact-modal__backdrop" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close"></button>
+
+        <section class="contact-page__panel" aria-labelledby="contact-page-title">
+            <button class="contact-page__close" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close">
+                &times;
+            </button>
+
+            <header class="contact-page__header">
+                <h2 id="contact-page-title" data-i18n="contact.title">
+                    Let’s build something useful.
+                </h2>
+
+                <p data-i18n="contact.description">
+                    Tell me about your project or contact me directly.
+                </p>
+            </header>
+
+            <div class="contact-page__profile">
+                <div class="contact-page__avatar">
+                    <img src="assets/images/about-photo.png" alt="Felipe S Belphman">
+
+                    <span class="contact-page__status" aria-label="Available" data-i18n-aria-label="contact.available"></span>
+                </div>
+
+                <div class="contact-page__profile-text">
+                    <strong>Felipe S Belphman</strong>
+
+                    <a href="mailto:felipesbelphman@gmail.com">
+                        felipesbelphman@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="contact-form__row">
+                    <label class="contact-form__field">
+                        <span data-i18n="contact.name">Name</span>
+
+                        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.name" autocomplete="name" required>
+                    </label>
+
+                    <label class="contact-form__field">
+                        <span data-i18n="footer.email">Email</span>
+
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="footer.email" autocomplete="email" required>
+                    </label>
+                </div>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.project">Tell me about your project</span>
+
+                    <textarea name="message" rows="5"
+                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant." data-i18n-placeholder="contact.messagePlaceholder"
+                        required></textarea>
+                </label>
+
+                <label class="contact-form__field">
+                    <span data-i18n="contact.help">How can I help?</span>
+
+                    <select name="helpType" required>
+                        <option value="" selected disabled data-i18n="contact.options.prompt">
+                            Select an option
+                        </option>
+
+                        <option value="front-end-development" data-i18n="contact.options.development">
+                            Front-end development
+                        </option>
+
+                        <option value="figma-to-code" data-i18n="contact.options.figma">
+                            Figma to code
+                        </option>
+
+                        <option value="responsive-website" data-i18n="contact.options.responsive">
+                            Responsive website
+                        </option>
+
+                        <option value="job-opportunity" data-i18n="contact.options.job">
+                            Junior job opportunity
+                        </option>
+
+                        <option value="other" data-i18n="contact.options.other">
+                            Other
+                        </option>
+                    </select>
+                </label>
+
+                <button class="contact-form__submit" type="submit">
+                    <img src="assets/images/contact-message-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.send">Send Message</span>
+                </button>
+
+                <a class="contact-form__whatsapp"
+                    href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                    <img src="assets/images/contact-whatsapp-icon.svg" alt="" aria-hidden="true">
+
+                    <span data-i18n="contact.whatsapp">Message on WhatsApp</span>
+                </a>
+
+                <p class="contact-form__note" data-i18n="contact.reply">
+                    I’ll reply as soon as possible.
+                </p>
+            </form>
+        </section>
+    </div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+# Internal audit artifacts
+.i18n-audit/
+I18N-REPORT.md
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/

@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Instagram Link">
+<g id="Instagram Background">
+<circle cx="15" cy="15" r="15" fill="black" fill-opacity="0.75" style="mix-blend-mode:luminosity"/>
+</g>
+<g id="Instagram Icon" clip-path="url(#clip0_0_27)">
+<g id="Instagram Icon Path 1">
+</g>
+<path id="Instagram Icon Path 2" d="M18.3333 8.33333H11.6667C9.82572 8.33333 8.33333 9.82572 8.33333 11.6667V18.3333C8.33333 20.1743 9.82572 21.6667 11.6667 21.6667H18.3333C20.1743 21.6667 21.6667 20.1743 21.6667 18.3333V11.6667C21.6667 9.82572 20.1743 8.33333 18.3333 8.33333Z" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Instagram Icon Path 3" d="M15 17.5C16.3807 17.5 17.5 16.3807 17.5 15C17.5 13.6193 16.3807 12.5 15 12.5C13.6193 12.5 12.5 13.6193 12.5 15C12.5 16.3807 13.6193 17.5 15 17.5Z" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Instagram Icon Path 4" d="M18.75 11.25V11.251" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_27">
+<rect width="20" height="20" fill="white" transform="translate(5 5)"/>
+</clipPath>
+</defs>
+</svg>
