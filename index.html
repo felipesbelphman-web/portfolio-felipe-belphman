@@ -5,20 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="homePage.meta.title">Felipe S Bephman | Front-end Developer</title>
-    <meta name="description" data-i18n-content="homePage.meta.description" content="Felipe’s front-end development portfolio: selected projects, skills and contact information.">
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <meta name="description" data-i18n-content="homePage.meta.description"
+        content="Felipe’s front-end development portfolio: selected projects, skills and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="portfolio-terminal">
+    <aside class="dev-rail" aria-label="Portfolio sections">
+        <a class="dev-rail__brand" href="#home" aria-label="Felipe Belphman — Home">
+            FB
+        </a>
+
+        <nav class="dev-rail__navigation" aria-label="Portfolio navigation">
+            <a class="dev-rail__link is-active" href="#home">
+                <span class="dev-rail__number">01</span>
+                <span class="dev-rail__label">INTRO</span>
+                <span class="dev-rail__dot" aria-hidden="true"></span>
+            </a>
+
+            <a class="dev-rail__link" href="#skills">
+                <span class="dev-rail__number">02</span>
+                <span class="dev-rail__label">SKILLS</span>
+                <span class="dev-rail__dot" aria-hidden="true"></span>
+            </a>
+
+            <a class="dev-rail__link" href="#work">
+                <span class="dev-rail__number">03</span>
+                <span class="dev-rail__label">WORK</span>
+                <span class="dev-rail__dot" aria-hidden="true"></span>
+            </a>
+
+            <a class="dev-rail__link" href="#contact">
+                <span class="dev-rail__number">04</span>
+                <span class="dev-rail__label">CONTACT</span>
+                <span class="dev-rail__dot" aria-hidden="true"></span>
+            </a>
+        </nav>
+
+        <p class="dev-rail__location" aria-label="Dublin, Ireland">
+            <span>DUB</span>
+            <span>IRE</span>
+            <span>/</span>
+            <span>53.3498° N</span>
+            <span>6.2603° W</span>
+        </p>
+    </aside>
     <header class="site-header">
+
         <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
             <a class="navigation__brand" href="#home">
-                <img src="assets/images/profile-photo.png" alt="Portrait of Felipe S Bephman" data-i18n-alt="common.images.portrait">
+                <img src="assets/images/profile-photo.png" alt="Portrait of Felipe S Bephman"
+                    data-i18n-alt="common.images.portrait">
                 <span>Felipe S Bephman</span>
             </a>
-            <button class="navigation__toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="common.navigation.open" aria-expanded="false"
-                aria-controls="navigation-menu">
+            <button class="navigation__toggle" type="button" aria-label="Open navigation menu"
+                data-i18n-aria-label="common.navigation.open" aria-expanded="false" aria-controls="navigation-menu">
                 <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
             </button>
             <ul class="navigation__menu" id="navigation-menu">
@@ -123,86 +172,109 @@
         </nav>
     </header>
     <main>
-        <section class="hero" id="home">
-            <div class="hero__content">
-                <p class="hero__availability">
-                    <span class="hero__status-dot" aria-hidden="true"></span>
+        <section class="dev-hero" id="home" aria-labelledby="dev-hero-title">
+    <div class="dev-hero__section-header">
+        <span>01 &mdash; INTRO</span>
+        <span>// FRONT-END DEVELOPER</span>
+    </div>
 
-                    <span data-i18n="hero.availability">
-                        Open to junior front-end opportunities
-                    </span>
-                </p>
+    <div class="dev-hero__layout">
+        <div class="dev-hero__identity">
+            <p class="dev-hero__availability">
+                <span class="dev-hero__status-dot" aria-hidden="true"></span>
 
-                <h1 class="hero__title">
-                    <span class="hero__title-muted">
-                        <span class="hero__word" style="--word-index: 0;" data-i18n="hero.titleWordOne">
-                            Front-end
-                        </span>
+                <span data-i18n="hero.availability">
+                    Open to junior front-end opportunities
+                </span>
+            </p>
 
-                        <span class="hero__word" style="--word-index: 1;" data-i18n="hero.titleWordTwo">
-                            developer
-                        </span>
-                    </span>
+            <h1 class="dev-hero__title" id="dev-hero-title">
+                <span>Felipe</span>
+                <span>S. Belphman</span>
+            </h1>
 
-                    <span class="hero__title-strong">
-                        <span class="hero__word" style="--word-index: 2;" data-i18n="hero.titleWordThree">
-                            building
-                        </span>
+            <p class="dev-hero__role">
+                Creative front-end developer.
+            </p>
 
-                        <span class="hero__word" style="--word-index: 3;" data-i18n="hero.titleWordFour">
-                            real-world
-                        </span>
+            <p class="dev-hero__summary">
+                I design interfaces. I build useful products.
+                <span>Based in Dublin.</span>
+            </p>
 
-                        <span class="hero__word" style="--word-index: 4;" data-i18n="hero.titleWordFive">
-                            products.
-                        </span>
-                    </span>
-                </h1>
+            <p class="dev-hero__location">
+                <img src="assets/images/location-icon.svg" alt="" aria-hidden="true">
+                <span>Dublin, Ireland</span>
+            </p>
+        </div>
 
-                <div class="hero__description">
+        <div class="dev-terminal" aria-label="Developer information displayed as JavaScript code">
+            <div class="dev-terminal__bar">
+                <div class="dev-terminal__controls" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="dev-terminal__filename">
+                    portfolio.js
+                </span>
+
+                <span class="dev-terminal__close" aria-hidden="true">
+                    &times;
+                </span>
+            </div>
+
+            <div class="dev-terminal__body">
+                <pre class="dev-terminal__code"><code><span class="code-keyword">const</span> developer = {
+  <span class="code-property">name</span>: <span class="code-string">'Felipe Belphman'</span>,
+  <span class="code-property">role</span>: <span class="code-string">'Front-end Developer'</span>,
+  <span class="code-property">location</span>: <span class="code-string">'Dublin, Ireland'</span>,
+  <span class="code-property">stack</span>: [
+    <span class="code-string">'React'</span>,
+    <span class="code-string">'Next.js'</span>,
+    <span class="code-string">'TypeScript'</span>
+  ],
+  <span class="code-property">background</span>: <span class="code-string">'Graphic Design'</span>,
+  <span class="code-property">currentlyBuilding</span>: <span class="code-string">'MoneyPilot'</span>,
+  <span class="code-property">openToWork</span>: <span class="code-boolean">true</span>
+};</code></pre>
+
+                <div class="dev-terminal__output">
                     <p>
-                        <span data-i18n="hero.description">
-                            I build responsive and accessible web applications with React,
-                            TypeScript and Next.js.
-                        </span>
+                        <span class="dev-terminal__prompt">$</span>
+                        npm run build-career
+                    </p>
 
-                        <span class="hero__description-highlight" data-i18n="hero.descriptionHighlight">
-                            I turn product ideas and interface designs into clear,
-                            reliable experiences for real users.
-                        </span>
+                    <p class="dev-terminal__success">
+                        &gt; Ready to contribute, learn and grow.
+                    </p>
+
+                    <p class="dev-terminal__cursor-line">
+                        <span class="dev-terminal__prompt">$</span>
+                        <span class="dev-terminal__cursor" aria-hidden="true"></span>
                     </p>
                 </div>
-
-                <p class="hero__location">
-                    <img src="assets/images/location-icon.svg" alt="" aria-hidden="true">
-
-                    <span data-i18n="hero.location">
-                        Dublin, Ireland · Open to opportunities across Europe
-                    </span>
-                </p>
-
-                <div class="hero__actions">
-                    <a class="button button--primary" href="#work">
-                        <span data-i18n="hero.viewWork">
-                            View selected work
-                        </span>
-
-                        <img src="assets/images/view-work-icon.svg" alt="" aria-hidden="true">
-                    </a>
-
-                    <a class="button button--secondary" href="https://github.com/felipesbelphman-web" target="_blank"
-                        rel="noopener noreferrer">
-                        <span>GitHub</span>
-
-                        <img src="assets/images/github-icon.svg" alt="" aria-hidden="true">
-                    </a>
-                </div>
             </div>
+        </div>
 
-            <div class="hero__visual">
-                <img src="assets/images/hero-projects.png" alt="Preview of Felipe's selected web development projects" data-i18n-alt="homePage.images.projects">
-            </div>
-        </section>
+        <aside class="dev-hero__note" aria-label="Creative interests">
+            <p>
+                IDEAS<br>
+                COMPONENTS<br>
+                PRODUCTS<br>
+                PEOPLE
+            </p>
+
+            <span aria-hidden="true"></span>
+
+            <strong>
+                SAME CURIOSITY.<br>
+                DIFFERENT HORIZONS.
+            </strong>
+        </aside>
+    </div>
+</section>
 
         <section class="technology-slider" aria-label="My daily technology stack"
             data-i18n-aria-label="stack.ariaLabel">
@@ -297,7 +369,8 @@
                     <article class="project-card">
                         <div class="project-card__preview">
                             <img src="assets/images/project-moneypilot.png"
-                                alt="MoneyPilot financial dashboard interface" data-i18n-alt="moneyPilotPage.images.interface">
+                                alt="MoneyPilot financial dashboard interface"
+                                data-i18n-alt="moneyPilotPage.images.interface">
                         </div>
 
                         <div class="project-card__footer">
@@ -314,7 +387,8 @@
                     <article class="project-card">
                         <div class="project-card__preview">
                             <img src="assets/images/project-black-bull-mobile.png"
-                                alt="Black Bull mobile restaurant interface" data-i18n-alt="blackBullMobilePage.images.mobile">
+                                alt="Black Bull mobile restaurant interface"
+                                data-i18n-alt="blackBullMobilePage.images.mobile">
                         </div>
 
                         <div class="project-card__footer">
@@ -330,7 +404,8 @@
                     </article>
                     <article class="project-card">
                         <div class="project-card__preview">
-                            <img src="assets/images/project-pet-id.png" alt="Pet ID digital identification interface" data-i18n-alt="petIdPage.images.interface">
+                            <img src="assets/images/project-pet-id.png" alt="Pet ID digital identification interface"
+                                data-i18n-alt="petIdPage.images.interface">
                         </div>
 
                         <div class="project-card__footer">
@@ -347,7 +422,8 @@
                     <article class="project-card">
                         <div class="project-card__preview">
                             <img src="assets/images/project-black-bull.png"
-                                alt="Black Bull digital restaurant menu interface" data-i18n-alt="blackBullPage.images.interface">
+                                alt="Black Bull digital restaurant menu interface"
+                                data-i18n-alt="blackBullPage.images.interface">
                         </div>
 
                         <div class="project-card__footer">
@@ -539,7 +615,8 @@
 
                             <div class="about__socials" aria-label="Social media links"
                                 data-i18n-aria-label="about.socialLinks">
-                                <a href="https://www.instagram.com/felipesantosbelphman" target="_blank" rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
+                                <a href="https://www.instagram.com/felipesantosbelphman" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
                                     <img src="assets/images/instagram-icon.svg" alt="" aria-hidden="true">
                                 </a>
 
@@ -626,7 +703,8 @@
                                 </span>
 
                                 <span class="about__text-muted" data-i18n="about.summaryTwoMuted">
-                                    I started with HTML, CSS and JavaScript. After moving to Dublin, I committed to becoming a front-end developer.
+                                    I started with HTML, CSS and JavaScript. After moving to Dublin, I committed to
+                                    becoming a front-end developer.
                                 </span>
                             </p>
 
@@ -636,7 +714,8 @@
                                 </span>
 
                                 <span class="about__text-muted" data-i18n="about.summaryThreeMuted">
-                                    I build responsive, accessible products with JavaScript, TypeScript, React and Next.js — and I’m ready to contribute, learn and grow.
+                                    I build responsive, accessible products with JavaScript, TypeScript, React and
+                                    Next.js — and I’m ready to contribute, learn and grow.
                                 </span>
                             </p>
                         </div>
@@ -1008,7 +1087,8 @@
                     </h3>
 
                     <div class="site-footer__social-links">
-                        <a href="https://www.instagram.com/felipesantosbelphman" target="_blank" rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
+                        <a href="https://www.instagram.com/felipesantosbelphman" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
                             <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
                         </a>
 
@@ -1105,10 +1185,12 @@
         </div>
     </footer>
     <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
-        <button class="contact-modal__backdrop" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close"></button>
+        <button class="contact-modal__backdrop" type="button" aria-label="Close contact form"
+            data-i18n-aria-label="contact.close"></button>
 
         <section class="contact-page__panel" aria-labelledby="contact-page-title">
-            <button class="contact-page__close" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close">
+            <button class="contact-page__close" type="button" aria-label="Close contact form"
+                data-i18n-aria-label="contact.close">
                 &times;
             </button>
 
@@ -1126,7 +1208,8 @@
                 <div class="contact-page__avatar">
                     <img src="assets/images/about-photo.png" alt="Felipe S Belphman">
 
-                    <span class="contact-page__status" aria-label="Available" data-i18n-aria-label="contact.available"></span>
+                    <span class="contact-page__status" aria-label="Available"
+                        data-i18n-aria-label="contact.available"></span>
                 </div>
 
                 <div class="contact-page__profile-text">
@@ -1143,13 +1226,15 @@
                     <label class="contact-form__field">
                         <span data-i18n="contact.name">Name</span>
 
-                        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.name" autocomplete="name" required>
+                        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.name"
+                            autocomplete="name" required>
                     </label>
 
                     <label class="contact-form__field">
                         <span data-i18n="footer.email">Email</span>
 
-                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="footer.email" autocomplete="email" required>
+                        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="footer.email"
+                            autocomplete="email" required>
                     </label>
                 </div>
 
@@ -1157,8 +1242,8 @@
                     <span data-i18n="contact.project">Tell me about your project</span>
 
                     <textarea name="message" rows="5"
-                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant." data-i18n-placeholder="contact.messagePlaceholder"
-                        required></textarea>
+                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant."
+                        data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                 </label>
 
                 <label class="contact-form__field">
@@ -1199,7 +1284,8 @@
 
                 <a class="contact-form__whatsapp"
                     href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
+                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp"
+                    data-i18n-aria-label="footer.whatsappLabel">
                     <img src="assets/images/contact-whatsapp-icon.svg" alt="" aria-hidden="true">
 
                     <span data-i18n="contact.whatsapp">Message on WhatsApp</span>
