@@ -79,12 +79,12 @@ const translations = {
             "buildingProjects": "Building MoneyPilot and Black Bull Steak House",
             "now": "Now",
             "openOpportunities": "Open to junior opportunities",
-            "summaryOneHighlight": "I’m a front-end developer based in Dublin,",
-            "summaryOneMuted": "focused on turning ideas and Figma designs into clear, responsive web experiences.",
-            "summaryTwoHighlight": "I learn by building products with a real purpose.",
-            "summaryTwoMuted": "MoneyPilot helps people understand their finances, while Black Bull explores a better digital restaurant experience.",
-            "summaryThreeHighlight": "I care about the small details and responsive layouts,",
-            "summaryThreeMuted": "accessible structure, clear components and maintainable code. My goal is to join a team where I can contribute, learn and grow."
+            "summaryOneHighlight": "My creative journey began with graphic design in 2019.",
+            "summaryOneMuted": "I learned Photoshop, Illustrator and branding — and discovered Figma.",
+            "summaryTwoHighlight": "In 2023, I started turning my designs into code.",
+            "summaryTwoMuted": "I started with HTML, CSS and JavaScript. After moving to Dublin, I committed to becoming a front-end developer.",
+            "summaryThreeHighlight": "Today, I combine design thinking with development.",
+            "summaryThreeMuted": "I build responsive, accessible products with JavaScript, TypeScript, React and Next.js — and I’m ready to contribute, learn and grow."
         },
         "workProcess": {
             "titleMuted": "From an idea.",
@@ -637,12 +637,12 @@ const translations = {
             "buildingProjects": "Desenvolvendo MoneyPilot e Black Bull Steak House",
             "now": "Agora",
             "openOpportunities": "Disponível para oportunidades júnior",
-            "summaryOneHighlight": "Sou desenvolvedor front-end em Dublin,",
-            "summaryOneMuted": "focado em transformar ideias e designs do Figma em experiências web claras e responsivas.",
-            "summaryTwoHighlight": "Aprendo desenvolvendo produtos com um propósito real.",
-            "summaryTwoMuted": "MoneyPilot ajuda as pessoas a entender suas finanças, enquanto Black Bull explora uma experiência digital melhor para restaurantes.",
-            "summaryThreeHighlight": "Valorizo os pequenos detalhes e os layouts responsivos,",
-            "summaryThreeMuted": "uma estrutura acessível, componentes claros e código de fácil manutenção. Meu objetivo é fazer parte de uma equipe na qual eu possa contribuir, aprender e crescer."
+            "summaryOneHighlight": "Minha jornada criativa começou com o design gráfico em 2019.",
+            "summaryOneMuted": "Aprendi Photoshop, Illustrator e criação de marcas — e conheci o Figma.",
+            "summaryTwoHighlight": "Em 2023, comecei a transformar meus designs em código.",
+            "summaryTwoMuted": "Comecei com HTML, CSS e JavaScript. Depois de me mudar para Dublin, decidi me tornar desenvolvedor front-end.",
+            "summaryThreeHighlight": "Hoje, combino design e desenvolvimento.",
+            "summaryThreeMuted": "Crio produtos responsivos e acessíveis com JavaScript, TypeScript, React e Next.js — e estou pronto para contribuir, aprender e evoluir."
         },
         "workProcess": {
             "titleMuted": "De uma ideia.",
@@ -1195,12 +1195,12 @@ const translations = {
             "buildingProjects": "Desarrollando MoneyPilot y Black Bull Steak House",
             "now": "Ahora",
             "openOpportunities": "Disponible para oportunidades junior",
-            "summaryOneHighlight": "Soy desarrollador front-end y vivo en Dublín,",
-            "summaryOneMuted": "centrado en convertir ideas y diseños de Figma en experiencias web claras y adaptables.",
-            "summaryTwoHighlight": "Aprendo creando productos con un propósito real.",
-            "summaryTwoMuted": "MoneyPilot ayuda a las personas a comprender sus finanzas, mientras que Black Bull explora una mejor experiencia digital para restaurantes.",
-            "summaryThreeHighlight": "Cuido los pequeños detalles y los diseños adaptables,",
-            "summaryThreeMuted": "la estructura accesible, los componentes claros y el código fácil de mantener. Mi objetivo es unirme a un equipo en el que pueda contribuir, aprender y crecer."
+            "summaryOneHighlight": "Mi camino creativo comenzó con el diseño gráfico en 2019.",
+            "summaryOneMuted": "Aprendí Photoshop, Illustrator y creación de marcas — y descubrí Figma.",
+            "summaryTwoHighlight": "En 2023, empecé a convertir mis diseños en código.",
+            "summaryTwoMuted": "Empecé con HTML, CSS y JavaScript. Después de mudarme a Dublín, decidí convertirme en desarrollador front-end.",
+            "summaryThreeHighlight": "Hoy combino el diseño y el desarrollo.",
+            "summaryThreeMuted": "Creo productos responsivos y accesibles con JavaScript, TypeScript, React y Next.js — y estoy listo para aportar, aprender y crecer."
         },
         "workProcess": {
             "titleMuted": "De una idea.",
