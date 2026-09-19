@@ -1,4 +1,4 @@
-const navigation = document.querySelector(".navigation");
+﻿const navigation = document.querySelector(".navigation");
 const menuButton = document.querySelector(".navigation__toggle");
 const menuIcon = menuButton?.querySelector("img");
 
@@ -176,7 +176,7 @@ portfolioContactForm?.addEventListener("submit", (event) => {
     const helpType =
         helpSelect.options[helpSelect.selectedIndex]?.text || translate("contact.emailEnquiry");
 
-    const subject = `${translate("contact.emailSubject")} — ${helpType}`;
+    const subject = `${translate("contact.emailSubject")} â€” ${helpType}`;
 
     const emailBody = [
         `${translate("contact.name")}: ${name}`,
@@ -216,3 +216,357 @@ if (projectsTitle) {
 
     projectsTitleObserver.observe(projectsTitle);
 }
+// DEV SKILLS — TECHNOLOGY STACK LOOP
+
+const devSkillsStack = document.querySelector(".dev-skills__stack");
+const devSkillsStackList = devSkillsStack?.querySelector("ul");
+
+if (devSkillsStack && devSkillsStackList) {
+    const originalItems = Array.from(devSkillsStackList.children);
+
+    originalItems.forEach((item) => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        devSkillsStackList.appendChild(clone);
+    });
+
+    devSkillsStack.addEventListener("click", () => {
+        const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+        if (isMobile) {
+            devSkillsStack.classList.toggle(
+                "dev-skills__stack--paused"
+            );
+        }
+    });
+}
+
+// DEV SKILLS — MATRIX CODE RAIN
+(() => {
+    const canvas = document.querySelector(".dev-skills__matrix");
+
+    if (!canvas) return;
+
+    const section = canvas.closest(".dev-skills__capabilities-section");
+    const context = canvas.getContext("2d");
+
+    if (!section || !context) return;
+
+    const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    );
+
+    const characters =
+        "01{}[]<>/\\|=+-*;:()constletvarfunctionreturnreactnextjshtmlcss";
+
+    const fontSize = 13;
+    const frameInterval = 48;
+
+    let columns = 0;
+    let drops = [];
+    let width = 0;
+    let height = 0;
+    let animationFrame = null;
+    let lastFrame = 0;
+    let isVisible = true;
+
+    const resizeCanvas = () => {
+        const rect = section.getBoundingClientRect();
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+        width = Math.max(1, Math.floor(rect.width));
+        height = Math.max(1, Math.floor(rect.height));
+
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+
+        context.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        columns = Math.ceil(width / fontSize);
+
+        drops = Array.from(
+            { length: columns },
+            () => Math.random() * -(height / fontSize)
+        );
+    };
+
+    const draw = () => {
+        context.fillStyle = "rgba(10, 10, 12, 0.12)";
+        context.fillRect(0, 0, width, height);
+
+        context.font = `${fontSize}px "JetBrains Mono", monospace`;
+        context.textAlign = "center";
+
+        for (let i = 0; i < drops.length; i++) {
+            const character =
+                characters[Math.floor(Math.random() * characters.length)];
+
+            const x = i * fontSize + fontSize / 2;
+            const y = drops[i] * fontSize;
+
+            const brightness = Math.random();
+
+            context.fillStyle =
+                brightness > 0.92
+                    ? "rgba(190, 255, 205, 0.82)"
+                    : "rgba(70, 210, 105, 0.48)";
+
+            context.fillText(character, x, y);
+
+            if (
+                y > height &&
+                Math.random() > 0.975
+            ) {
+                drops[i] = Math.random() * -18;
+            } else {
+                drops[i] += 0.42;
+            }
+        }
+    };
+
+    const render = (time) => {
+        if (!isVisible || reducedMotion.matches) {
+            animationFrame = null;
+            return;
+        }
+
+        if (time - lastFrame >= frameInterval) {
+            draw();
+            lastFrame = time;
+        }
+
+        animationFrame = requestAnimationFrame(render);
+    };
+
+    const start = () => {
+        if (
+            animationFrame ||
+            reducedMotion.matches ||
+            !isVisible
+        ) {
+            return;
+        }
+
+        animationFrame = requestAnimationFrame(render);
+    };
+
+    const stop = () => {
+        if (!animationFrame) return;
+
+        cancelAnimationFrame(animationFrame);
+        animationFrame = null;
+    };
+
+    const resizeObserver = new ResizeObserver(() => {
+        resizeCanvas();
+
+        context.fillStyle = "#0a0a0c";
+        context.fillRect(0, 0, width, height);
+
+        if (reducedMotion.matches) {
+            draw();
+        }
+    });
+
+    const visibilityObserver = new IntersectionObserver(
+        ([entry]) => {
+            isVisible = entry.isIntersecting;
+
+            if (isVisible) {
+                start();
+            } else {
+                stop();
+            }
+        },
+        {
+            threshold: 0.05
+        }
+    );
+
+    reducedMotion.addEventListener("change", () => {
+        if (reducedMotion.matches) {
+            stop();
+            draw();
+        } else {
+            start();
+        }
+    });
+
+    resizeCanvas();
+
+    context.fillStyle = "#0a0a0c";
+    context.fillRect(0, 0, width, height);
+
+    resizeObserver.observe(section);
+    visibilityObserver.observe(section);
+
+    start();
+})();
+
+// DEV MATRIX — SIDE RAIL CODE RAIN
+(() => {
+    const canvases = document.querySelectorAll(".dev-matrix-side");
+
+    if (!canvases.length) return;
+
+    const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    );
+
+    const characters =
+        "01{}[]<>/\\|=+-*;:()constletvarfunctionreturnreactnextjshtmlcss";
+
+    const fontSize = 14;
+    const frameInterval = 58;
+
+    canvases.forEach((canvas, canvasIndex) => {
+        const context = canvas.getContext("2d");
+
+        if (!context) return;
+
+        let width = 0;
+        let height = 0;
+        let columns = 0;
+        let drops = [];
+        let animationFrame = null;
+        let lastFrame = 0;
+        let isVisible = true;
+
+        const resizeCanvas = () => {
+            const rect = canvas.getBoundingClientRect();
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+            width = Math.max(1, Math.floor(rect.width));
+
+            const capabilitiesSection = document.querySelector(
+                ".dev-skills__capabilities-section"
+            );
+
+            const targetBottom = capabilitiesSection
+                ? capabilitiesSection.getBoundingClientRect().bottom + window.scrollY
+                : document.documentElement.scrollHeight;
+
+            const canvasTop = canvas.getBoundingClientRect().top + window.scrollY;
+
+            height = Math.max(
+                1,
+                Math.floor(targetBottom - canvasTop)
+            );
+
+            canvas.width = Math.floor(width * dpr);
+            canvas.height = Math.floor(height * dpr);
+
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
+
+            context.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+            columns = Math.ceil(width / fontSize);
+
+            drops = Array.from(
+                { length: columns },
+                (_, index) =>
+                    Math.random() * -(height / fontSize) -
+                    index * 0.75 -
+                    canvasIndex * 4
+            );
+        };
+
+        const draw = () => {
+            context.fillStyle = "rgba(10, 10, 12, 0.12)";
+            context.fillRect(0, 0, width, height);
+
+            context.font = `${fontSize}px "JetBrains Mono", monospace`;
+            context.textAlign = "center";
+
+            for (let i = 0; i < drops.length; i++) {
+                const character =
+                    characters[Math.floor(Math.random() * characters.length)];
+
+                const x = i * fontSize + fontSize / 2;
+                const y = drops[i] * fontSize;
+
+                const brightness = Math.random();
+
+                context.fillStyle =
+                    brightness > 0.92
+                        ? "rgba(190, 255, 205, 0.82)"
+                        : "rgba(70, 210, 105, 0.48)";
+
+                context.fillText(character, x, y);
+
+                if (y > height && Math.random() > 0.975) {
+                    drops[i] = Math.random() * -18;
+                } else {
+                    drops[i] += 0.42;
+                }
+            }
+        };
+
+        const render = (time) => {
+            if (!isVisible || reducedMotion.matches) {
+                animationFrame = null;
+                return;
+            }
+
+            if (time - lastFrame >= frameInterval) {
+                draw();
+                lastFrame = time;
+            }
+
+            animationFrame = requestAnimationFrame(render);
+        };
+
+        const start = () => {
+            if (
+                animationFrame ||
+                reducedMotion.matches ||
+                !isVisible
+            ) {
+                return;
+            }
+
+            animationFrame = requestAnimationFrame(render);
+        };
+
+        const stop = () => {
+            if (!animationFrame) return;
+
+            cancelAnimationFrame(animationFrame);
+            animationFrame = null;
+        };
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                isVisible = entry.isIntersecting;
+
+                if (isVisible) {
+                    start();
+                } else {
+                    stop();
+                }
+            },
+            {
+                threshold: 0.01
+            }
+        );
+
+        window.addEventListener("resize", resizeCanvas);
+
+        resizeCanvas();
+
+        context.fillStyle = "#0a0a0c";
+        context.fillRect(0, 0, width, height);
+
+        observer.observe(canvas);
+        start();
+    });
+})();
+
+
+
+
+

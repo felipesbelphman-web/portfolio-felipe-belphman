@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="homePage.meta.title">Felipe S Bephman | Front-end Developer</title>
     <meta name="description" data-i18n-content="homePage.meta.description"
-        content="Felipe’s front-end development portfolio: selected projects, skills and contact information.">
+        content="Felipeâ€™s front-end development portfolio: selected projects, skills and contact information.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -20,7 +20,7 @@
 
 <body class="portfolio-terminal">
     <aside class="dev-rail" aria-label="Portfolio sections">
-        <a class="dev-rail__brand" href="#home" aria-label="Felipe Belphman — Home">
+        <a class="dev-rail__brand" href="#home" aria-label="Felipe Belphman â€” Home">
             FB
         </a>
 
@@ -54,10 +54,20 @@
             <span>DUB</span>
             <span>IRE</span>
             <span>/</span>
-            <span>53.3498° N</span>
-            <span>6.2603° W</span>
+            <span>53.3498Â° N</span>
+            <span>6.2603Â° W</span>
         </p>
     </aside>
+    <canvas
+        class="dev-matrix-side dev-matrix-side--left"
+        aria-hidden="true"
+    ></canvas>
+
+    <canvas
+        class="dev-matrix-side dev-matrix-side--right"
+        aria-hidden="true"
+    ></canvas>
+
     <header class="site-header">
 
         <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
@@ -71,8 +81,8 @@
                 <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
             </button>
             <ul class="navigation__menu" id="navigation-menu">
-                <li>
-                    <a href="#work" data-i18n="nav.work">Work</a>
+                                <li>
+                    <a href="#home">Intro</a>
                 </li>
 
                 <li>
@@ -80,16 +90,9 @@
                 </li>
 
                 <li>
-                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#work" data-i18n="nav.work">Work</a>
                 </li>
 
-                <li>
-                    <a href="#how-i-work" data-i18n="nav.howIWork">How I Work</a>
-                </li>
-
-                <li>
-                    <a href="#faq" data-i18n="nav.faq">FAQ</a>
-                </li>
 
                 <li class="language-switcher">
                     <button class="language-switcher__trigger" type="button" aria-label="Select language"
@@ -126,7 +129,7 @@
                                 <img class="language-switcher__flag" src="assets/images/flags/flag-pt-br.svg" alt=""
                                     aria-hidden="true">
 
-                                <span>Português</span>
+                                <span>PortuguÃªs</span>
                             </span>
 
                             <span class="language-switcher__option-code">
@@ -140,7 +143,7 @@
                                 <img class="language-switcher__flag" src="assets/images/flags/flag-es.svg" alt=""
                                     aria-hidden="true">
 
-                                <span>Español</span>
+                                <span>EspaÃ±ol</span>
                             </span>
 
                             <span class="language-switcher__option-code">
@@ -174,8 +177,51 @@
     <main>
         <section class="dev-hero" id="home" aria-labelledby="dev-hero-title">
     <div class="dev-hero__section-header">
-        <span>01 &mdash; INTRO</span>
-        <span>// FRONT-END DEVELOPER</span>
+
+        <span class="dev-hero__section-label">
+            01 &mdash; INTRO
+        </span>
+
+        <nav
+            class="dev-hero__languages"
+            aria-label="Language selector"
+        >
+            <button
+                type="button"
+                class="dev-hero__language"
+                data-language="en"
+                aria-pressed="true"
+            >
+                EN
+            </button>
+
+            <span aria-hidden="true">/</span>
+
+            <button
+                type="button"
+                class="dev-hero__language"
+                data-language="pt-BR"
+                aria-pressed="false"
+            >
+                PT
+            </button>
+
+            <span aria-hidden="true">/</span>
+
+            <button
+                type="button"
+                class="dev-hero__language"
+                data-language="es"
+                aria-pressed="false"
+            >
+                ES
+            </button>
+        </nav>
+
+        <span class="dev-hero__section-role">
+            // FRONT-END DEVELOPER
+        </span>
+
     </div>
 
     <div class="dev-hero__layout">
@@ -206,6 +252,34 @@
                 <img src="assets/images/location-icon.svg" alt="" aria-hidden="true">
                 <span>Dublin, Ireland</span>
             </p>
+
+            <div class="dev-hero__actions">
+                <a
+                    class="dev-hero__action dev-hero__action--work"
+                    href="#work"
+                >
+                    <span>View my work</span>
+                    <img
+                        src="assets/images/cta-devices-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                </a>
+
+                <a
+                    class="dev-hero__action dev-hero__action--github"
+                    href="https://github.com/felipesbelphman-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>GitHub</span>
+                    <img
+                        src="assets/images/github-icon.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                </a>
+            </div>
         </div>
 
         <div class="dev-terminal" aria-label="Developer information displayed as JavaScript code">
@@ -276,680 +350,690 @@
     </div>
 </section>
 
-        <section class="technology-slider" aria-label="My daily technology stack"
-            data-i18n-aria-label="stack.ariaLabel">
-            <div class="technology-slider__intro">
-                <p class="technology-slider__eyebrow">
-                    <img class="technology-slider__status-dot" src="assets/images/stack-status.svg" alt=""
-                        aria-hidden="true">
-                    <span data-i18n="stack.eyebrow">
-                        MY DAILY STACK
-                    </span>
-                </p>
+        <section class="dev-skills" id="skills" aria-labelledby="dev-skills-title">
+    <span class="dev-skills__about-anchor" id="about" aria-hidden="true"></span>
 
-                <p class="technology-slider__title">
-                    <img src="assets/images/tools-icon.svg" alt="" aria-hidden="true">
-                    <span data-i18n="stack.title">
-                        Tools I use to build useful products
-                    </span>
-                </p>
-            </div>
+    <div class="dev-skills__section-header dev-section-band">
 
-            <div class="technology-slider__viewport">
-                <div class="technology-slider__track">
-                    <div class="technology-slider__group">
-                        <div class="technology-slider__item">
-                            <img src="assets/images/nextjs-logo.svg" alt="" aria-hidden="true">
-                            <span>Next.js</span>
-                        </div>
+        <span class="dev-section-band__corner dev-section-band__corner--left" aria-hidden="true"></span>
 
-                        <div class="technology-slider__item">
-                            <img src="assets/images/react-logo.svg" alt="" aria-hidden="true">
-                            <span>React</span>
-                        </div>
+        <div class="dev-skills__section-title">
+            <span class="dev-skills__section-index">02</span>
+            <span class="dev-skills__section-slash">//</span>
+            <span class="dev-skills__section-name">SKILLS</span>
+        </div>
 
-                        <div class="technology-slider__item">
-                            <img src="assets/images/typescript-logo.svg" alt="" aria-hidden="true">
-                            <span>TypeScript</span>
-                        </div>
+        <div class="dev-section-band__line" aria-hidden="true">
+            <span class="dev-section-band__accent"></span>
+            <span class="dev-section-band__segment"></span>
+            <span class="dev-section-band__dots">···</span>
+            <span class="dev-section-band__stretch"></span>
+            <span class="dev-section-band__dots">···</span>
+            <span class="dev-section-band__segment"></span>
+        </div>
 
-                        <div class="technology-slider__item">
-                            <img src="assets/images/tailwind-logo.svg" alt="" aria-hidden="true">
-                            <span>Tailwind CSS</span>
-                        </div>
+        <span class="dev-skills__section-meta">
+            DESIGN + CODE
+        </span>
+
+        <span class="dev-section-band__corner dev-section-band__corner--right" aria-hidden="true"></span>
+
+    </div>
+
+    <div class="dev-skills__layout">
+        <div class="dev-skills__profile">
+                        <div class="dev-skills__profile-card">
+                <div class="dev-skills__profile-rail" aria-hidden="true">
+                    <div class="dev-skills__profile-rail-copy dev-skills__profile-rail-copy--left">
+                        <span>PASSION</span>
+                        <span>BUILDS</span>
+                        <span>PROGRESS</span>
                     </div>
 
-                    <div class="technology-slider__item">
-                        <img src="assets/images/figma-logo.svg" alt="" aria-hidden="true">
-                        <span>Figma</span>
-                    </div>
+                    <div class="dev-skills__profile-rail-line"></div>
 
-                    <div class="technology-slider__item">
-                        <img src="assets/images/framer-logo.svg" alt="" aria-hidden="true">
-                        <span>Framer</span>
-                    </div>
+                    <div class="dev-skills__profile-rail-slash">//</div>
 
-                    <div class="technology-slider__group" aria-hidden="true">
-                        <div class="technology-slider__item">
-                            <img src="assets/images/nextjs-logo.svg" alt="">
-                            <span>Next.js</span>
-                        </div>
-
-                        <div class="technology-slider__item">
-                            <img src="assets/images/react-logo.svg" alt="">
-                            <span>React</span>
-                        </div>
-
-                        <div class="technology-slider__item">
-                            <img src="assets/images/typescript-logo.svg" alt="">
-                            <span>TypeScript</span>
-                        </div>
-
-                        <div class="technology-slider__item">
-                            <img src="assets/images/tailwind-logo.svg" alt="">
-                            <span>Tailwind CSS</span>
-                        </div>
+                    <div class="dev-skills__profile-rail-copy dev-skills__profile-rail-copy--right">
+                        <span>ALWAYS A</span>
+                        <span>BETTER VERSION</span>
                     </div>
                 </div>
+                <div class="about__photo-wrapper">
+                <img
+                    class="about__photo"
+                    src="assets/images/about-photo.png"
+                    alt="Felipe Santos Belphman"
+                >
+
+                <div
+                    class="about__socials"
+                    aria-label="Social media links"
+                    data-i18n-aria-label="about.socialLinks"
+                >
+                    <a
+                        href="https://www.instagram.com/felipesantosbelphman"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Felipe Instagram profile"
+                    >
+                        <img
+                            src="assets/images/instagram-icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+                    </a>
+
+                    <a
+                        href="https://github.com/felipesbelphman-web"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit Felipe GitHub profile"
+                    >
+                        <img
+                            src="assets/images/github-icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+                    </a>
+
+                    <a
+                        href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Message Felipe on WhatsApp"
+                        data-i18n-aria-label="about.whatsappLabel"
+                    >
+                        <img
+                            src="assets/images/whatsapp-icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+                    </a>
+                </div>
             </div>
-        </section>
-        <section class="projects" id="work" aria-labelledby="projects-title">
-            <div class="projects__container">
-                <h2 class="projects__title" id="projects-title">
-                    <span class="projects__title-word" data-i18n="projects.titleWordOne">
-                        Latest
+
+            <div class="dev-skills__identity">
+                <h3>Felipe Santos Belphman</h3>
+
+                <p data-i18n="about.role">
+                    Junior Front-End Developer
+                </p>
+            </div>
+                        <div class="dev-skills__tech-grid" aria-label="Technology stack">
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/skills-html5-logo.svg" alt="" aria-hidden="true">
+                    <span>HTML</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/skills-css3-logo.svg" alt="" aria-hidden="true">
+                    <span>CSS</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/skills-javascript-logo.svg" alt="" aria-hidden="true">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/typescript-logo.svg" alt="" aria-hidden="true">
+                    <span>TypeScript</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/react-logo.svg" alt="" aria-hidden="true">
+                    <span>React</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/nextjs-logo.svg" alt="" aria-hidden="true">
+                    <span>Next.js</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/tailwind-logo.svg" alt="" aria-hidden="true">
+                    <span>Tailwind</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/skills-git-logo.svg" alt="" aria-hidden="true">
+                    <span>Git</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/github-icon.svg" alt="" aria-hidden="true">
+                    <span>GitHub</span>
+                </div>
+
+                <div class="dev-skills__tech-item">
+                    <img src="assets/images/figma-logo.svg" alt="" aria-hidden="true">
+                    <span>Figma</span>
+                </div>
+            </div>
+                <div class="dev-skills__profile-footer">
+                    <div class="dev-skills__profile-footer-dev">
+                        <img
+                            src="assets/images/terminal.svg"
+                            alt=""
+                            aria-hidden="true"
+                        >
+                        <span>DEV</span>
+                    </div>
+
+                    <span class="dev-skills__profile-footer-motto">
+                        BUILD • LEARN • EVOLVE
+                    </span>
+                </div>
+            </div>
+</div>
+
+        <div class="dev-skills__content">
+            <p class="dev-skills__eyebrow">
+                CREATIVE BACKGROUND / DEVELOPER MINDSET
+            </p>
+
+            <h2 class="dev-skills__title" id="dev-skills-title">
+                Design roots.<br>
+                Developer mindset.
+            </h2>
+
+            <div class="dev-skills__story">
+                <p>
+                    <span
+                        class="dev-skills__story-highlight"
+                        data-i18n="about.summaryOneHighlight"
+                    >
+                        My creative journey began with graphic design in 2019.
                     </span>
 
-                    <span class="projects__title-word" data-i18n="projects.titleWordTwo">
-                        Projects
+                    <span data-i18n="about.summaryOneMuted">
+                        I learned Photoshop, Illustrator and branding â€” and discovered Figma.
                     </span>
-                </h2>
+                </p>
 
-                <div class="projects__grid">
-                    <article class="project-card">
+                <p>
+                    <span
+                        class="dev-skills__story-highlight"
+                        data-i18n="about.summaryTwoHighlight"
+                    >
+                        In 2023, I started turning my designs into code.
+                    </span>
+
+                    <span data-i18n="about.summaryTwoMuted">
+                        I started with HTML, CSS and JavaScript. After moving to Dublin,
+                        I committed to becoming a front-end developer.
+                    </span>
+                </p>
+
+                <p>
+                    <span
+                        class="dev-skills__story-highlight"
+                        data-i18n="about.summaryThreeHighlight"
+                    >
+                        Today, I combine design thinking with development.
+                    </span>
+
+                    <span data-i18n="about.summaryThreeMuted">
+                        I build responsive, accessible products with JavaScript,
+                        TypeScript, React and Next.js â€” and Iâ€™m ready to contribute,
+                        learn and grow.
+                    </span>
+                </p>
+            </div>
+            <div class="dev-skills__timeline">
+                <div class="dev-skills__timeline-heading">
+                    <div>
+                        <p class="dev-skills__timeline-label">
+                            // MY JOURNEY
+                        </p>
+                        <p class="dev-skills__timeline-intro">
+                            Ideas evolve. So do I.
+                        </p>
+                    </div>
+
+                    <span class="dev-skills__timeline-count">
+                        [ 001 - 004 ]
+                    </span>
+                </div>
+
+                <ol>
+                    <li>
+                        <div class="dev-skills__timeline-step" aria-hidden="true">
+                            <span>1</span>
+                        </div>
+
+                        <div class="dev-skills__timeline-copy">
+                            <div class="dev-skills__timeline-meta">
+                                <span class="dev-skills__timeline-year-inline">2019</span>
+                                <span class="dev-skills__timeline-meta-separator">//</span>
+                                <span class="dev-skills__timeline-kicker">BEGINNINGS</span>
+                            </div>
+
+                            <strong class="dev-skills__timeline-title">
+                                Started with graphic design
+                            </strong>
+
+                            <span class="dev-skills__timeline-description">
+                                Photoshop, Illustrator, branding and Figma.
+                            </span>
+
+                            <div class="dev-skills__timeline-card-icon">
+                                <img src="assets/images/brush.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dev-skills__timeline-step" aria-hidden="true">
+                            <span>2</span>
+                        </div>
+
+                        <div class="dev-skills__timeline-copy">
+                            <div class="dev-skills__timeline-meta">
+                                <span class="dev-skills__timeline-year-inline">2023</span>
+                                <span class="dev-skills__timeline-meta-separator">//</span>
+                                <span class="dev-skills__timeline-kicker">TRANSITION</span>
+                            </div>
+
+                            <strong class="dev-skills__timeline-title">
+                                Started turning designs into code
+                            </strong>
+
+                            <span class="dev-skills__timeline-description">
+                                HTML, CSS and JavaScript became my next tools.
+                            </span>
+
+                            <div class="dev-skills__timeline-card-icon">
+                                <img src="assets/images/code.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dev-skills__timeline-step" aria-hidden="true">
+                            <span>3</span>
+                        </div>
+
+                        <div class="dev-skills__timeline-copy">
+                            <div class="dev-skills__timeline-meta">
+                                <span class="dev-skills__timeline-year-inline">2025</span>
+                                <span class="dev-skills__timeline-meta-separator">//</span>
+                                <span class="dev-skills__timeline-kicker">A NEW HOME</span>
+                            </div>
+
+                            <strong class="dev-skills__timeline-title">
+                                Moved to Dublin
+                            </strong>
+
+                            <span class="dev-skills__timeline-description">
+                                Committed to becoming a front-end developer.
+                            </span>
+
+                            <div class="dev-skills__timeline-card-icon">
+                                <img src="assets/images/location-marker.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dev-skills__timeline-step" aria-hidden="true">
+                            <span>4</span>
+                        </div>
+
+                        <div class="dev-skills__timeline-copy">
+                            <div class="dev-skills__timeline-meta">
+                                <span class="dev-skills__timeline-year-inline">2026</span>
+                                <span class="dev-skills__timeline-meta-separator">//</span>
+                                <span class="dev-skills__timeline-kicker">WHAT'S NEXT</span>
+                            </div>
+
+                            <strong class="dev-skills__timeline-title">
+                                Building real-world products
+                            </strong>
+
+                            <span class="dev-skills__timeline-description">
+                                Combining design thinking with front-end development.
+                            </span>
+
+                            <div class="dev-skills__timeline-card-icon">
+                                <img src="assets/images/terminal.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+</div>
+    </div>
+
+
+    <section class="dev-skills__capabilities-section" aria-labelledby="core-capabilities-title">
+        <canvas
+            class="dev-skills__matrix"
+            aria-hidden="true"
+        ></canvas>
+        <div class="dev-skills__capabilities-heading">
+            <h2 id="core-capabilities-title">
+                // CORE CAPABILITIES
+            </h2>
+
+            <p>
+                Design skills that power better code.
+            </p>
+        </div>
+
+        <div class="dev-skills__capabilities">
+                <article>
+                    <img
+                        src="assets/images/capability-figma-code.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Figma to Code</h3>
+                    <p>Turning interface designs into responsive pages.</p>
+                </article>
+
+                <article>
+                    <img
+                        src="assets/images/capability-responsive-ui.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Responsive UI</h3>
+                    <p>Interfaces that adapt across desktop and mobile.</p>
+                </article>
+
+                <article>
+                    <img
+                        src="assets/images/capability-front-end.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Front-End</h3>
+                    <p>Building clear and maintainable user experiences.</p>
+                </article>
+
+                <article>
+                    <img
+                        src="assets/images/capability-product-thinking.svg"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h3>Product Thinking</h3>
+                    <p>Connecting user needs, design and implementation.</p>
+                </article>
+            </div>
+    </section>
+    
+</section>
+        <section class="projects dev-projects" id="work" aria-labelledby="projects-title">
+            <div class="projects__container dev-projects__container">
+
+                <header class="dev-projects__header dev-section-band dev-projects__section-band">
+
+    <span class="dev-section-band__corner dev-section-band__corner--left" aria-hidden="true"></span>
+
+    <div class="dev-projects__section-title">
+        <span class="dev-projects__section-index">03</span>
+        <span class="dev-projects__section-slash">//</span>
+
+        <h2 id="projects-title">
+            <span data-i18n="projects.titleWordOne">Latest</span>
+            <span data-i18n="projects.titleWordTwo">Projects</span>
+        </h2>
+    </div>
+
+    <div class="dev-section-band__line" aria-hidden="true">
+        <span class="dev-section-band__accent"></span>
+        <span class="dev-section-band__segment"></span>
+        <span class="dev-section-band__dots">···</span>
+        <span class="dev-section-band__stretch"></span>
+        <span class="dev-section-band__dots">···</span>
+        <span class="dev-section-band__segment"></span>
+    </div>
+
+    <span class="dev-projects__section-meta">
+        DESIGN + CODE
+    </span>
+
+    <span class="dev-section-band__corner dev-section-band__corner--right" aria-hidden="true"></span>
+
+</header>
+
+<p class="dev-projects__subtitle">
+    Selected work across product design and front-end development.
+</p>
+
+                <div class="projects__grid dev-projects__grid">
+
+                    <article class="project-card dev-project-card">
+                        <div class="dev-project-card__meta">
+                            <span>01 —</span>
+                            <span>WEB APP</span>
+                        </div>
+
                         <div class="project-card__preview">
-                            <img src="assets/images/project-moneypilot.png"
-                                alt="MoneyPilot financial dashboard interface"
-                                data-i18n-alt="moneyPilotPage.images.interface">
+                            <video
+                                class="dev-project-card__video"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                                poster="assets/images/project-moneypilot.png"
+                                aria-label="MoneyPilot interface preview"
+                            >
+                                <source
+                                    src="assets/videos/moneypilot-auth-navigation-slow-loop-1920x864.mp4"
+                                    type="video/mp4"
+                                >
+                            </video>
                         </div>
 
                         <div class="project-card__footer">
-                            <h3 class="project-card__title">Money Pilot</h3>
+                            <div class="dev-project-card__info">
+                                <h3 class="project-card__title">
+                                    Money Pilot
+                                </h3>
+
+                                <p class="dev-project-card__description">
+                                    Personal finance made simple.
+                                </p>
+
+                                <div class="dev-project-card__stack" aria-label="Technologies used">
+                                    <span>Next.js</span>
+                                    <span>TypeScript</span>
+                                    <span>Supabase</span>
+                                </div>
+                            </div>
 
                             <a class="project-card__link" href="./moneypilot.html">
                                 <span data-i18n="projects.viewProject">
                                     View Project
                                 </span>
-                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+
+                                <img
+                                    src="assets/images/arrow-up-right.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
                             </a>
                         </div>
                     </article>
-                    <article class="project-card">
+
+
+                    <article class="project-card dev-project-card">
+                        <div class="dev-project-card__meta">
+                            <span>02 —</span>
+                            <span>MOBILE / WEB</span>
+                        </div>
+
                         <div class="project-card__preview">
-                            <img src="assets/images/project-black-bull-mobile.png"
+                            <img
+                                src="assets/images/project-black-bull-mobile.png"
                                 alt="Black Bull mobile restaurant interface"
-                                data-i18n-alt="blackBullMobilePage.images.mobile">
+                                data-i18n-alt="blackBullMobilePage.images.mobile"
+                            >
                         </div>
 
                         <div class="project-card__footer">
-                            <h3 class="project-card__title">Black Bull Mobile</h3>
+                            <div class="dev-project-card__info">
+                                <h3 class="project-card__title">
+                                    Black Bull Mobile
+                                </h3>
+
+                                <p class="dev-project-card__description">
+                                    Kitchen operations in your pocket.
+                                </p>
+
+                                <div class="dev-project-card__stack" aria-label="Technologies used">
+                                    <span>React</span>
+                                    <span>API</span>
+                                    <span>WebSocket</span>
+                                </div>
+                            </div>
 
                             <a class="project-card__link" href="./black-bull-mobile.html">
                                 <span data-i18n="projects.viewProject">
                                     View Project
                                 </span>
-                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+
+                                <img
+                                    src="assets/images/arrow-up-right.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
                             </a>
                         </div>
                     </article>
-                    <article class="project-card">
+
+
+                    <article class="project-card dev-project-card">
+                        <div class="dev-project-card__meta">
+                            <span>03 —</span>
+                            <span>WEB APP</span>
+                        </div>
+
                         <div class="project-card__preview">
-                            <img src="assets/images/project-pet-id.png" alt="Pet ID digital identification interface"
-                                data-i18n-alt="petIdPage.images.interface">
+                            <img
+                                src="assets/images/project-pet-id.png"
+                                alt="Pet ID digital identification interface"
+                                data-i18n-alt="petIdPage.images.interface"
+                            >
                         </div>
 
                         <div class="project-card__footer">
-                            <h3 class="project-card__title">Pet ID</h3>
+                            <div class="dev-project-card__info">
+                                <h3 class="project-card__title">
+                                    Pet ID
+                                </h3>
+
+                                <p class="dev-project-card__description">
+                                    Digital identity for a safer, kinder world.
+                                </p>
+
+                                <div class="dev-project-card__stack" aria-label="Technologies used">
+                                    <span>React</span>
+                                    <span>UI</span>
+                                    <span>Database</span>
+                                </div>
+                            </div>
 
                             <a class="project-card__link" href="./pet-id.html">
                                 <span data-i18n="projects.viewProject">
                                     View Project
                                 </span>
-                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+
+                                <img
+                                    src="assets/images/arrow-up-right.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
                             </a>
                         </div>
                     </article>
-                    <article class="project-card">
+
+
+                    <article class="project-card dev-project-card">
+                        <div class="dev-project-card__meta">
+                            <span>04 —</span>
+                            <span>WEB APP</span>
+                        </div>
+
                         <div class="project-card__preview">
-                            <img src="assets/images/project-black-bull.png"
+                            <img
+                                src="assets/images/project-black-bull.png"
                                 alt="Black Bull digital restaurant menu interface"
-                                data-i18n-alt="blackBullPage.images.interface">
+                                data-i18n-alt="blackBullPage.images.interface"
+                            >
                         </div>
 
                         <div class="project-card__footer">
-                            <h3 class="project-card__title">Black Bull</h3>
+                            <div class="dev-project-card__info">
+                                <h3 class="project-card__title">
+                                    Black Bull
+                                </h3>
+
+                                <p class="dev-project-card__description">
+                                    Premium cars. A better buying experience.
+                                </p>
+
+                                <div class="dev-project-card__stack" aria-label="Technologies used">
+                                    <span>Next.js</span>
+                                    <span>Auth</span>
+                                    <span>Supabase</span>
+                                </div>
+                            </div>
 
                             <a class="project-card__link" href="./black-bull.html">
                                 <span data-i18n="projects.viewProject">
                                     View Project
                                 </span>
-                                <img src="assets/images/arrow-up-right.svg" alt="" aria-hidden="true">
+
+                                <img
+                                    src="assets/images/arrow-up-right.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
                             </a>
                         </div>
                     </article>
+
                 </div>
-                <a class="projects__all-link" href="./projects.html">
-                    <span class="projects__all-text" data-i18n="projects.viewAll">
-                        View all my projects
-                    </span>
 
-                    <span class="projects__all-icon" aria-hidden="true">
-                        <img class="projects__all-arrow projects__all-arrow--current"
-                            src="assets/images/arrow-up-right.svg" alt="">
+                <div class="dev-projects__bottom">
+                    <span class="dev-projects__bottom-line" aria-hidden="true"></span>
 
-                        <img class="projects__all-arrow projects__all-arrow--next"
-                            src="assets/images/arrow-up-right.svg" alt="">
-                    </span>
-                </a>
+                    <a class="projects__all-link" href="./projects.html">
+                        <span class="projects__all-text" data-i18n="projects.viewAll">
+                            View all my projects
+                        </span>
+
+                        <span class="projects__all-icon" aria-hidden="true">
+                            <img
+                                class="projects__all-arrow projects__all-arrow--current"
+                                src="assets/images/arrow-up-right.svg"
+                                alt=""
+                            >
+
+                            <img
+                                class="projects__all-arrow projects__all-arrow--next"
+                                src="assets/images/arrow-up-right.svg"
+                                alt=""
+                            >
+                        </span>
+                    </a>
+
+                    <span class="dev-projects__bottom-line" aria-hidden="true"></span>
+                </div>
+
             </div>
         </section>
-        <section class="skills" id="skills" aria-labelledby="skills-title">
-            <div class="skills__container">
-                <div class="skills__intro">
-                    <h2 class="skills__title" id="skills-title">
-                        <span class="skills__title-muted" data-i18n="skills.titleLineOne">
-                            Skills I use
-                        </span>
 
-                        <span data-i18n="skills.titleLineTwo">
-                            to build useful
-                        </span>
-
-                        <span data-i18n="skills.titleLineThree">
-                            web products
-                        </span>
-                    </h2>
-
-                    <div class="skills__stack">
-                        <h3 class="skills__stack-title" data-i18n="skills.stackTitle">
-                            My tech stack
-                        </h3>
-                        <div class="skills__logos">
-                            <div class="skills__logos-track">
-                                <div class="skills__logos-group">
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/figma-logo.svg" alt="Figma">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/framer-logo.svg" alt="Framer">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/github-icon.svg" alt="GitHub">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/skills-git-logo.svg" alt="Git">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/react-logo.svg" alt="React">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/nextjs-logo.svg" alt="Next.js">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/skills-html5-logo.svg" alt="HTML5">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/skills-javascript-logo.svg" alt="JavaScript">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/tailwind-logo.svg" alt="Tailwind CSS">
-                                    </div>
-
-                                    <div class="skills__logo-tile">
-                                        <img src="assets/images/skills-css3-logo.svg" alt="CSS3">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="skills__capabilities">
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-code-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.frontEnd">
-                            Front-end Development
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-mobile-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.responsiveApps">
-                            Responsive Web Apps
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-desktop-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.landingPages">
-                            Landing Pages
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-database-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.apiIntegration">
-                            API Integration
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-dashboard-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.dashboardInterfaces">
-                            Dashboard Interfaces
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-figma-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.figmaToCode">
-                            Figma to Code
-                        </p>
-                    </div>
-
-                    <div class="skills__capability">
-                        <div class="skills__capability-icon">
-                            <img src="assets/images/skills-branch-icon.svg" alt="" aria-hidden="true">
-                        </div>
-
-                        <p data-i18n="skills.versionControl">
-                            Version Control
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about" id="about" aria-labelledby="about-title">
-            <div class="about__container">
-                <h2 class="about__title" id="about-title">
-                    <span class="about__title-muted" data-i18n="about.titleMuted">
-                        Building useful products
-                    </span>
-
-                    <span data-i18n="about.titleStrong">
-                        that solve real problems.
-                    </span>
-                </h2>
-
-                <div class="about__content">
-                    <div class="about__profile">
-                        <div class="about__photo-wrapper">
-                            <img class="about__photo" src="assets/images/about-photo.png" alt="Felipe Santos Belphman">
-
-                            <div class="about__socials" aria-label="Social media links"
-                                data-i18n-aria-label="about.socialLinks">
-                                <a href="https://www.instagram.com/felipesantosbelphman" target="_blank"
-                                    rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
-                                    <img src="assets/images/instagram-icon.svg" alt="" aria-hidden="true">
-                                </a>
-
-                                <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-                                    target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp"
-                                    data-i18n-aria-label="about.whatsappLabel">
-                                    <img src="assets/images/whatsapp-icon.svg" alt="" aria-hidden="true">
-                                </a>
-
-                                <a href="#" aria-label="Dribbble">
-                                    <img src="assets/images/dribbble-icon.svg" alt="" aria-hidden="true">
-                                </a>
-
-                                <a href="#" aria-label="LinkedIn">
-                                    <img src="assets/images/linkedin-icon.svg" alt="" aria-hidden="true">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="about__identity">
-                            <h3>Felipe Santos Belphman</h3>
-
-                            <p data-i18n="about.role">
-                                Junior Front-End Developer
-                            </p>
-                        </div>
-
-                        <div class="about__history">
-                            <h3 class="about__history-title" data-i18n="about.historyTitle">
-                                My work history
-                            </h3>
-
-                            <div class="about__history-list">
-                                <div class="about__history-item">
-                                    <strong>2024</strong>
-
-                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
-
-                                    <span data-i18n="about.movedDublin">
-                                        Moved to Dublin
-                                    </span>
-                                </div>
-
-                                <div class="about__history-item">
-                                    <strong>2026</strong>
-
-                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
-
-                                    <span data-i18n="about.buildingProjects">
-                                        Building MoneyPilot &amp; Black Bull Steak House
-                                    </span>
-                                </div>
-
-                                <div class="about__history-item">
-                                    <strong data-i18n="about.now">
-                                        Now
-                                    </strong>
-
-                                    <img src="assets/images/timeline-connector.svg" alt="" aria-hidden="true">
-
-                                    <span data-i18n="about.openOpportunities">
-                                        Open to junior opportunities
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about__summary">
-                        <div class="about__text">
-                            <p>
-                                <span class="about__text-highlight" data-i18n="about.summaryOneHighlight">
-                                    My creative journey began with graphic design in 2019.
-                                </span>
-
-                                <span class="about__text-muted" data-i18n="about.summaryOneMuted">
-                                    I learned Photoshop, Illustrator and branding — and discovered Figma.
-                                </span>
-                            </p>
-
-                            <p>
-                                <span class="about__text-highlight" data-i18n="about.summaryTwoHighlight">
-                                    In 2023, I started turning my designs into code.
-                                </span>
-
-                                <span class="about__text-muted" data-i18n="about.summaryTwoMuted">
-                                    I started with HTML, CSS and JavaScript. After moving to Dublin, I committed to
-                                    becoming a front-end developer.
-                                </span>
-                            </p>
-
-                            <p>
-                                <span class="about__text-highlight" data-i18n="about.summaryThreeHighlight">
-                                    Today, I combine design thinking with development.
-                                </span>
-
-                                <span class="about__text-muted" data-i18n="about.summaryThreeMuted">
-                                    I build responsive, accessible products with JavaScript, TypeScript, React and
-                                    Next.js — and I’m ready to contribute, learn and grow.
-                                </span>
-                            </p>
-                        </div>
-
-                        <img class="about__signature" src="assets/images/about-signature.png"
-                            alt="Felipe S Belphman signature" data-i18n-alt="common.images.signature">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="work-process" id="how-i-work" aria-labelledby="work-process-title">
-            <div class="work-process__container">
-                <header class="work-process__header">
-                    <h2 class="work-process__title" id="work-process-title">
-                        <span class="work-process__title-muted" data-i18n="workProcess.titleMuted">
-                            From an idea.
-                        </span>
-
-                        <span data-i18n="workProcess.titleStrong">
-                            To a working product.
-                        </span>
-                    </h2>
-
-                    <p class="work-process__intro">
-                        <span class="work-process__intro-highlight" data-i18n="workProcess.introHighlight">
-                            Clear process, thoughtful execution.
-                        </span>
-
-                        <span data-i18n="workProcess.introText">
-                            I turn Figma designs and product ideas
-                            into responsive, maintainable web experiences.
-                        </span>
-                    </p>
-                </header>
-
-                <div class="work-process__steps">
-                    <article class="work-process__step">
-                        <img class="work-process__step-icon" src="assets/images/process-understand-icon.svg" alt=""
-                            aria-hidden="true">
-
-                        <div class="work-process__step-content">
-                            <h3 data-i18n="workProcess.understandTitle">
-                                Understand
-                            </h3>
-
-                            <p data-i18n="workProcess.understandText">
-                                Learn the goal, the user and the problem
-                                before writing code.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="work-process__step">
-                        <img class="work-process__step-icon" src="assets/images/process-build-icon.svg" alt=""
-                            aria-hidden="true">
-
-                        <div class="work-process__step-content">
-                            <h3 data-i18n="workProcess.buildTitle">
-                                Build
-                            </h3>
-
-                            <p data-i18n="workProcess.buildText">
-                                Create responsive interfaces with React,
-                                Next.js and TypeScript.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="work-process__step">
-                        <img class="work-process__step-icon" src="assets/images/process-improve-icon.svg" alt=""
-                            aria-hidden="true">
-
-                        <div class="work-process__step-content">
-                            <h3 data-i18n="workProcess.improveTitle">
-                                Improve
-                            </h3>
-
-                            <p data-i18n="workProcess.improveText">
-                                Test, refine and document each decision
-                                as the product grows.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="faq" id="faq" aria-labelledby="faq-title">
-            <div class="faq__container">
-                <header class="faq__header">
-                    <p class="faq__eyebrow" data-i18n="faq.eyebrow">
-                        FREQUENTLY ASKED QUESTIONS
-                    </p>
-
-                    <h2 class="faq__title" id="faq-title">
-                        <span class="faq__title-muted" data-i18n="faq.titleMuted">
-                            Your questions
-                        </span>
-
-                        <span data-i18n="faq.titleStrong">
-                            answered.
-                        </span>
-                    </h2>
-                </header>
-
-                <div class="faq__body">
-                    <aside class="faq__contact-card">
-                        <img class="faq__avatar" src="assets/images/faq-avatar.png" alt="Felipe Santos Belphman">
-
-                        <h3 class="faq__contact-title">
-                            <span class="faq__contact-title-muted" data-i18n="faq.contactMuted">
-                                Still not sure?
-                            </span>
-
-                            <span data-i18n="faq.contactStrong">
-                                Book a free discovery call.
-                            </span>
-                        </h3>
-
-                        <div class="faq__contact-content">
-                            <p data-i18n="faq.contactText">
-                                Learn more about how I work and how I can
-                                help you and your business take the next step.
-                            </p>
-
-                            <a class="faq__schedule-button"
-                                href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-                                target="_blank" rel="noopener noreferrer" aria-label="Send Felipe a message on WhatsApp"
-                                data-i18n-aria-label="faq.whatsappLabel">
-                                <span data-i18n="faq.sendMessage">
-                                    Send me a message
-                                </span>
-
-                                <img src="assets/images/nav-whatsapp-icon.svg" alt="" aria-hidden="true">
-                            </a>
-                        </div>
-                    </aside>
-
-                    <div class="faq__accordion">
-                        <div class="faq__item faq__item--open">
-                            <button class="faq__question" type="button" aria-expanded="true"
-                                aria-controls="faq-answer-1">
-                                <span data-i18n="faq.questionOne">
-                                    Are you available for a junior front-end role?
-                                </span>
-
-                                <img src="assets/images/faq-collapse-icon.svg" alt="" aria-hidden="true">
-                            </button>
-
-                            <div class="faq__answer" id="faq-answer-1">
-                                <p data-i18n="faq.answerOne">
-                                    Yes. I’m based in Dublin and open to junior
-                                    opportunities across Ireland and Europe.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq__item">
-                            <button class="faq__question" type="button" aria-expanded="false"
-                                aria-controls="faq-answer-2">
-                                <span data-i18n="faq.questionTwo">
-                                    Which technologies do you work with?
-                                </span>
-
-                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
-                            </button>
-
-                            <div class="faq__answer" id="faq-answer-2">
-                                <p data-i18n="faq.answerTwo">
-                                    I work with HTML, CSS, JavaScript, TypeScript,
-                                    React, Next.js, Tailwind CSS, Git and GitHub.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq__item">
-                            <button class="faq__question" type="button" aria-expanded="false"
-                                aria-controls="faq-answer-3">
-                                <span data-i18n="faq.questionThree">
-                                    Can you turn Figma designs into code?
-                                </span>
-
-                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
-                            </button>
-
-                            <div class="faq__answer" id="faq-answer-3">
-                                <p data-i18n="faq.answerThree">
-                                    Yes. I translate Figma designs into responsive,
-                                    accessible interfaces while preserving the intended
-                                    layout and visual details.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq__item">
-                            <button class="faq__question" type="button" aria-expanded="false"
-                                aria-controls="faq-answer-4">
-                                <span data-i18n="faq.questionFour">
-                                    What are you building right now?
-                                </span>
-
-                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
-                            </button>
-
-                            <div class="faq__answer" id="faq-answer-4">
-                                <p data-i18n="faq.answerFour">
-                                    I’m currently building MoneyPilot, a personal finance
-                                    platform, and Black Bull, a digital restaurant
-                                    experience.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="faq__item">
-                            <button class="faq__question" type="button" aria-expanded="false"
-                                aria-controls="faq-answer-5">
-                                <span data-i18n="faq.questionFive">
-                                    Are your projects responsive and accessible?
-                                </span>
-
-                                <img src="assets/images/faq-expand-icon.svg" alt="" aria-hidden="true">
-                            </button>
-
-                            <div class="faq__answer" id="faq-answer-5">
-                                <p data-i18n="faq.answerFive">
-                                    Yes. I build mobile-first layouts with semantic HTML,
-                                    keyboard-friendly interactions and adaptable
-                                    components.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="final-cta" id="contact" aria-labelledby="final-cta-title">
             <div class="final-cta__card">
                 <div class="final-cta__content">
@@ -961,7 +1045,7 @@
 
                             <h2 class="final-cta__title" id="final-cta-title">
                                 <span data-i18n="finalCta.titleOne">
-                                    Let’s build something
+                                    Letâ€™s build something
                                 </span>
 
                                 <span class="final-cta__title-accent" data-i18n="finalCta.titleAccent">
@@ -972,7 +1056,7 @@
 
                         <div class="final-cta__action">
                             <p class="final-cta__description" data-i18n="finalCta.description">
-                                I’m ready to contribute, learn and build thoughtful
+                                Iâ€™m ready to contribute, learn and build thoughtful
                                 web experiences with a collaborative team.
                             </p>
 
@@ -1058,132 +1142,102 @@
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="site-footer__container">
-            <h2 class="site-footer__title">
-                <span data-i18n="footer.titleOne">
-                    Let’s design
-                </span>
+    <footer class="site-footer dev-footer">
+    <div class="dev-footer__container">
 
-                <span data-i18n="footer.titleTwo">
-                    Incredible work together.
-                </span>
-            </h2>
+        <div class="dev-footer__top">
+            <div class="dev-footer__brand">
+                <p class="dev-footer__eyebrow">
+                    // FELIPE BELPHMAN
+                </p>
 
-            <div class="site-footer__contact">
-                <div class="site-footer__email">
-                    <h3 data-i18n="footer.email">
-                        Email
-                    </h3>
+                <h2 class="dev-footer__title">
+                    BUILD.<br>
+                    LEARN.<br>
+                    <span>EVOLVE.</span>
+                </h2>
 
-                    <a href="mailto:felipesbelphman@gmail.com">
-                        felipesbelphman@gmail.com
-                    </a>
-                </div>
-
-                <div class="site-footer__social">
-                    <h3 data-i18n="footer.social">
-                        Social
-                    </h3>
-
-                    <div class="site-footer__social-links">
-                        <a href="https://www.instagram.com/felipesantosbelphman" target="_blank"
-                            rel="noopener noreferrer" aria-label="Visit Felipe Instagram profile">
-                            <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
-                        </a>
-
-                        <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-                            target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp"
-                            data-i18n-aria-label="footer.whatsappLabel">
-                            <img src="assets/images/footer-whatsapp-icon.svg" alt="" aria-hidden="true">
-                        </a>
-
-                        <a href="#" aria-label="Dribbble">
-                            <img src="assets/images/footer-dribbble-icon.svg" alt="" aria-hidden="true">
-                        </a>
-
-                        <a href="#" aria-label="LinkedIn">
-                            <img src="assets/images/footer-linkedin-icon.svg" alt="" aria-hidden="true">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="site-footer__divider">
-                <img class="site-footer__divider-line" src="assets/images/footer-line-left.svg" alt=""
-                    aria-hidden="true">
-
-                <img class="site-footer__divider-icon" src="assets/images/footer-brand-icon.svg" alt=""
-                    aria-hidden="true">
-
-                <img class="site-footer__divider-line" src="assets/images/footer-line-right.svg" alt=""
-                    aria-hidden="true">
-            </div>
-
-            <div class="site-footer__bottom">
-                <nav class="site-footer__menu" aria-label="Footer navigation"
-                    data-i18n-aria-label="footer.navigationLabel">
-                    <h3 data-i18n="footer.menu">
-                        Menu
-                    </h3>
-
-                    <div class="site-footer__menu-links">
-                        <div>
-                            <a href="#home" data-i18n="nav.home">
-                                Home
-                            </a>
-
-                            <a href="#work" data-i18n="nav.work">
-                                Work
-                            </a>
-
-                            <a href="#skills" data-i18n="nav.skills">
-                                Skills
-                            </a>
-
-                            <a href="#about" data-i18n="nav.about">
-                                About
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="#how-i-work" data-i18n="nav.howIWork">
-                                How I Work
-                            </a>
-
-                            <a href="#faq" data-i18n="nav.faq">
-                                FAQ
-                            </a>
-
-                            <a href="#contact" data-i18n="nav.contact">
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-
-                <div class="site-footer__legal">
-                    <h3 data-i18n="footer.legal">
-                        Legal
-                    </h3>
-
-                    <div class="site-footer__legal-links">
-                        <a href="./terms-of-service.html" data-i18n="footer.terms">
-                            Terms of service
-                        </a>
-
-                        <a href="./privacy-policy.html" data-i18n="footer.privacy">
-                            Privacy Policy
-                        </a>
-                    </div>
-                </div>
-
-                <p class="site-footer__copyright">
-                    © 2026 Felipe Belphman
+                <p class="dev-footer__description">
+                    Junior Front-End Developer focused on responsive,
+                    accessible and thoughtful web experiences.
                 </p>
             </div>
+
+            <div class="dev-footer__contact">
+                <p class="dev-footer__label">
+                    // CONTACT
+                </p>
+
+                <a
+                    class="dev-footer__email"
+                    href="mailto:felipesbelphman@gmail.com"
+                >
+                    felipesbelphman@gmail.com
+                </a>
+
+                <div class="dev-footer__location">
+                    <span>DUBLIN, IRELAND</span>
+                    <span>OPEN TO JUNIOR FRONT-END OPPORTUNITIES</span>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <div class="dev-footer__middle">
+
+            <nav
+                class="dev-footer__nav"
+                aria-label="Footer navigation"
+            >
+                <a href="#home">HOME</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#work">WORK</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+
+            <div
+                class="dev-footer__socials"
+                aria-label="Social links"
+            >
+                <a
+                    href="https://github.com/felipesbelphman-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GITHUB ↗
+                </a>
+
+                <a
+                    href="https://www.instagram.com/felipesantosbelphman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    INSTAGRAM ↗
+                </a>
+
+                <a
+                    href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WHATSAPP ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="dev-footer__bottom">
+            <p>
+                &copy; 2026 FELIPE BELPHMAN
+            </p>
+
+            <p>
+                DESIGN + CODE&nbsp;&nbsp;/&nbsp;&nbsp;BUILD • LEARN • EVOLVE
+            </p>
+        </div>
+
+    </div>
+</footer>
+
     <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
         <button class="contact-modal__backdrop" type="button" aria-label="Close contact form"
             data-i18n-aria-label="contact.close"></button>
@@ -1196,7 +1250,7 @@
 
             <header class="contact-page__header">
                 <h2 id="contact-page-title" data-i18n="contact.title">
-                    Let’s build something useful.
+                    Letâ€™s build something useful.
                 </h2>
 
                 <p data-i18n="contact.description">
@@ -1242,7 +1296,7 @@
                     <span data-i18n="contact.project">Tell me about your project</span>
 
                     <textarea name="message" rows="5"
-                        placeholder="Share a few details — goals, ideas, timeline, or anything you think is relevant."
+                        placeholder="Share a few details â€” goals, ideas, timeline, or anything you think is relevant."
                         data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                 </label>
 
@@ -1292,7 +1346,7 @@
                 </a>
 
                 <p class="contact-form__note" data-i18n="contact.reply">
-                    I’ll reply as soon as possible.
+                    Iâ€™ll reply as soon as possible.
                 </p>
             </form>
         </section>
@@ -1302,3 +1356,32 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

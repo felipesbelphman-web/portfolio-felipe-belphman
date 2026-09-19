@@ -1,0 +1,653 @@
+/*
+  projects-dev-theme.css
+  -----------------------------------------------------------------
+  Scoped override for projects.html ONLY.
+  Loaded after styles.css and applies exclusively under
+  body.dev-projects, so it can never affect index.html or any
+  other page even if this file were linked there by mistake.
+
+  It restyles the *tokens* (color, type, radius) of the existing,
+  shared components (.navigation, .project-card, .site-footer,
+  .contact-modal, etc.) — it does not change their structure,
+  spacing logic or breakpoints, which stay inherited from styles.css.
+  -----------------------------------------------------------------
+*/
+
+body.dev-projects {
+    --dev-bg: #0a0a0c;
+    --dev-surface: #111216;
+    --dev-elevated: #18191f;
+    --dev-border: #26272e;
+    --dev-text: #f2eee7;
+    --dev-muted: #8f8d95;
+    --dev-violet: #a970ff;
+    --dev-coral: #ff765d;
+    --dev-lime: #d7ff64;
+    --dev-font-mono: "JetBrains Mono", ui-monospace, monospace;
+    --dev-font-display: "Barlow Condensed", "Switzer", sans-serif;
+
+    background-color: var(--dev-bg);
+    color: var(--dev-text);
+    font-family: var(--dev-font-mono);
+}
+
+/* ---------------------------------------------------------------
+   Header / Navigation
+--------------------------------------------------------------- */
+body.dev-projects .site-header {
+    padding: 20px 24px;
+}
+
+body.dev-projects .navigation {
+    background-color: var(--dev-surface);
+    border: 1px solid var(--dev-border);
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+body.dev-projects .navigation__brand {
+    font-family: var(--dev-font-mono);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--dev-text);
+    letter-spacing: 0.2px;
+}
+
+body.dev-projects .navigation__brand img {
+    border-radius: 4px;
+    border: 1px solid var(--dev-border);
+}
+
+body.dev-projects .navigation__menu a {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+body.dev-projects .navigation__menu a:hover {
+    color: var(--dev-violet);
+}
+
+body.dev-projects .navigation__contact {
+    background-color: var(--dev-coral);
+    color: #0d0d0f;
+    border-radius: 4px;
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .navigation__toggle img {
+    filter: invert(1) brightness(1.4);
+}
+
+body.dev-projects .language-switcher__trigger {
+    background-color: var(--dev-elevated);
+    border-color: var(--dev-border);
+    color: var(--dev-text);
+    border-radius: 4px;
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .language-switcher__trigger:hover,
+body.dev-projects .language-switcher__trigger:focus-visible {
+    background-color: var(--dev-violet);
+    border-color: var(--dev-violet);
+    color: #0d0d0f;
+}
+
+body.dev-projects .language-switcher__menu {
+    background-color: var(--dev-surface);
+    border-color: var(--dev-border);
+    border-radius: 6px;
+}
+
+body.dev-projects .language-switcher__option {
+    color: var(--dev-text);
+    font-family: var(--dev-font-mono);
+    border-radius: 3px;
+}
+
+body.dev-projects .language-switcher__option:hover,
+body.dev-projects .language-switcher__option:focus-visible {
+    background-color: var(--dev-elevated);
+}
+
+body.dev-projects .language-switcher__option.is-active {
+    color: var(--dev-violet);
+}
+
+@media (max-width: 900px) {
+    body.dev-projects .navigation,
+    body.dev-projects .navigation.navigation--open {
+        background-color: rgba(17, 18, 22, 0.85);
+        border: 1px solid var(--dev-border);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
+
+    body.dev-projects .navigation--open .navigation__menu a {
+        color: var(--dev-text);
+    }
+
+    body.dev-projects .navigation--open .navigation__contact {
+        background-color: var(--dev-coral);
+        color: #0d0d0f;
+        border-color: var(--dev-coral);
+    }
+}
+
+/* ---------------------------------------------------------------
+   Hero
+--------------------------------------------------------------- */
+body.dev-projects .project-archive {
+    background-color: var(--dev-bg);
+    color: var(--dev-text);
+}
+
+body.dev-projects .project-archive__hero {
+    padding-top: 168px;
+    border-bottom: 1px solid var(--dev-border);
+    padding-bottom: 64px;
+}
+
+body.dev-projects .project-archive__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    transition: color 0.15s ease;
+}
+
+body.dev-projects .project-archive__back:hover {
+    color: var(--dev-violet);
+}
+
+body.dev-projects .project-archive__eyebrow {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+body.dev-projects .project-archive__title {
+    font-family: var(--dev-font-display);
+    font-weight: 700;
+    color: var(--dev-text);
+    letter-spacing: -0.02em;
+}
+
+body.dev-projects .project-archive__title span:last-child {
+    color: var(--dev-violet);
+}
+
+body.dev-projects .project-archive__description {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+body.dev-projects .project-archive__meta {
+    display: flex;
+    gap: 10px;
+    margin: 32px 0 0 auto;
+    max-width: 720px;
+}
+
+body.dev-projects .project-archive__meta span {
+    padding: 6px 12px;
+    border: 1px solid var(--dev-border);
+    border-radius: 3px;
+    font-family: var(--dev-font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.6px;
+    color: var(--dev-muted);
+}
+
+/* ---------------------------------------------------------------
+   Filter bar
+--------------------------------------------------------------- */
+body.dev-projects .project-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px 56px;
+}
+
+body.dev-projects .project-filter__btn {
+    padding: 9px 16px;
+    background: transparent;
+    border: 1px solid var(--dev-border);
+    border-radius: 3px;
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+body.dev-projects .project-filter__btn:hover {
+    border-color: var(--dev-violet);
+    color: var(--dev-text);
+}
+
+body.dev-projects .project-filter__btn--active {
+    background-color: var(--dev-violet);
+    border-color: var(--dev-violet);
+    color: #0d0d0f;
+}
+
+/* ---------------------------------------------------------------
+   Project grid — asymmetric composition
+--------------------------------------------------------------- */
+body.dev-projects .project-archive__work {
+    padding-bottom: 120px;
+}
+
+body.dev-projects .project-archive__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "featured featured"
+        "b c"
+        "large large";
+    gap: 20px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+body.dev-projects .project-card--featured { grid-area: featured; }
+body.dev-projects .project-card--b { grid-area: b; }
+body.dev-projects .project-card--c { grid-area: c; }
+body.dev-projects .project-card--large { grid-area: large; }
+
+body.dev-projects .project-card {
+    background-color: var(--dev-surface);
+    border: 1px solid var(--dev-border);
+    border-radius: 8px;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    padding: 18px;
+    gap: 16px;
+    transition: border-color 0.2s ease;
+}
+
+body.dev-projects .project-card:hover {
+    border-color: var(--dev-violet);
+}
+
+body.dev-projects .project-card--hidden {
+    display: none;
+}
+
+body.dev-projects .project-card__index-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+}
+
+body.dev-projects .project-card__index {
+    color: var(--dev-text);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+body.dev-projects .project-card:hover .project-card__index {
+    color: var(--dev-violet);
+}
+
+body.dev-projects .project-card__featured-tag {
+    color: var(--dev-violet);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+body.dev-projects .project-card__preview {
+    background-color: var(--dev-bg);
+    border: 1px solid var(--dev-border);
+    border-radius: 5px;
+    padding: 0;
+}
+
+body.dev-projects .project-card__preview img,
+body.dev-projects .project-card__preview video {
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+body.dev-projects .project-card:hover .project-card__preview img,
+body.dev-projects .project-card:hover .project-card__preview video {
+    transform: scale(1.015);
+}
+
+body.dev-projects .project-card--featured .project-card__preview,
+body.dev-projects .project-card--large .project-card__preview {
+    aspect-ratio: 1920 / 864;
+}
+
+body.dev-projects .project-card--featured .project-card__preview video,
+body.dev-projects .project-card--featured .project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--dev-elevated);
+}
+
+body.dev-projects .project-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 22px;
+    padding: 2px 2px 0;
+}
+
+body.dev-projects .project-card__meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+body.dev-projects .project-card__meta dt {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 8.5px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+body.dev-projects .project-card__meta dd {
+    color: var(--dev-text);
+    font-family: var(--dev-font-mono);
+    font-size: 10px;
+    max-width: 320px;
+}
+
+body.dev-projects .project-card__footer {
+    padding: 2px 2px 4px;
+}
+
+body.dev-projects .project-card__title {
+    color: var(--dev-text);
+    font-family: var(--dev-font-display);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+}
+
+body.dev-projects .project-card--featured .project-card__title,
+body.dev-projects .project-card--large .project-card__title {
+    font-size: 34px;
+}
+
+body.dev-projects .project-card__link {
+    color: var(--dev-violet);
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+body.dev-projects .project-card__link img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.15s ease;
+    filter: invert(48%) sepia(61%) saturate(4310%) hue-rotate(230deg) brightness(103%) contrast(101%);
+}
+
+body.dev-projects .project-card:hover .project-card__link img {
+    transform: translate(2px, -2px);
+}
+
+@media (max-width: 900px) {
+    body.dev-projects .project-archive__grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "featured"
+            "b"
+            "c"
+            "large";
+    }
+
+    body.dev-projects .project-card--featured .project-card__title,
+    body.dev-projects .project-card--large .project-card__title {
+        font-size: 28px;
+    }
+}
+
+/* ---------------------------------------------------------------
+   Final CTA band (reuses the same visual language as the hero)
+--------------------------------------------------------------- */
+body.dev-projects .project-archive__cta {
+    border-top: 1px solid var(--dev-border);
+    padding: 72px 24px;
+}
+
+body.dev-projects .project-archive__cta-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+body.dev-projects .project-archive__cta-eyebrow {
+    color: var(--dev-violet);
+    font-family: var(--dev-font-mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+body.dev-projects .project-archive__cta-title {
+    font-family: var(--dev-font-display);
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--dev-text);
+    max-width: 520px;
+    line-height: 1.05;
+}
+
+body.dev-projects .project-archive__cta-side {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 420px;
+}
+
+body.dev-projects .project-archive__cta-note {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+body.dev-projects .project-archive__cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+body.dev-projects .project-archive__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 4px;
+    font-family: var(--dev-font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+body.dev-projects .project-archive__cta-btn--primary {
+    background-color: var(--dev-coral);
+    color: #0d0d0f;
+}
+
+body.dev-projects .project-archive__cta-btn--secondary {
+    background: transparent;
+    border-color: var(--dev-border);
+    color: var(--dev-text);
+}
+
+body.dev-projects .project-archive__cta-location {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.3px;
+}
+
+/* ---------------------------------------------------------------
+   Footer — already near-black; align accent + type with DEV theme
+--------------------------------------------------------------- */
+body.dev-projects .site-footer {
+    background-color: var(--dev-bg);
+    border-top: 1px solid var(--dev-border);
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .site-footer__title {
+    font-family: var(--dev-font-display);
+    font-weight: 700;
+}
+
+body.dev-projects .site-footer__title span:first-child {
+    color: var(--dev-lime);
+}
+
+body.dev-projects .site-footer__email a,
+body.dev-projects .site-footer__bottom a,
+body.dev-projects .site-footer__copyright {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .site-footer__bottom a:hover {
+    color: var(--dev-lime);
+}
+
+body.dev-projects .site-footer__email h3,
+body.dev-projects .site-footer__social h3,
+body.dev-projects .site-footer__bottom h3 {
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--dev-muted);
+}
+
+/* ---------------------------------------------------------------
+   Contact modal
+--------------------------------------------------------------- */
+body.dev-projects .contact-page__panel {
+    background-color: var(--dev-surface);
+}
+
+body.dev-projects .contact-modal .contact-page__panel {
+    background-color: var(--dev-surface);
+}
+
+body.dev-projects .contact-page__close {
+    color: var(--dev-text);
+}
+
+body.dev-projects .contact-page__header h2 {
+    color: var(--dev-text);
+    font-family: var(--dev-font-display);
+}
+
+body.dev-projects .contact-page__header p {
+    color: var(--dev-muted);
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .contact-page__profile-text strong {
+    color: var(--dev-text);
+}
+
+body.dev-projects .contact-page__profile-text a {
+    color: var(--dev-muted);
+}
+
+body.dev-projects .contact-page__status {
+    background-color: var(--dev-lime);
+    border-color: var(--dev-surface);
+}
+
+body.dev-projects .contact-page .contact-form__field > span {
+    color: var(--dev-text);
+    font-family: var(--dev-font-mono);
+    font-size: 11px;
+}
+
+body.dev-projects .contact-page .contact-form input,
+body.dev-projects .contact-page .contact-form textarea,
+body.dev-projects .contact-page .contact-form select {
+    background-color: var(--dev-elevated);
+    border-color: var(--dev-border);
+    color: var(--dev-text);
+    border-radius: 4px;
+    font-family: var(--dev-font-mono);
+}
+
+body.dev-projects .contact-page .contact-form input::placeholder,
+body.dev-projects .contact-page .contact-form textarea::placeholder {
+    color: var(--dev-muted);
+}
+
+body.dev-projects .contact-page .contact-form input:focus,
+body.dev-projects .contact-page .contact-form textarea:focus,
+body.dev-projects .contact-page .contact-form select:focus {
+    border-color: var(--dev-violet);
+    box-shadow: 0 0 0 3px rgba(169, 112, 255, 0.16);
+}
+
+body.dev-projects .contact-page .contact-form__submit {
+    background-color: var(--dev-coral);
+    color: #0d0d0f;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+body.dev-projects .contact-page .contact-form__whatsapp {
+    background-color: transparent;
+    border-color: var(--dev-border);
+    color: var(--dev-text);
+    border-radius: 4px;
+}
+
+body.dev-projects .contact-page .contact-form__note {
+    color: var(--dev-muted);
+}
+
+body.dev-projects .contact-modal__backdrop {
+    background-color: rgba(10, 10, 12, 0.7);
+}
+
+/* Respect reduced motion: filter/hover transitions above are already
+   opacity/color/transform based and short; explicitly disable the
+   subtle image scale for users who requested less motion. */
+@media (prefers-reduced-motion: reduce) {
+    body.dev-projects .project-card__preview img,
+    body.dev-projects .project-card__preview video,
+    body.dev-projects .project-card__link img {
+        transition: none !important;
+        transform: none !important;
+    }
+}
