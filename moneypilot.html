@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="moneyPilotPage.meta.title">MoneyPilot Case Study | Felipe S Bephman</title>
     <meta name="description" data-i18n-content="moneyPilotPage.meta.description" content="A personal finance platform designed to help people understand their money, control spending, and make progress toward meaningful financial goals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="moneypilot-dev-theme.css">
 </head>
 
 <body>
@@ -22,11 +28,18 @@
                 <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
             </button>
             <ul class="navigation__menu" id="navigation-menu">
-                <li><a href="./index.html#work" data-i18n="nav.work">Work</a></li>
-                <li><a href="./index.html#skills" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="./index.html#about" data-i18n="nav.about">About</a></li>
-                <li><a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a></li>
-                <li><a href="./index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                                <li>
+                    <a href="./index.html#home" data-i18n="nav.intro">Intro</a>
+                </li>
+
+                <li>
+                    <a href="./index.html#skills" data-i18n="nav.skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="./index.html#work" data-i18n="nav.work">Work</a>
+                </li>
+
                 <li class="language-switcher">
                     <button class="language-switcher__trigger" type="button" aria-label="Select language"
                         data-i18n-aria-label="language.select" aria-haspopup="true" aria-expanded="false"
@@ -103,218 +116,1002 @@
             </button>
         </nav>
     </header>
-    <main class="case-study">
-        <section class="case-study__hero" aria-labelledby="case-study-title">
-            <div class="case-study__container">
-                <a class="case-study__back" href="./projects.html">
+    <main class="case-study mp-case">
+        <section class="mp-hero" aria-labelledby="case-study-title">
+            <div class="mp-shell">
+                <a class="mp-back" href="./projects.html">
                     <span aria-hidden="true">←</span>
                     <span data-i18n="common.caseStudies.allProjects">All projects</span>
                 </a>
 
-                <p class="case-study__eyebrow" data-i18n="moneyPilotPage.hero.eyebrow">
-                    Financial technology — Web application
-                </p>
+                <div class="mp-panel mp-hero__panel">
+                    <div class="mp-hero__grid">
+                        <div class="mp-hero__content">
+                            <p class="mp-terminal-label">$ open project/moneypilot</p>
 
-                <h1 class="case-study__title" id="case-study-title">
-                    MoneyPilot
-                </h1>
+                            <h1 class="mp-hero__title" id="case-study-title">
+                                MoneyPilot
+                            </h1>
 
-                <p class="case-study__intro" data-i18n="moneyPilotPage.hero.intro">
-                    A personal finance platform designed to help people
-                    understand their money, control spending, and make
-                    progress toward meaningful financial goals.
-                </p>
+                            <p class="mp-hero__subtitle" data-i18n="moneyPilotPage.content.heroSubtitle">
+                                An AI-Assisted Financial Management Platform
+                            </p>
 
-                <dl class="case-study__meta">
-                    <div>
-                        <dt data-i18n="common.caseStudies.role">Role</dt>
-                        <dd data-i18n="common.caseStudies.roleValue">Product Design &amp; Front-end Development</dd>
+                            <p class="mp-hero__summary" data-i18n="moneyPilotPage.hero.intro">
+                                A personal finance platform designed to help people
+                                understand their money, control spending, and make
+                                progress toward meaningful financial goals.
+                            </p>
+
+                            <ul class="mp-tech-list" aria-label="Technologies used" data-i18n-aria-label="moneyPilotPage.content.technologiesUsed">
+                                <li>Next.js<img src="assets/icons/Next.js Icon.svg" alt="" aria-hidden="true"></li>
+                                <li>TypeScript<img src="assets/icons/TypeScript Icon.svg" alt="" aria-hidden="true"></li>
+                                <li>Supabase<img src="assets/icons/Supabase Icon.svg" alt="" aria-hidden="true"></li>
+                                <li>Figma<img src="assets/icons/Figma Icon.svg" alt="" aria-hidden="true"></li>
+                            </ul>
+
+                            <div class="mp-hero__actions">
+                                <a
+                                    class="mp-button mp-button--primary"
+                                    href="https://github.com/felipesbelphman-web/moneypilot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span data-i18n="moneyPilotPage.content.viewRepository">View Repository</span>
+                                    <span><img src="assets/icons/git-hub-icon.svg" alt="" aria-hidden="true"></span>
+                                </a>
+
+                                <span class="mp-status">
+                                    <span class="mp-status__dot" aria-hidden="true"></span>
+                                    <span data-i18n="moneyPilotPage.content.activeDevelopment">Active development</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mp-preview">
+                            <div class="mp-preview__bar" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p data-i18n="moneyPilotPage.content.previewFile">product-preview.mp4</p>
+                            </div>
+
+                            <video
+                                class="mp-preview__media"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                poster="assets/images/project-moneypilot.png"
+                                aria-label="MoneyPilot authentication and dashboard demonstration"
+                                data-i18n-aria-label="moneyPilotPage.content.heroVideo"
+                            >
+                                <source
+                                    src="assets/videos/moneypilot-auth-navigation-slow-loop-1920x864.mp4"
+                                    type="video/mp4"
+                                >
+                            </video>
+
+                            <p class="mp-preview__caption" data-i18n="moneyPilotPage.content.previewCaption">
+                                PRODUCT PREVIEW · AUTHENTICATION → DASHBOARD
+                            </p>
+                        </div>
                     </div>
 
-                    <div>
-                        <dt data-i18n="common.caseStudies.type">Type</dt>
-                        <dd data-i18n="moneyPilotPage.details.type">Personal Finance Web App</dd>
-                    </div>
+                    <dl class="mp-metrics">
+                        <div class="mp-metric">
+                            <dt><img src="assets/icons/Role Icon.svg" alt="" aria-hidden="true"><span data-i18n="moneyPilotPage.content.role">ROLE</span></dt>
+                            <dd data-i18n="common.caseStudies.roleValue">
+                                Product Design &amp;<br>Front-end Development
+                            </dd>
+                        </div>
 
-                    <div>
-                        <dt data-i18n="common.caseStudies.stack">Stack</dt>
-                        <dd>Next.js, React, TypeScript, Tailwind, Supabase</dd>
-                    </div>
+                        <div class="mp-metric">
+                            <dt><img src="assets/icons/Project Type Icon.svg" alt="" aria-hidden="true"><span data-i18n="moneyPilotPage.content.type">TYPE</span></dt>
+                            <dd data-i18n="moneyPilotPage.details.type">
+                                Personal Finance Web App
+                            </dd>
+                        </div>
 
-                    <div>
-                        <dt data-i18n="common.caseStudies.status">Status</dt>
-                        <dd data-i18n="moneyPilotPage.details.status">In development</dd>
-                    </div>
-                </dl>
-            </div>
-        </section>
+                        <div class="mp-metric">
+                            <dt><img src="assets/icons/Status Icon.svg" alt="" aria-hidden="true"><span data-i18n="moneyPilotPage.content.status">STATUS</span></dt>
+                            <dd data-i18n="moneyPilotPage.details.status">
+                                In development
+                            </dd>
+                        </div>
 
-        <section class="case-study__cover" aria-label="MoneyPilot project preview" data-i18n-aria-label="moneyPilotPage.images.preview">
-            <div class="case-study__container">
-                <div class="case-study__cover-frame">
-                    <img src="assets/images/project-moneypilot.png" alt="MoneyPilot financial dashboard interface" data-i18n-alt="moneyPilotPage.images.interface">
+                        <div class="mp-metric">
+                            <dt><img src="assets/icons/Focus Icon.svg" alt="" aria-hidden="true"><span data-i18n="moneyPilotPage.content.focus">FOCUS</span></dt>
+                            <dd data-i18n="moneyPilotPage.content.focusValue">FinTech · Data · AI</dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
         </section>
 
-        <section class="case-study__section">
-            <div class="case-study__container case-study__two-columns">
-                <h2 data-i18n="common.caseStudies.project">The project</h2>
+                <section class="mp-section mp-strategy" aria-labelledby="mp-strategy-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.strategyEyebrow">01 / PRODUCT STRATEGY</p>
 
-                <div class="case-study__copy">
-                    <p data-i18n="moneyPilotPage.project.overview">
-                        MoneyPilot brings financial information into one clear
-                        experience, helping users track transactions, plan
-                        budgets, organize goals, and understand their complete
-                        financial picture.
-                    </p>
+                        <h2 class="mp-section__title" id="mp-strategy-title" data-i18n="moneyPilotPage.content.strategyTitle">
+                            From financial information to confident decisions.
+                        </h2>
+                    </header>
 
-                    <p data-i18n="moneyPilotPage.project.approach">
-                        The product combines software, data, artificial
-                        intelligence, and business intelligence to turn complex
-                        financial information into practical guidance.
-                    </p>
+                    <div class="mp-strategy__grid">
+                        <article class="mp-content-card">
+                            <div class="mp-content-card__header">
+                                <p data-i18n="moneyPilotPage.content.problemLabel">THE PROBLEM</p>
+                                <img class="mp-card-icon" src="assets/icons/Problem.svg" alt="" aria-hidden="true">
+                            </div>
+
+                            <p class="mp-content-card__body" data-i18n="moneyPilotPage.content.problemText">
+                                Personal finance tools often show numbers without
+                                helping people understand what those numbers mean.
+                                Users are left with fragmented transactions, unclear
+                                spending patterns, and goals that feel disconnected
+                                from everyday decisions.
+                            </p>
+                        </article>
+
+                        <article class="mp-content-card mp-content-card--accent">
+                            <div class="mp-content-card__header">
+                                <p data-i18n="moneyPilotPage.content.solutionLabel">THE SOLUTION</p>
+                                <img class="mp-card-icon" src="assets/icons/Solution.svg" alt="" aria-hidden="true">
+                            </div>
+
+                            <p class="mp-content-card__body" data-i18n="moneyPilotPage.content.solutionText">
+                                MoneyPilot brings transactions, budgets, goals,
+                                investments, and AI-assisted observations into one
+                                clear system—helping people move from financial
+                                visibility to practical action.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="case-study__section case-study__section--muted">
-            <div class="case-study__container case-study__two-columns">
-                <h2 data-i18n="common.caseStudies.challenge">The challenge</h2>
+        <section class="mp-mobile-showcase" aria-label="MoneyPilot mobile experience" data-i18n-aria-label="moneyPilotPage.content.mobileRegion">
+            <div class="mp-shell">
+                <div class="mp-mobile-showcase__grid">
+                    <figure class="mp-mobile-showcase__image">
+                        <img
+                            src="assets/images/Mockup Mobile 1.png"
+                            alt="MoneyPilot dashboard displayed on a smartphone"
+                            data-i18n-alt="moneyPilotPage.content.mobileOneAlt"
+                        >
+                    </figure>
 
-                <div class="case-study__copy">
-                    <p data-i18n="moneyPilotPage.challenge.complexity">
-                        Financial tools can feel complex and overwhelming.
-                        The challenge was to create a dashboard that presents
-                        detailed information without making users feel lost.
-                    </p>
+                    <figure class="mp-mobile-showcase__image">
+                        <img
+                            src="assets/images/Mockup Mobile 2.png"
+                            alt="MoneyPilot financial dashboard on a mobile device"
+                            data-i18n-alt="moneyPilotPage.content.mobileTwoAlt"
+                        >
+                    </figure>
 
-                    <p data-i18n="moneyPilotPage.challenge.consistency">
-                        The interface also needed to remain consistent across
-                        desktop and mobile while supporting both day and night
-                        themes.
-                    </p>
+                    <div class="mp-mobile-showcase__demo">
+                        <div class="mp-mobile-showcase__label">
+                            <span data-i18n="moneyPilotPage.content.mobileEyebrow">01 / RESPONSIVE EXPERIENCE</span>
+                            <strong data-i18n="moneyPilotPage.content.mobileTitle">Mobile authentication flow</strong>
+                        </div>
+
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            poster="assets/images/project-moneypilot.png"
+                            aria-label="MoneyPilot mobile authentication walkthrough"
+                            data-i18n-aria-label="moneyPilotPage.content.mobileVideo"
+                        >
+                            <source
+                                src="assets/videos/moneypilot-mobile-experience.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                        <div class="mp-mobile-showcase__playback">
+                            <span aria-hidden="true"></span>
+                            <span data-i18n="moneyPilotPage.content.mobilePlayback">PLAY PRODUCT WALKTHROUGH</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="mp-section mp-experience" aria-labelledby="mp-experience-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.experienceEyebrow">02 / PRODUCT EXPERIENCE</p>
 
-        <section class="case-study__section">
-            <div class="case-study__container case-study__two-columns">
-                <h2 data-i18n="common.caseStudies.solution">The solution</h2>
+                        <h2 class="mp-section__title" id="mp-experience-title" data-i18n="moneyPilotPage.content.experienceTitle">
+                            One financial workspace, designed for clarity.
+                        </h2>
+                    </header>
 
-                <div class="case-study__copy">
-                    <p data-i18n="moneyPilotPage.solution.structure">
-                        The solution uses clear visual hierarchy, reusable
-                        components, accessible navigation, and focused
-                        dashboards for transactions, budgets, insights,
-                        goals, and investments.
-                    </p>
+                    <div class="mp-experience__grid">
+                        <div class="mp-experience__features">
+                            <article class="mp-experience__feature">
+                                <span class="mp-experience__icon"><img src="assets/icons/sun-low.svg" alt="" aria-hidden="true"></span>
 
-                    <p data-i18n="moneyPilotPage.solution.upcoming">
-                        Additional project details, process images, and final
-                        mockups will be added as the case study develops.
-                    </p>
+                                <div>
+                                    <h3 data-i18n="moneyPilotPage.content.dayTitle">DAY + NIGHT</h3>
+                                    <p data-i18n="moneyPilotPage.content.dayText">
+                                        A consistent interface adapts to different
+                                        environments without changing the product hierarchy.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="mp-experience__feature">
+                                <span class="mp-experience__icon"><img src="assets/icons/language.svg" alt="" aria-hidden="true"></span>
+
+                                <div>
+                                    <h3 data-i18n="moneyPilotPage.content.languagesTitle">7 LANGUAGES</h3>
+                                    <p data-i18n="moneyPilotPage.content.languagesText">
+                                        Designed for international users and future
+                                        European expansion.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="mp-experience__feature">
+                                <span class="mp-experience__icon"><img src="assets/icons/currency-dollar.svg" alt="" aria-hidden="true"></span>
+
+                                <div>
+                                    <h3 data-i18n="moneyPilotPage.content.currencyTitle">MULTI-CURRENCY</h3>
+                                    <p data-i18n="moneyPilotPage.content.currencyText">
+                                        Financial information remains understandable
+                                        across currencies and personal contexts.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="mp-experience__demo">
+                            <div class="mp-preview__bar" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p data-i18n="moneyPilotPage.content.experienceFile">authentication-to-dashboard.mp4</p>
+                            </div>
+
+                            <video
+                                class="mp-experience__video"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                poster="assets/images/project-moneypilot.png"
+                                aria-label="MoneyPilot responsive product experience"
+                                data-i18n-aria-label="moneyPilotPage.content.experienceVideo"
+                            >
+                                <source
+                                    src="assets/videos/moneypilot-desktop-experience.mp4"
+                                    type="video/mp4"
+                                >
+                            </video>
+
+                            <div class="mp-experience__demo-footer">
+                                <span>
+                                    <i aria-hidden="true"></i>
+                                    <span data-i18n="moneyPilotPage.content.liveWalkthrough">LIVE PRODUCT WALKTHROUGH</span>
+                                </span>
+
+                                <span data-i18n="moneyPilotPage.content.authDashboard">AUTHENTICATION → DASHBOARD</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="mp-section mp-desktop-experience" aria-labelledby="mp-desktop-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-desktop-experience__panel">
+                    <div class="mp-desktop-experience__visual">
+                        <img
+                            src="assets/images/Desktop Mockup Visual.png"
+                            alt="MoneyPilot dashboard presented on a desktop computer"
+                            data-i18n-alt="moneyPilotPage.content.desktopAlt"
+                        >
+                    </div>
 
-        <nav class="case-study__next" aria-label="Next project" data-i18n-aria-label="common.caseStudies.next">
-            <div class="case-study__container">
-                <p data-i18n="common.caseStudies.next">Next project</p>
+                    <div class="mp-desktop-experience__content">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.desktopEyebrow">
+                            02 / DESKTOP EXPERIENCE
+                        </p>
 
-                <a href="./black-bull-mobile.html">
-                    <span>Black Bull Mobile</span>
-                    <span aria-hidden="true">↗</span>
-                </a>
+                        <h2 id="mp-desktop-title" data-i18n="moneyPilotPage.content.desktopTitle">
+                            One workspace across every device.
+                        </h2>
+
+                        <p class="mp-desktop-experience__body" data-i18n="moneyPilotPage.content.desktopBody">
+                            The MoneyPilot dashboard preserves financial clarity,
+                            hierarchy, and usability from mobile to desktop without
+                            sacrificing detail.
+                        </p>
+
+                        <div class="mp-desktop-experience__divider"></div>
+
+                        <ul class="mp-desktop-experience__highlights">
+                            <li>
+                                <img
+                                    src="assets/icons/device-mobile.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                                <span data-i18n="moneyPilotPage.content.responsiveOverview">Responsive financial overview</span>
+                            </li>
+
+                            <li>
+                                <img
+                                    src="assets/icons/moon.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                                <span data-i18n="moneyPilotPage.content.darkThemes">Consistent light and dark themes</span>
+                            </li>
+
+                            <li>
+                                <img
+                                    src="assets/icons/file-database.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                                <span data-i18n="moneyPilotPage.content.dataHierarchy">Clear data hierarchy at larger scales</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </main>
-    <footer class="site-footer">
-        <div class="site-footer__container">
-            <h2 class="site-footer__title">
-                <span data-i18n="footer.titleOne">Let’s design</span>
-                <span data-i18n="footer.titleTwo">Incredible work together.</span>
-            </h2>
+        </section>
+        <section class="mp-section mp-features" aria-labelledby="mp-features-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.featuresEyebrow">03 / CORE PRODUCT EXPERIENCE</p>
 
-            <div class="site-footer__contact">
-                <div class="site-footer__email">
-                    <h3 data-i18n="footer.email">Email</h3>
+                        <h2 class="mp-section__title" id="mp-features-title" data-i18n="moneyPilotPage.content.featuresTitle">
+                            A complete system for everyday financial decisions.
+                        </h2>
+                    </header>
 
-                    <a href="mailto:felipesbelphman@gmail.com">
-                        felipesbelphman@gmail.com
+                    <div class="mp-feature-grid">
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>01</span>
+                                <span><img src="assets/icons/Dashboard.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.dashboardTitle">Dashboard</h3>
+
+                            <p data-i18n="moneyPilotPage.content.dashboardText">
+                                A decision-first overview of balances, income,
+                                expenses, cash flow, and progress.
+                            </p>
+                        </article>
+
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>02</span>
+                                <span><img src="assets/icons/Transactions.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.transactionsTitle">Transactions</h3>
+
+                            <p data-i18n="moneyPilotPage.content.transactionsText">
+                                CSV import, categories, filters, and a clear
+                                history of financial activity.
+                            </p>
+                        </article>
+
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>03</span>
+                                <span><img src="assets/icons/Budgets.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.budgetsTitle">Budgets</h3>
+
+                            <p data-i18n="moneyPilotPage.content.budgetsText">
+                                Spending limits and progress tracking that make
+                                financial plans visible.
+                            </p>
+                        </article>
+
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>04</span>
+                                <span><img src="assets/icons/AI Insights.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.insightsTitle">AI Insights</h3>
+
+                            <p data-i18n="moneyPilotPage.content.insightsText">
+                                Personalized observations designed to explain
+                                patterns and highlight better decisions.
+                            </p>
+                        </article>
+
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>05</span>
+                                <span><img src="assets/icons/Goals.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.goalsTitle">Goals</h3>
+
+                            <p data-i18n="moneyPilotPage.content.goalsText">
+                                Practical progress tracking for homes, travel,
+                                education, family, and other milestones.
+                            </p>
+                        </article>
+
+                        <article class="mp-feature-card">
+                            <div class="mp-feature-card__top">
+                                <span>06</span>
+                                <span><img src="assets/icons/Investments.svg" alt="" aria-hidden="true"></span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.investmentsTitle">Investments</h3>
+
+                            <p data-i18n="moneyPilotPage.content.investmentsText">
+                                A unified view of portfolio value, allocation,
+                                performance, and long-term growth.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mp-section mp-architecture" aria-labelledby="mp-architecture-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.architectureEyebrow">
+                            04 / ENGINEERING + TRUST
+                        </p>
+
+                        <h2 class="mp-section__title" id="mp-architecture-title" data-i18n="moneyPilotPage.content.architectureTitle">
+                            Built as a real product, not a static dashboard.
+                        </h2>
+                    </header>
+
+                    <div class="mp-architecture__grid">
+                        <article class="mp-architecture__main">
+                            <div class="mp-architecture__card-header">
+                                <p data-i18n="moneyPilotPage.content.architectureLabel">PROJECT ARCHITECTURE</p>
+
+                                <img
+                                    src="assets/icons/Project Architecture.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <pre class="mp-architecture__tree" aria-label="MoneyPilot project architecture" data-i18n-aria-label="moneyPilotPage.content.architectureTree"><code>moneypilot/
+├── public/moneypilot/
+│   ├── icons + illustrations
+│   └── dashboard assets
+├── src/app/
+│   ├── dashboard + transactions
+│   ├── budgets + insights + goals
+│   └── investments + settings
+├── src/components/
+└── Supabase + test contracts</code></pre>
+                        </article>
+
+                        <div class="mp-architecture__metrics">
+                            <article class="mp-architecture__metric">
+                                <img
+                                    src="assets/icons/Local Tests.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                                <div class="mp-architecture__metric-copy">
+                                    <span data-i18n="moneyPilotPage.content.localTests">LOCAL TESTS</span>
+
+                                    <p data-i18n="moneyPilotPage.content.localTestsText">
+                                        Automated tests across product logic,
+                                        contracts, and user-facing behavior.
+                                    </p>
+                                </div>
+
+                                <strong>530</strong>
+                            </article>
+
+                            <article class="mp-architecture__metric">
+                                <img
+                                    src="assets/icons/RLS Tests.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                                <div class="mp-architecture__metric-copy">
+                                    <span data-i18n="moneyPilotPage.content.remoteTests">REMOTE RLS TESTS</span>
+
+                                    <p data-i18n="moneyPilotPage.content.remoteTestsText">
+                                        Row Level Security validates ownership and
+                                        isolates each user's financial data.
+                                    </p>
+                                </div>
+
+                                <strong>34 / 34</strong>
+                            </article>
+
+                            <article class="mp-architecture__metric">
+                                <img
+                                    src="assets/icons/Secure Data.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+
+                                <div class="mp-architecture__metric-copy">
+                                    <span data-i18n="moneyPilotPage.content.secureModel">SECURE DATA MODEL</span>
+
+                                    <p data-i18n="moneyPilotPage.content.secureModelText">
+                                        Hardened operations with ownership
+                                        enforcement, validation, and sanitized errors.
+                                    </p>
+                                </div>
+
+                                <strong>13</strong>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mp-section mp-roadmap" aria-labelledby="mp-roadmap-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.roadmapEyebrow">
+                            05 / DEVELOPMENT ROADMAP
+                        </p>
+
+                        <h2 class="mp-section__title" id="mp-roadmap-title" data-i18n="moneyPilotPage.content.roadmapTitle">
+                            From interface foundation to intelligent financial guidance.
+                        </h2>
+                    </header>
+
+                    <div class="mp-roadmap__grid">
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status mp-roadmap__status--complete">
+                                <span>01</span>
+                                <span data-i18n="moneyPilotPage.content.complete">COMPLETE</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.interfaceTitle">Interface</h3>
+
+                            <p data-i18n="moneyPilotPage.content.interfaceText">
+                                Landing, responsive screens, authentication UI,
+                                and dashboard foundations.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status mp-roadmap__status--progress">
+                                <span>02</span>
+                                <span data-i18n="moneyPilotPage.content.inProgress">IN PROGRESS</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.authenticationTitle">Authentication</h3>
+
+                            <p data-i18n="moneyPilotPage.content.authenticationText">
+                                Supabase registration, sessions, recovery,
+                                protected routes, and Google auth.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status">
+                                <span>03</span>
+                                <span data-i18n="moneyPilotPage.content.next">NEXT</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.financialDataTitle">Financial Data</h3>
+
+                            <p data-i18n="moneyPilotPage.content.financialDataText">
+                                Income, expenses, transactions, categories,
+                                goals, and real dashboard data.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status mp-roadmap__status--progress">
+                                <span>04</span>
+                                <span data-i18n="moneyPilotPage.content.active">ACTIVE</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.securityTitle">Security + Testing</h3>
+
+                            <p data-i18n="moneyPilotPage.content.securityText">
+                                RLS, data isolation, validation, permission
+                                tests, and production review.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status">
+                                <span>05</span>
+                                <span data-i18n="moneyPilotPage.content.planned">PLANNED</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.pythonTitle">Python Intelligence</h3>
+
+                            <p data-i18n="moneyPilotPage.content.pythonText">
+                                Financial analysis, calculations, pattern
+                                detection, and automated summaries.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status">
+                                <span>06</span>
+                                <span>PLANNED</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.aiTitle">AI Insights</h3>
+
+                            <p data-i18n="moneyPilotPage.content.aiText">
+                                Personalized observations, recommendations,
+                                and assistant experience.
+                            </p>
+                        </article>
+
+                        <article class="mp-roadmap__card">
+                            <div class="mp-roadmap__status">
+                                <span>07</span>
+                                <span>PLANNED</span>
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.productionTitle">Production</h3>
+
+                            <p data-i18n="moneyPilotPage.content.productionText">
+                                Accessibility, performance, security audit,
+                                and final deployment.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mp-section mp-project-context" aria-labelledby="mp-context-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.contextEyebrow">
+                            01 / PROJECT CONTEXT
+                        </p>
+
+                        <h2 class="mp-section__title" id="mp-context-title" data-i18n="moneyPilotPage.content.contextTitle">
+                            Why I built MoneyPilot and what I owned.
+                        </h2>
+                    </header>
+
+                    <div class="mp-context__cards">
+                        <article class="mp-context-card">
+                            <div class="mp-context-card__header">
+                                <span data-i18n="moneyPilotPage.content.contextLabel">PROJECT CONTEXT</span>
+
+                                <img
+                                    src="assets/icons/Project Context.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <p class="mp-context-card__body" data-i18n="moneyPilotPage.content.contextText">
+                                MoneyPilot is a personal finance product created
+                                to help people understand spending, organize
+                                financial data, and build practical plans for
+                                meaningful life goals.
+                            </p>
+
+                            <p class="mp-context-card__meta" data-i18n="moneyPilotPage.content.contextMeta">
+                                Personal product · 2026
+                            </p>
+                        </article>
+
+                        <article class="mp-context-card mp-context-card--blue">
+                            <div class="mp-context-card__header">
+                                <span data-i18n="moneyPilotPage.content.roleLabel">MY ROLE</span>
+
+                                <img
+                                    src="assets/icons/My Role.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <p class="mp-context-card__body" data-i18n="moneyPilotPage.content.roleText">
+                                I own the product direction, UX/UI design,
+                                front-end development, design system, responsive
+                                implementation, Supabase integration, and
+                                product validation.
+                            </p>
+
+                            <p class="mp-context-card__meta" data-i18n="moneyPilotPage.content.roleMeta">
+                                Product Designer + Front-End Developer
+                            </p>
+                        </article>
+
+                        <article class="mp-context-card">
+                            <div class="mp-context-card__header">
+                                <span data-i18n="moneyPilotPage.content.goalsLabel">GOALS + CONSTRAINTS</span>
+
+                                <img
+                                    src="assets/icons/Goals and Constraints.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <p class="mp-context-card__body" data-i18n="moneyPilotPage.content.goalsText">
+                                The MVP avoids bank APIs, prioritizes privacy,
+                                supports international users, and must remain
+                                understandable across currencies, languages,
+                                devices, and financial experience levels.
+                            </p>
+
+                            <p class="mp-context-card__meta" data-i18n="moneyPilotPage.content.goalsMeta">
+                                No bank connection required
+                            </p>
+                        </article>
+                    </div>
+
+                    <ol class="mp-context__process" aria-label="MoneyPilot product process" data-i18n-aria-label="moneyPilotPage.content.processLabel">
+                        <li>
+                            <span>01</span>
+                            <strong data-i18n="moneyPilotPage.content.discovery">Discovery</strong>
+                        </li>
+
+                        <li>
+                            <span>02</span>
+                            <strong data-i18n="moneyPilotPage.content.productStrategy">Product Strategy</strong>
+                        </li>
+
+                        <li>
+                            <span>03</span>
+                            <strong data-i18n="moneyPilotPage.content.uxUi">UX + UI</strong>
+                        </li>
+
+                        <li>
+                            <span>04</span>
+                            <strong data-i18n="moneyPilotPage.content.engineering">Engineering</strong>
+                        </li>
+
+                        <li>
+                            <span>05</span>
+                            <strong data-i18n="moneyPilotPage.content.validation">Validation</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="mp-section mp-product-thinking" aria-labelledby="mp-thinking-title">
+            <div class="mp-shell">
+                <div class="mp-panel mp-section__panel">
+                    <header class="mp-section__header">
+                        <p class="mp-section__eyebrow" data-i18n="moneyPilotPage.content.thinkingEyebrow">
+                            04 / PRODUCT THINKING
+                        </p>
+
+                        <h2 class="mp-section__title" id="mp-thinking-title" data-i18n="moneyPilotPage.content.thinkingTitle">
+                            Decisions behind the interface.
+                        </h2>
+                    </header>
+
+                    <div class="mp-thinking__grid">
+                        <article class="mp-thinking-card">
+                            <div class="mp-thinking-card__header">
+                                <span data-i18n="moneyPilotPage.content.decisionLabel">DESIGN DECISION</span>
+
+                                <img
+                                    src="assets/icons/Design Decision.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.decisionTitle">Decision-first hierarchy</h3>
+
+                            <p data-i18n="moneyPilotPage.content.decisionText">
+                                Instead of presenting every financial metric at
+                                once, the dashboard prioritizes the information
+                                that helps users decide what to do next: current
+                                balance, cash flow, unusual spending, goal
+                                progress, and recommended actions.
+                            </p>
+                        </article>
+
+                        <article class="mp-thinking-card mp-thinking-card--blue">
+                            <div class="mp-thinking-card__header">
+                                <span data-i18n="moneyPilotPage.content.accessibilityLabel">ACCESSIBILITY</span>
+
+                                <img
+                                    src="assets/icons/Accessibility.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.accessibilityTitle">Clarity across themes and devices</h3>
+
+                            <p data-i18n="moneyPilotPage.content.accessibilityText">
+                                Day and Night modes preserve hierarchy and
+                                contrast. Responsive layouts, visible focus
+                                states, understandable labels, reduced visual
+                                noise, and consistent interaction patterns
+                                support different devices and user needs.
+                            </p>
+                        </article>
+
+                        <article class="mp-thinking-card">
+                            <div class="mp-thinking-card__header">
+                                <span data-i18n="moneyPilotPage.content.challengeLabel">CORE CHALLENGE</span>
+
+                                <img
+                                    src="assets/icons/Core Challenge.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.challengeTitle">Complex data without complexity</h3>
+
+                            <p data-i18n="moneyPilotPage.content.challengeText">
+                                The main challenge was combining transactions,
+                                budgets, goals, investments, and AI guidance
+                                without creating an interface that feels like
+                                professional accounting software. Progressive
+                                disclosure keeps advanced information available
+                                without overwhelming the user.
+                            </p>
+                        </article>
+
+                        <article class="mp-thinking-card mp-thinking-card--blue">
+                            <div class="mp-thinking-card__header">
+                                <span data-i18n="moneyPilotPage.content.learningLabel">KEY LEARNING</span>
+
+                                <img
+                                    src="assets/icons/Key Learning.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+
+                            <h3 data-i18n="moneyPilotPage.content.learningTitle">Trust must be designed and engineered</h3>
+
+                            <p data-i18n="moneyPilotPage.content.learningText">
+                                Financial products require more than polished
+                                screens. Clear language, predictable feedback,
+                                user-owned data, RLS policies, validation, error
+                                handling, and meaningful tests all contribute to
+                                the same product quality: trust.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mp-more-projects" aria-labelledby="mp-more-projects-title">
+            <div class="mp-shell">
+                <header class="mp-more-projects__header">
+                    <p data-i18n="moneyPilotPage.content.moreEyebrow">NEXT / EXPLORE MORE WORK</p>
+
+                    <h2 id="mp-more-projects-title" data-i18n="moneyPilotPage.content.moreTitle">
+                        More Projects
+                    </h2>
+                </header>
+
+                <div class="mp-more-projects__grid">
+                    <a
+                        class="mp-more-projects__project mp-more-projects__project--restaurant"
+                        href="./black-bull.html"
+                        aria-label="View Black Bull Restaurant project"
+                        data-i18n-aria-label="moneyPilotPage.content.blackBullLink"
+                    >
+                        <div class="mp-more-projects__thumbnail">
+                            <img
+                                src="assets/images/project-black-bull-kitchen.png"
+                                alt="Black Bull Restaurant kitchen display system"
+                                data-i18n-alt="moneyPilotPage.content.blackBullAlt"
+                            >
+                        </div>
+
+                        <div class="mp-more-projects__details">
+                            <div>
+                                <h3 data-i18n="moneyPilotPage.content.blackBullTitle">Black Bull Restaurant</h3>
+                                <p data-i18n="moneyPilotPage.content.blackBullType">Restaurant Operations Platform</p>
+                            </div>
+
+                            <span class="mp-more-projects__action">
+                                <span aria-hidden="true">↗</span>
+                                <span data-i18n="moneyPilotPage.content.viewProject">View Project</span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a
+                        class="mp-more-projects__project mp-more-projects__project--devconnect"
+                        href="./projects.html"
+                        aria-label="View DevConnect project"
+                        data-i18n-aria-label="moneyPilotPage.content.devConnectLink"
+                    >
+                        <div class="mp-more-projects__thumbnail">
+                            <img
+                                src="assets/images/project-devconnect.png"
+                                alt="DevConnect technology jobs platform"
+                                data-i18n-alt="moneyPilotPage.content.devConnectAlt"
+                            >
+                        </div>
+
+                        <div class="mp-more-projects__details">
+                            <div>
+                                <h3 data-i18n="moneyPilotPage.content.devConnectTitle">DevConnect</h3>
+                                <p data-i18n="moneyPilotPage.content.devConnectType">Technology Jobs Platform</p>
+                            </div>
+
+                            <span class="mp-more-projects__action">
+                                <span aria-hidden="true">↗</span>
+                                <span data-i18n="moneyPilotPage.content.viewProject">View Project</span>
+                            </span>
+                        </div>
                     </a>
                 </div>
 
-                <div class="site-footer__social">
-                    <h3 data-i18n="footer.social">Social</h3>
+                <a class="mp-more-projects__all" href="./projects.html">
+                    <span data-i18n="moneyPilotPage.content.viewAll">View all my projects</span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+        <section class="mp-final-cta" aria-labelledby="mp-final-cta-title">
+            <div class="mp-shell">
+                <div class="mp-final-cta__panel">
+                    <p class="mp-final-cta__eyebrow" data-i18n="moneyPilotPage.content.ctaEyebrow">
+                        MONEYPILOT / ACTIVE DEVELOPMENT
+                    </p>
 
-                    <div class="site-footer__social-links">
-                        <a href="#" aria-label="Instagram">
-                            <img src="assets/images/footer-instagram-icon.svg" alt="" aria-hidden="true">
+                    <h2 id="mp-final-cta-title" data-i18n="moneyPilotPage.content.ctaTitle">
+                        Building financial clarity into an intelligent product.
+                    </h2>
+
+                    <p class="mp-final-cta__description" data-i18n="moneyPilotPage.content.ctaText">
+                        Follow the project on GitHub to explore the codebase,
+                        architecture, testing strategy, and upcoming product phases.
+                    </p>
+
+                    <div class="mp-final-cta__actions">
+                        <a
+                            class="mp-final-cta__button mp-final-cta__button--primary"
+                            href="https://github.com/felipesbelphman-web/moneypilot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span data-i18n="moneyPilotPage.content.viewGithub">View GitHub Repository</span>
+                            <span aria-hidden="true"><img src="assets/icons/git-hub-icon.svg" alt=""></span>
                         </a>
 
-                        <a href="https://wa.me/353896028494?text=Hello%20Felipe%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk."
-                            target="_blank" rel="noopener noreferrer" aria-label="Message Felipe on WhatsApp" data-i18n-aria-label="footer.whatsappLabel">
-                            <img src="assets/images/footer-whatsapp-icon.svg" alt="" aria-hidden="true">
-                        </a>
-
-                        <a href="#" aria-label="Dribbble">
-                            <img src="assets/images/footer-dribbble-icon.svg" alt="" aria-hidden="true">
-                        </a>
-
-                        <a href="#" aria-label="LinkedIn">
-                            <img src="assets/images/footer-linkedin-icon.svg" alt="" aria-hidden="true">
+                        <a
+                            class="mp-final-cta__button mp-final-cta__button--secondary"
+                            href="./projects.html"
+                        >
+                            <span aria-hidden="true">←</span>
+                            <span data-i18n="moneyPilotPage.content.backProjects">Back to Projects</span>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <div class="site-footer__divider">
-                <img class="site-footer__divider-line" src="assets/images/footer-line-left.svg" alt=""
-                    aria-hidden="true">
-
-                <img class="site-footer__divider-icon" src="assets/images/footer-brand-icon.svg" alt=""
-                    aria-hidden="true">
-
-                <img class="site-footer__divider-line" src="assets/images/footer-line-right.svg" alt=""
-                    aria-hidden="true">
-            </div>
-
-            <div class="site-footer__bottom">
-                <nav class="site-footer__menu" aria-label="Footer navigation" data-i18n-aria-label="footer.navigationLabel">
-                    <h3 data-i18n="footer.menu">Menu</h3>
-
-                    <div class="site-footer__menu-links">
-                        <div>
-                            <a href="./index.html#home" data-i18n="nav.home">Home</a>
-                            <a href="./index.html#work" data-i18n="nav.work">Work</a>
-                            <a href="./index.html#skills" data-i18n="nav.skills">Skills</a>
-                            <a href="./index.html#about" data-i18n="nav.about">About</a>
-                        </div>
-
-                        <div>
-                            <a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a>
-                            <a href="./index.html#faq" data-i18n="nav.faq">FAQ</a>
-                            <a href="./index.html#contact" data-i18n="nav.contact">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-
-                <div class="site-footer__legal">
-                    <h3 data-i18n="footer.legal">Legal</h3>
-
-                    <div class="site-footer__legal-links">
-                        <a href="./terms-of-service.html" data-i18n="footer.terms">Terms of service</a>
-                        <a href="./privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
-                    </div>
-                </div>
-
-                <p class="site-footer__copyright">
-                    © 2026 Felipe Belphman
-                </p>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </main>
     <div class="contact-page contact-modal" id="contact-modal" aria-hidden="true">
         <button class="contact-modal__backdrop" type="button" aria-label="Close contact form" data-i18n-aria-label="contact.close"></button>
 

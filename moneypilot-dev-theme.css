@@ -1,0 +1,4056 @@
+/* =========================================================
+   MONEYPILOT CASE STUDY — DEV / TERMINAL THEME
+   ========================================================= */
+
+.mp-case {
+    --mp-background: #070b10;
+    --mp-surface: #0a1017;
+    --mp-surface-soft: #0d141d;
+    --mp-border: #1c2a38;
+    --mp-border-strong: #26384a;
+    --mp-text: #f5f7fa;
+    --mp-text-soft: #aab6c3;
+    --mp-text-muted: #718091;
+    --mp-accent: #33e6c3;
+    --mp-accent-blue: #348dfc;
+    --mp-radius-large: 18px;
+    --mp-radius-medium: 12px;
+
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 85% 8%,
+            rgba(52, 141, 252, 0.08),
+            transparent 28rem
+        ),
+        var(--mp-background);
+    color: var(--mp-text);
+}
+
+.mp-case *,
+.mp-case *::before,
+.mp-case *::after {
+    box-sizing: border-box;
+}
+
+.mp-hero {
+    padding: 48px 24px 64px;
+}
+
+.mp-shell {
+    width: min(1200px, 100%);
+    margin-inline: auto;
+}
+
+.mp-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: var(--mp-text-soft);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        transform 180ms ease;
+}
+
+.mp-back:hover {
+    color: var(--mp-accent);
+    transform: translateX(-3px);
+}
+
+.mp-back:focus-visible,
+.mp-button:focus-visible {
+    outline: 2px solid var(--mp-accent);
+    outline-offset: 4px;
+}
+
+.mp-panel {
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-large);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(13, 20, 29, 0.96),
+            rgba(7, 11, 16, 0.98)
+        );
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.mp-hero__panel {
+    padding: 32px;
+}
+
+.mp-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(480px, 1.08fr);
+    align-items: stretch;
+    gap: 44px;
+}
+
+.mp-hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.mp-terminal-label {
+    margin: 0 0 14px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.mp-hero__title {
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 600;
+    line-height: 0.96;
+    letter-spacing: -0.055em;
+}
+
+.mp-hero__subtitle {
+    max-width: 520px;
+    margin: 18px 0 0;
+    color: var(--mp-text);
+    font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.mp-hero__summary {
+    max-width: 520px;
+    margin: 16px 0 0;
+    color: var(--mp-text-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.mp-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mp-tech-list li {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 6px 11px;
+    border: 1px solid var(--mp-border-strong);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.025);
+    color: var(--mp-text-soft);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.7rem;
+    line-height: 1;
+}
+
+.mp-tech-list li::before {
+    width: 5px;
+    height: 5px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: var(--mp-accent);
+    content: "";
+    box-shadow: 0 0 10px rgba(51, 230, 195, 0.65);
+}
+
+.mp-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.mp-button,
+.mp-status {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.mp-button {
+    gap: 8px;
+    padding: 9px 14px;
+    text-decoration: none;
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.mp-button--primary {
+    background: var(--mp-accent);
+    color: #03110e;
+    box-shadow: 0 8px 24px rgba(51, 230, 195, 0.14);
+}
+
+.mp-button--primary:hover {
+    background: #65efd4;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(51, 230, 195, 0.2);
+}
+
+.mp-status {
+    gap: 8px;
+    padding: 8px 13px;
+    border: 1px solid var(--mp-border);
+    color: var(--mp-text-soft);
+}
+
+.mp-status__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--mp-accent);
+    box-shadow: 0 0 12px rgba(51, 230, 195, 0.8);
+}
+
+.mp-preview {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--mp-border-strong);
+    border-radius: var(--mp-radius-medium);
+    background: #05080c;
+}
+
+.mp-preview__bar {
+    display: flex;
+    min-height: 38px;
+    align-items: center;
+    gap: 7px;
+    padding: 0 13px;
+    border-bottom: 1px solid var(--mp-border);
+    background: #0b1118;
+}
+
+.mp-preview__bar > span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.mp-preview__bar > span:nth-child(1) {
+    background: #ff6258;
+}
+
+.mp-preview__bar > span:nth-child(2) {
+    background: #f6c84c;
+}
+
+.mp-preview__bar > span:nth-child(3) {
+    background: #35c66b;
+}
+
+.mp-preview__bar p {
+    overflow: hidden;
+    margin: 0 0 0 6px;
+    color: var(--mp-text-muted);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.65rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mp-preview__media {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background: #05080c;
+    object-fit: cover;
+}
+
+.mp-preview__caption {
+    margin: 0;
+    padding: 11px 13px;
+    border-top: 1px solid var(--mp-border);
+    color: var(--mp-text-muted);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.625rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.mp-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0 0;
+}
+
+.mp-metric {
+    min-width: 0;
+    min-height: 128px;
+    padding: 18px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background: rgba(13, 20, 29, 0.74);
+}
+
+.mp-metric dt {
+    margin-bottom: 14px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.625rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+}
+
+.mp-metric dd {
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+/* Keep the remaining legacy sections readable
+   until each one is replaced by the new Figma layout. */
+
+.mp-case > .case-study__section,
+.mp-case > .case-study__next {
+    color: #15191f;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 980px) {
+    .mp-hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-preview {
+        width: 100%;
+    }
+
+    .mp-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-hero {
+        padding: 28px 16px 44px;
+    }
+
+    .mp-hero__panel {
+        padding: 18px;
+    }
+
+    .mp-hero__grid {
+        gap: 28px;
+    }
+
+    .mp-hero__title {
+        font-size: clamp(2.7rem, 14vw, 3.7rem);
+    }
+
+    .mp-hero__subtitle {
+        font-size: 1rem;
+    }
+
+    .mp-hero__summary {
+        font-size: 0.875rem;
+    }
+
+    .mp-hero__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .mp-button,
+    .mp-status {
+        width: 100%;
+    }
+
+    .mp-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-metric {
+        min-height: auto;
+    }
+
+    .mp-preview__caption {
+        font-size: 0.56rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-back,
+    .mp-button {
+        transition: none;
+    }
+}
+/* =========================================================
+   PRODUCT STRATEGY — PROBLEM + SOLUTION
+   ========================================================= */
+
+.mp-section {
+    padding: 0 24px 48px;
+}
+
+.mp-section__panel {
+    padding: 40px 48px;
+}
+
+.mp-section__header {
+    margin-bottom: 24px;
+}
+
+.mp-section__eyebrow {
+    margin: 0 0 14px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+}
+
+.mp-section__title {
+    max-width: 920px;
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.mp-strategy__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.mp-content-card {
+    min-height: 230px;
+    padding: 24px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.94),
+            rgba(9, 14, 20, 0.96)
+        );
+}
+
+.mp-content-card--accent {
+    border-color: rgba(51, 230, 195, 0.22);
+}
+
+.mp-content-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.mp-content-card__header p {
+    margin: 0;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+}
+
+.mp-content-card__header span {
+    color: var(--mp-accent);
+    font-size: 1rem;
+}
+
+.mp-content-card__body {
+    max-width: 55ch;
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.94rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 760px) {
+    .mp-section {
+        padding: 0 16px 32px;
+    }
+
+    .mp-section__panel {
+        padding: 28px 20px;
+    }
+
+    .mp-strategy__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-content-card {
+        min-height: auto;
+    }
+}
+/* =========================================================
+   PRODUCT EXPERIENCE
+   ========================================================= */
+
+.mp-experience__grid {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.36fr) minmax(0, 1fr);
+    gap: 24px;
+}
+
+.mp-experience__features {
+    display: grid;
+    gap: 1px;
+    overflow: hidden;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background: var(--mp-border);
+}
+
+.mp-experience__feature {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    min-height: 116px;
+    padding: 20px;
+    background: var(--mp-surface-soft);
+}
+
+.mp-experience__icon {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(51, 230, 195, 0.22);
+    border-radius: 8px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.85rem;
+}
+
+.mp-experience__feature h3 {
+    margin: 2px 0 8px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.mp-experience__feature p {
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.55;
+}
+
+.mp-experience__demo {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--mp-border-strong);
+    border-radius: var(--mp-radius-medium);
+    background: #05080c;
+}
+
+.mp-experience__video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #05080c;
+    object-fit: cover;
+}
+
+.mp-experience__demo-footer {
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 14px;
+    border-top: 1px solid var(--mp-border);
+    color: var(--mp-text-muted);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+}
+
+.mp-experience__demo-footer span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mp-experience__demo-footer i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--mp-accent);
+    box-shadow: 0 0 10px rgba(51, 230, 195, 0.75);
+}
+
+@media (max-width: 880px) {
+    .mp-experience__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-experience__features {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-experience__features {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-experience__feature {
+        min-height: auto;
+    }
+
+    .mp-experience__demo-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+/* =========================================================
+   CORE PRODUCT EXPERIENCE
+   ========================================================= */
+
+.mp-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mp-feature-card {
+    min-height: 170px;
+    padding: 21px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(9, 14, 20, 0.98)
+        );
+    transition:
+        border-color 180ms ease,
+        transform 180ms ease,
+        background-color 180ms ease;
+}
+
+.mp-feature-card:hover {
+    border-color: rgba(51, 230, 195, 0.38);
+    transform: translateY(-3px);
+}
+
+.mp-feature-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+}
+
+.mp-feature-card__top span:last-child {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(51, 230, 195, 0.18);
+    border-radius: 7px;
+}
+
+.mp-feature-card h3 {
+    margin: 0 0 10px;
+    color: var(--mp-text);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.mp-feature-card p {
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 880px) {
+    .mp-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 540px) {
+    .mp-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-feature-card {
+        min-height: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-feature-card {
+        transition: none;
+    }
+}
+/* =========================================================
+   ORIGINAL FIGMA ICONS
+   ========================================================= */
+
+.mp-tech-list li {
+    gap: 7px;
+}
+
+.mp-tech-list li::before {
+    display: none;
+}
+
+.mp-tech-list li img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.mp-metric dt {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mp-metric dt img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.mp-card-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.mp-experience__icon img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.mp-feature-card__top span:last-child img {
+    display: block;
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+/* =========================================================
+   MOBILE PRODUCT SHOWCASE — FIGMA ASSETS
+   ========================================================= */
+
+.mp-mobile-showcase {
+    padding: 0 24px 48px;
+}
+
+.mp-mobile-showcase__grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 374px)
+        minmax(0, 374px)
+        minmax(0, 313px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.mp-mobile-showcase__image {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--mp-surface);
+}
+
+.mp-mobile-showcase__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 374 / 563;
+    object-fit: cover;
+}
+
+.mp-mobile-showcase__demo {
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 313 / 563;
+    overflow: hidden;
+    border: 1px solid var(--mp-border);
+    border-radius: 2px;
+    background: #020406;
+}
+
+.mp-mobile-showcase__demo video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #020406;
+    object-fit: cover;
+}
+
+.mp-mobile-showcase__demo::after {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(2, 4, 6, 0.42) 0%,
+            transparent 25%,
+            transparent 68%,
+            rgba(2, 4, 6, 0.62) 100%
+        );
+    content: "";
+    pointer-events: none;
+}
+
+.mp-mobile-showcase__label {
+    position: absolute;
+    z-index: 2;
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 13px;
+    border: 1px solid rgba(51, 230, 195, 0.12);
+    border-radius: 6px;
+    background: rgba(7, 18, 27, 0.92);
+}
+
+.mp-mobile-showcase__label span {
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.56rem;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+}
+
+.mp-mobile-showcase__label strong {
+    color: var(--mp-text);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.mp-mobile-showcase__playback {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    bottom: 16px;
+    display: inline-flex;
+    min-width: 180px;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px 12px;
+    border: 1px solid var(--mp-border);
+    border-radius: 999px;
+    background: rgba(7, 18, 27, 0.94);
+    color: var(--mp-text);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.56rem;
+    line-height: 1.2;
+    transform: translateX(50%);
+}
+
+.mp-mobile-showcase__playback span {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--mp-accent);
+    box-shadow: 0 0 10px rgba(51, 230, 195, 0.75);
+}
+
+@media (max-width: 980px) {
+    .mp-mobile-showcase__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mp-mobile-showcase__demo {
+        grid-column: 1 / -1;
+        width: min(100%, 500px);
+        margin-inline: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-mobile-showcase {
+        padding: 0 16px 32px;
+    }
+
+    .mp-mobile-showcase__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .mp-mobile-showcase__demo {
+        grid-column: auto;
+        width: 100%;
+        aspect-ratio: 313 / 563;
+    }
+}
+/* =========================================================
+   DESKTOP EXPERIENCE — FIGMA ASSET
+   ========================================================= */
+
+.mp-desktop-experience__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 628px) minmax(320px, 419px);
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    min-height: 420px;
+    padding: 32px 48px;
+}
+
+.mp-desktop-experience__visual {
+    min-width: 0;
+}
+
+.mp-desktop-experience__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.mp-desktop-experience__content {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.95),
+            rgba(8, 13, 19, 0.98)
+        );
+}
+
+.mp-desktop-experience__content .mp-section__eyebrow {
+    margin-bottom: 12px;
+}
+
+.mp-desktop-experience__content h2 {
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(1.65rem, 2.4vw, 2.15rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.mp-desktop-experience__body {
+    margin: 14px 0 0;
+    color: var(--mp-text-soft);
+    font-size: 0.86rem;
+    line-height: 1.65;
+}
+
+.mp-desktop-experience__divider {
+    width: 100%;
+    height: 1px;
+    margin: 18px 0 14px;
+    background: var(--mp-border);
+}
+
+.mp-desktop-experience__highlights {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mp-desktop-experience__highlights li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--mp-text-soft);
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+
+.mp-desktop-experience__highlights img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .mp-desktop-experience__panel {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-desktop-experience__visual {
+        width: min(100%, 628px);
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-desktop-experience__panel {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .mp-desktop-experience__content {
+        padding: 20px;
+    }
+}
+/* CENTRALIZAÇÃO DO MOCKUP DESKTOP */
+
+.mp-desktop-experience__visual {
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mp-desktop-experience__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: contain;
+}
+/* ALINHAMENTO VERTICAL DO MOCKUP COM O CARD */
+
+@media (min-width: 901px) {
+    .mp-desktop-experience__visual img {
+        transform: translateY(13px);
+    }
+}
+/* =========================================================
+   ARCHITECTURE & SECURITY
+   ========================================================= */
+
+.mp-architecture__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+    gap: 16px;
+}
+
+.mp-architecture__main {
+    display: flex;
+    min-height: 330px;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 28px;
+    border: 1px solid rgba(51, 230, 195, 0.24);
+    border-radius: var(--mp-radius-medium);
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(51, 230, 195, 0.08),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.97),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-architecture__icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(51, 230, 195, 0.24);
+    border-radius: 12px;
+    background: rgba(51, 230, 195, 0.04);
+}
+
+.mp-architecture__icon img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.mp-architecture__main-content {
+    min-width: 0;
+}
+
+.mp-architecture__label {
+    margin: 0 0 13px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+}
+
+.mp-architecture__main h3 {
+    max-width: 540px;
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+.mp-architecture__main-content > p:not(.mp-architecture__label) {
+    max-width: 60ch;
+    margin: 16px 0 0;
+    color: var(--mp-text-soft);
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+.mp-architecture__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mp-architecture__stack li {
+    padding: 7px 11px;
+    border: 1px solid var(--mp-border);
+    border-radius: 999px;
+    color: var(--mp-text-soft);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.64rem;
+    line-height: 1;
+}
+
+.mp-architecture__metrics {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.mp-architecture__metric {
+    display: grid;
+    grid-template-columns: 38px 82px minmax(0, 1fr);
+    align-items: center;
+    gap: 13px;
+    min-height: 100px;
+    padding: 17px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.98)
+        );
+}
+
+.mp-architecture__metric > img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.mp-architecture__metric div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mp-architecture__metric strong {
+    color: var(--mp-text);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.mp-architecture__metric span {
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.55rem;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+}
+
+.mp-architecture__metric p {
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.7rem;
+    line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+    .mp-architecture__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-architecture__metrics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: auto;
+    }
+
+    .mp-architecture__metric {
+        grid-template-columns: 34px minmax(0, 1fr);
+    }
+
+    .mp-architecture__metric p {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-architecture__main {
+        min-height: auto;
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .mp-architecture__metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-architecture__metric {
+        grid-template-columns: 38px 82px minmax(0, 1fr);
+    }
+
+    .mp-architecture__metric p {
+        grid-column: auto;
+    }
+}
+/* =========================================================
+   ENGINEERING + TRUST — FIGMA MATCH
+   ========================================================= */
+
+.mp-architecture__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 16px;
+}
+
+.mp-architecture__main {
+    display: block;
+    min-height: 350px;
+    padding: 26px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-architecture__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.mp-architecture__card-header p {
+    margin: 0;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.mp-architecture__card-header img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.mp-architecture__tree {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--mp-text-soft);
+    font-family: "Courier New", Courier, monospace;
+    font-size: clamp(0.7rem, 1vw, 0.82rem);
+    line-height: 1.72;
+    white-space: pre;
+}
+
+.mp-architecture__tree code {
+    font: inherit;
+    color: inherit;
+}
+
+.mp-architecture__metrics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mp-architecture__metric {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+    min-height: 100px;
+    padding: 20px;
+    border: 1px solid var(--mp-border);
+    border-radius: var(--mp-radius-medium);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-architecture__metric > img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.mp-architecture__metric-copy {
+    display: block;
+    min-width: 0;
+}
+
+.mp-architecture__metric-copy span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.62rem;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+}
+
+.mp-architecture__metric-copy p {
+    max-width: 40ch;
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
+.mp-architecture__metric strong {
+    min-width: 74px;
+    color: var(--mp-accent);
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 600;
+    line-height: 1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .mp-architecture__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-architecture__main {
+        min-height: auto;
+    }
+
+    .mp-architecture__metrics {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .mp-architecture__main {
+        padding: 20px;
+    }
+
+    .mp-architecture__tree {
+        overflow-x: auto;
+        font-size: 0.64rem;
+    }
+
+    .mp-architecture__metric {
+        grid-template-columns: 28px minmax(0, 1fr);
+        padding: 18px;
+    }
+
+    .mp-architecture__metric strong {
+        grid-column: 2;
+        min-width: 0;
+        text-align: left;
+    }
+}
+/* =========================================================
+   DEVELOPMENT ROADMAP — FIGMA MATCH
+   ========================================================= */
+
+.mp-roadmap .mp-section__panel {
+    min-height: 600px;
+}
+
+.mp-roadmap__grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mp-roadmap__card {
+    grid-column: span 3;
+    min-height: 168px;
+    padding: 18px;
+    border: 1px solid var(--mp-border);
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-roadmap__card:nth-child(n + 5) {
+    grid-column: span 4;
+}
+
+.mp-roadmap__status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.6rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+
+.mp-roadmap__status span:first-child {
+    width: 26px;
+    flex: 0 0 auto;
+    color: var(--mp-accent);
+    font-size: 0.7rem;
+}
+
+.mp-roadmap__status span:last-child {
+    color: var(--mp-text-soft);
+}
+
+.mp-roadmap__status--complete span:last-child {
+    color: var(--mp-accent);
+}
+
+.mp-roadmap__status--progress span:last-child {
+    color: #62a8ff;
+}
+
+.mp-roadmap__card h3 {
+    margin: 0 0 10px;
+    color: var(--mp-text);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.mp-roadmap__card > p {
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .mp-roadmap .mp-section__panel {
+        min-height: auto;
+    }
+
+    .mp-roadmap__card,
+    .mp-roadmap__card:nth-child(n + 5) {
+        grid-column: span 6;
+    }
+
+    .mp-roadmap__card:last-child {
+        grid-column: 4 / span 6;
+    }
+}
+
+@media (max-width: 560px) {
+    .mp-roadmap__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-roadmap__card,
+    .mp-roadmap__card:nth-child(n + 5),
+    .mp-roadmap__card:last-child {
+        grid-column: auto;
+        min-height: auto;
+    }
+}
+/* =========================================================
+   PROJECT CONTEXT — FIGMA MATCH
+   ========================================================= */
+
+.mp-project-context .mp-section__panel {
+    min-height: 500px;
+}
+
+.mp-context__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mp-context-card {
+    display: flex;
+    min-height: 220px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid var(--mp-border);
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-context-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.mp-context-card__header span {
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+
+.mp-context-card--blue .mp-context-card__header span {
+    color: #62a8ff;
+}
+
+.mp-context-card__header img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.mp-context-card__body {
+    min-height: 105px;
+    margin: 0;
+    color: var(--mp-text);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.mp-context-card__meta {
+    margin: auto 0 0;
+    color: var(--mp-text-soft);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.mp-context__process {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-height: 58px;
+    margin: 12px 0 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--mp-border);
+    border-radius: 12px;
+    background: var(--mp-surface);
+    list-style: none;
+}
+
+.mp-context__process li {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+}
+
+.mp-context__process li + li {
+    border-left: 1px solid var(--mp-border);
+}
+
+.mp-context__process span {
+    width: 20px;
+    flex: 0 0 auto;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.63rem;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.mp-context__process strong {
+    min-width: 0;
+    color: var(--mp-text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .mp-project-context .mp-section__panel {
+        min-height: auto;
+    }
+
+    .mp-context__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-context-card {
+        min-height: auto;
+    }
+
+    .mp-context-card__body {
+        min-height: auto;
+    }
+
+    .mp-context__process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mp-context__process li {
+        min-height: 52px;
+        border-bottom: 1px solid var(--mp-border);
+    }
+
+    .mp-context__process li + li {
+        border-left: 0;
+    }
+
+    .mp-context__process li:nth-child(even) {
+        border-left: 1px solid var(--mp-border);
+    }
+
+    .mp-context__process li:last-child {
+        grid-column: 1 / -1;
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .mp-context__process {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-context__process li,
+    .mp-context__process li:nth-child(even) {
+        border-left: 0;
+    }
+
+    .mp-context__process li:last-child {
+        grid-column: auto;
+    }
+}
+/* =========================================================
+   PRODUCT THINKING — FIGMA MATCH
+   ========================================================= */
+
+.mp-product-thinking .mp-section__panel {
+    min-height: 600px;
+}
+
+.mp-thinking__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mp-thinking-card {
+    min-height: 204px;
+    padding: 22px;
+    border: 1px solid var(--mp-border);
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 33, 0.96),
+            rgba(8, 13, 19, 0.99)
+        );
+}
+
+.mp-thinking-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.mp-thinking-card__header span {
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+}
+
+.mp-thinking-card--blue .mp-thinking-card__header span {
+    color: #62a8ff;
+}
+
+.mp-thinking-card__header img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.mp-thinking-card h3 {
+    margin: 0 0 12px;
+    color: var(--mp-text);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.mp-thinking-card > p {
+    max-width: 64ch;
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.52;
+}
+
+@media (max-width: 800px) {
+    .mp-product-thinking .mp-section__panel {
+        min-height: auto;
+    }
+
+    .mp-thinking__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-thinking-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .mp-thinking-card {
+        padding: 20px;
+    }
+
+    .mp-thinking-card__header img {
+        width: 26px;
+        height: 26px;
+    }
+}
+/* =========================================================
+   MORE PROJECTS — FIGMA MATCH
+   ========================================================= */
+
+.mp-more-projects {
+    padding: 0 24px 48px;
+}
+
+.mp-more-projects__header {
+    margin-bottom: 28px;
+}
+
+.mp-more-projects__header > p {
+    margin: 0 0 12px;
+    color: #54d9c2;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.mp-more-projects__header h2 {
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.mp-more-projects__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.mp-more-projects__idea,
+.mp-more-projects__project {
+    min-width: 0;
+    min-height: 455px;
+    overflow: hidden;
+    border: 1px solid #dedede;
+    border-radius: 17px;
+    background: #ffffff;
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.07),
+        0 5px 12px rgba(0, 0, 0, 0.06),
+        0 16px 32px rgba(0, 0, 0, 0.04);
+}
+
+.mp-more-projects__idea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mp-more-projects__idea-content {
+    display: flex;
+    max-width: 360px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    text-align: center;
+}
+
+.mp-more-projects__idea-icon {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.07),
+        0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.mp-more-projects__idea-icon img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.mp-more-projects__idea-content p {
+    margin: 0;
+    color: #000000;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+.mp-more-projects__idea-content p span {
+    color: #545454;
+}
+
+.mp-more-projects__project {
+    display: flex;
+    color: inherit;
+    flex-direction: column;
+    text-decoration: none;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.mp-more-projects__project:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 22px 44px rgba(0, 0, 0, 0.08);
+}
+
+.mp-more-projects__thumbnail {
+    min-height: 0;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+.mp-more-projects__thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mp-more-projects__details {
+    display: flex;
+    min-height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 13px 18px;
+    background: #ffffff;
+}
+
+.mp-more-projects__details h3 {
+    margin: 0 0 3px;
+    color: #000000;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.mp-more-projects__details p {
+    margin: 0;
+    color: #545454;
+    font-size: 0.76rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.mp-more-projects__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #545454;
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.mp-more-projects__action > span {
+    font-size: 1rem;
+}
+
+.mp-more-projects__all {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    margin: 28px auto 0;
+    color: var(--mp-text-soft);
+    font-size: 1.06rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.mp-more-projects__all:hover {
+    color: var(--mp-accent);
+}
+
+@media (max-width: 800px) {
+    .mp-more-projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-more-projects__idea,
+    .mp-more-projects__project {
+        min-height: 390px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mp-more-projects {
+        padding: 0 16px 32px;
+    }
+
+    .mp-more-projects__idea,
+    .mp-more-projects__project {
+        min-height: 320px;
+    }
+
+    .mp-more-projects__details {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-more-projects__project {
+        transition: none;
+    }
+}
+/* =========================================================
+   MORE PROJECTS — COMPACT PROJECT CARDS
+   ========================================================= */
+
+.mp-more-projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.mp-more-projects__project {
+    min-height: 0;
+    height: 360px;
+}
+
+.mp-more-projects__thumbnail {
+    height: 288px;
+    flex: 0 0 288px;
+    border-radius: 17px 17px 0 0;
+    background: #0b0b0b;
+}
+
+.mp-more-projects__thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mp-more-projects__project--restaurant
+.mp-more-projects__thumbnail img {
+    object-position: center;
+}
+
+.mp-more-projects__project--devconnect
+.mp-more-projects__thumbnail img {
+    object-position: center top;
+}
+
+.mp-more-projects__details {
+    min-height: 72px;
+    flex: 0 0 72px;
+}
+
+@media (max-width: 800px) {
+    .mp-more-projects__project {
+        min-height: 0;
+        height: 340px;
+    }
+
+    .mp-more-projects__thumbnail {
+        height: 268px;
+        flex-basis: 268px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mp-more-projects__project {
+        min-height: 0;
+        height: auto;
+    }
+
+    .mp-more-projects__thumbnail {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        flex-basis: auto;
+    }
+
+    .mp-more-projects__details {
+        min-height: 88px;
+        flex-basis: auto;
+    }
+}
+/* =========================================================
+   MORE PROJECTS — HOVER OVERLAY
+   ========================================================= */
+
+.mp-more-projects__project {
+    position: relative;
+    isolation: isolate;
+    background: #071019;
+}
+
+.mp-more-projects__thumbnail {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    border-radius: 17px;
+}
+
+.mp-more-projects__thumbnail img {
+    transition:
+        transform 450ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter 300ms ease;
+}
+
+.mp-more-projects__details {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 96px;
+    padding: 28px 24px 20px;
+    border-radius: 0 0 16px 16px;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 9, 14, 0) 0%,
+            rgba(4, 9, 14, 0.88) 35%,
+            rgba(4, 9, 14, 0.98) 100%
+        );
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+        opacity 220ms ease,
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+}
+
+.mp-more-projects__details h3 {
+    color: #ffffff;
+}
+
+.mp-more-projects__details p {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.mp-more-projects__action {
+    color: #ffffff;
+}
+
+.mp-more-projects__action > span {
+    color: var(--mp-accent);
+}
+
+.mp-more-projects__project:hover .mp-more-projects__details,
+.mp-more-projects__project:focus-visible .mp-more-projects__details {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mp-more-projects__project:hover .mp-more-projects__thumbnail img,
+.mp-more-projects__project:focus-visible .mp-more-projects__thumbnail img {
+    transform: scale(1.035);
+    filter: brightness(0.72);
+}
+
+.mp-more-projects__project:focus-visible {
+    outline: 2px solid var(--mp-accent);
+    outline-offset: 4px;
+}
+
+@media (hover: none), (max-width: 800px) {
+    .mp-more-projects__details {
+        min-height: 88px;
+        padding: 24px 18px 16px;
+        opacity: 1;
+        transform: none;
+    }
+
+    .mp-more-projects__thumbnail img {
+        filter: brightness(0.78);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-more-projects__thumbnail img,
+    .mp-more-projects__details {
+        transition: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT FINAL CTA — FIGMA MATCH
+   ========================================================= */
+
+.mp-final-cta {
+    padding: 0 24px 48px;
+}
+
+.mp-final-cta__panel {
+    display: flex;
+    min-height: 280px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 48px 40px;
+    border: 1px solid #223047;
+    border-radius: 24px;
+    background:
+        radial-gradient(
+            circle at 50% 120%,
+            rgba(51, 230, 195, 0.07),
+            transparent 44%
+        ),
+        #070a0f;
+    text-align: center;
+}
+
+.mp-final-cta__eyebrow {
+    margin: 0;
+    color: var(--mp-accent);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.mp-final-cta__panel h2 {
+    max-width: 820px;
+    margin: 0;
+    color: var(--mp-text);
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+}
+
+.mp-final-cta__description {
+    max-width: 690px;
+    margin: 0;
+    color: var(--mp-text-soft);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+.mp-final-cta__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.mp-final-cta__button {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 11px 20px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease;
+}
+
+.mp-final-cta__button:hover {
+    transform: translateY(-2px);
+}
+
+.mp-final-cta__button--primary {
+    background: var(--mp-accent);
+    color: #03120f;
+}
+
+.mp-final-cta__button--primary:hover {
+    background: #66f1d7;
+}
+
+.mp-final-cta__button--secondary {
+    border-color: var(--mp-border);
+    background: #0c131c;
+    color: var(--mp-text);
+}
+
+.mp-final-cta__button--secondary:hover {
+    border-color: rgba(51, 230, 195, 0.42);
+}
+
+@media (max-width: 520px) {
+    .mp-final-cta {
+        padding: 0 16px 32px;
+    }
+
+    .mp-final-cta__panel {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .mp-final-cta__actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mp-final-cta__button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-final-cta__button {
+        transition: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT — PORTFOLIO DEV DESIGN SYSTEM
+   Somente identidade visual: assets e conteúdo preservados
+   ========================================================= */
+
+.mp-case {
+    --mp-background: #0a0a0c;
+    --mp-surface: #111216;
+    --mp-surface-soft: #18191f;
+    --mp-border: #2a2b31;
+    --mp-border-strong: #3a3b43;
+    --mp-text: #f2eee7;
+    --mp-text-soft: #a7a4ad;
+    --mp-text-muted: #8f8d95;
+    --mp-accent: #a970ff;
+    --mp-accent-blue: #ff765d;
+    --mp-accent-lime: #d7ff64;
+    --mp-status-success: #45d483;
+    --mp-radius-large: 3px;
+    --mp-radius-medium: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(169, 112, 255, 0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(169, 112, 255, 0.018) 1px,
+            transparent 1px
+        ),
+        var(--mp-background);
+    background-size: 88px 88px;
+    color: var(--mp-text);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.mp-case .mp-shell {
+    width: min(1240px, 100%);
+}
+
+.mp-case .mp-panel,
+.mp-case .mp-content-card,
+.mp-case .mp-feature-card,
+.mp-case .mp-roadmap__card,
+.mp-case .mp-thinking-card,
+.mp-case .mp-desktop-experience__content,
+.mp-case .mp-mobile-showcase__demo,
+.mp-case .mp-more-projects__project,
+.mp-case .mp-final-cta__panel {
+    border-color: var(--mp-border);
+    border-radius: var(--mp-radius-large);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(24, 25, 31, 0.96),
+            rgba(13, 14, 18, 0.98)
+        );
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.32),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.mp-case .mp-hero__title,
+.mp-case .mp-section__title,
+.mp-case .mp-desktop-experience__content h2,
+.mp-case .mp-final-cta__panel h2,
+.mp-case .mp-more-projects__header h2 {
+    color: var(--mp-text);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.mp-case .mp-hero__title {
+    font-size: clamp(4.5rem, 7vw, 7rem);
+    line-height: 0.84;
+}
+
+.mp-case .mp-section__title,
+.mp-case .mp-desktop-experience__content h2,
+.mp-case .mp-final-cta__panel h2 {
+    font-size: clamp(2.8rem, 5vw, 4.75rem);
+    line-height: 0.93;
+}
+
+.mp-case .mp-more-projects__header h2 {
+    font-size: clamp(3.4rem, 6vw, 5.8rem);
+    line-height: 0.9;
+}
+
+.mp-case .mp-terminal-label,
+.mp-case .mp-section__eyebrow,
+.mp-case .mp-final-cta__eyebrow,
+.mp-case .mp-more-projects__header > p,
+.mp-case .mp-content-card__header p,
+.mp-case .mp-feature-card__top,
+.mp-case .mp-roadmap__status,
+.mp-case .mp-thinking-card__header span {
+    color: var(--mp-accent);
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.mp-case .mp-hero__subtitle,
+.mp-case .mp-hero__summary,
+.mp-case .mp-content-card__body,
+.mp-case .mp-feature-card p,
+.mp-case .mp-roadmap__card > p,
+.mp-case .mp-thinking-card > p,
+.mp-case .mp-desktop-experience__body,
+.mp-case .mp-final-cta__description {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.mp-case .mp-feature-card h3,
+.mp-case .mp-roadmap__card h3,
+.mp-case .mp-thinking-card h3,
+.mp-case .mp-more-projects__details h3 {
+    color: var(--mp-text);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+}
+
+.mp-case .mp-button,
+.mp-case .mp-final-cta__button {
+    border-radius: 2px;
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.mp-case .mp-button--primary,
+.mp-case .mp-final-cta__button--primary {
+    background: var(--mp-accent-coral, #ff765d);
+    color: #0a0a0c;
+}
+
+.mp-case .mp-button--primary:hover,
+.mp-case .mp-final-cta__button--primary:hover {
+    background: #ff8b75;
+}
+
+.mp-case .mp-back:hover,
+.mp-case .mp-more-projects__all:hover {
+    color: var(--mp-accent);
+}
+
+.mp-case .mp-back:focus-visible,
+.mp-case .mp-button:focus-visible,
+.mp-case .mp-final-cta__button:focus-visible,
+.mp-case .mp-more-projects__project:focus-visible {
+    outline-color: var(--mp-accent);
+}
+
+.mp-case .mp-tech-list li {
+    border-color: var(--mp-border);
+    border-radius: 2px;
+    background: var(--mp-bg-surface, #111216);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.mp-case .mp-feature-card:hover,
+.mp-case .mp-roadmap__card:hover,
+.mp-case .mp-thinking-card:hover {
+    border-color: rgba(169, 112, 255, 0.58);
+}
+
+.mp-case ::selection {
+    background: var(--mp-accent);
+    color: #0a0a0c;
+}
+
+@media (max-width: 640px) {
+    .mp-case .mp-hero__title {
+        font-size: clamp(3.5rem, 17vw, 5rem);
+    }
+
+    .mp-case .mp-section__title,
+    .mp-case .mp-desktop-experience__content h2,
+    .mp-case .mp-final-cta__panel h2 {
+        font-size: clamp(2.6rem, 13vw, 4rem);
+    }
+}
+/* =========================================================
+   MONEYPILOT HERO — DEV PORTFOLIO MATCH
+   Assets originais preservados
+   ========================================================= */
+
+body {
+    background: #0a0a0c;
+}
+
+/* Navegação Dev */
+
+.site-header {
+    min-height: 112px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #2a2b31;
+    background: #0a0a0c;
+}
+
+.site-header .navigation {
+    width: min(1080px, calc(100% - 48px));
+    min-height: 64px;
+    margin-inline: auto;
+    padding: 7px 10px;
+    border: 1px solid #2a2b31;
+    border-radius: 6px;
+    background: rgba(17, 18, 22, 0.96);
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.site-header .navigation__brand {
+    color: #f2eee7;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.site-header .navigation__brand img {
+    border: 1px solid #2a2b31;
+    border-radius: 3px;
+}
+
+.site-header .navigation__menu a {
+    color: #8f8d95;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.site-header .navigation__menu a:hover,
+.site-header .navigation__menu a:focus-visible {
+    color: #a970ff;
+}
+
+.site-header .language-switcher__trigger {
+    border: 1px solid #2a2b31;
+    border-radius: 3px;
+    background: #18191f;
+    color: #f2eee7;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.site-header .language-switcher__menu {
+    border-color: #2a2b31;
+    border-radius: 3px;
+    background: #111216;
+    color: #f2eee7;
+}
+
+.site-header .navigation__contact {
+    min-height: 46px;
+    padding-inline: 22px;
+    border-radius: 3px;
+    background: #ff765d;
+    color: #0a0a0c;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.site-header .navigation__contact:hover {
+    background: #ff8b75;
+}
+
+/* Hero Dev */
+
+.mp-case .mp-hero {
+    padding: 38px 24px 64px;
+    border-bottom: 1px solid var(--mp-border);
+}
+
+.mp-case .mp-back {
+    margin-bottom: 24px;
+    color: var(--mp-text-muted);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.mp-case .mp-back:hover {
+    color: var(--mp-accent);
+}
+
+.mp-case .mp-hero__panel {
+    padding: 36px;
+    border-radius: 3px;
+}
+
+.mp-case .mp-hero__grid {
+    grid-template-columns:
+        minmax(360px, 0.88fr)
+        minmax(500px, 1.12fr);
+    gap: 40px;
+}
+
+.mp-case .mp-terminal-label {
+    margin-bottom: 22px;
+    color: var(--mp-status-success);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.mp-case .mp-hero__title {
+    color: var(--mp-text);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(5rem, 8vw, 8rem);
+    font-weight: 800;
+    line-height: 0.78;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+}
+
+.mp-case .mp-hero__subtitle {
+    margin-top: 30px;
+    color: var(--mp-accent);
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(1rem, 1.6vw, 1.35rem);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.mp-case .mp-hero__summary {
+    margin-top: 18px;
+    color: var(--mp-text-muted);
+    font-size: 0.84rem;
+    line-height: 1.75;
+}
+
+.mp-case .mp-tech-list {
+    gap: 8px;
+    margin-top: 26px;
+}
+
+.mp-case .mp-tech-list li {
+    min-height: 34px;
+    padding: 7px 10px;
+    border: 1px solid var(--mp-border);
+    border-radius: 2px;
+    background: #111216;
+    color: var(--mp-text-soft);
+    font-size: 0.65rem;
+}
+
+.mp-case .mp-tech-list li:hover {
+    border-color: var(--mp-accent);
+    color: var(--mp-text);
+}
+
+.mp-case .mp-hero__actions {
+    margin-top: 24px;
+}
+
+.mp-case .mp-button {
+    min-height: 46px;
+    padding: 12px 18px;
+    border-radius: 2px;
+}
+
+.mp-case .mp-button--primary {
+    background: #ff765d;
+    color: #0a0a0c;
+}
+
+.mp-case .mp-button--primary:hover {
+    background: #ff8b75;
+}
+
+.mp-case .mp-status {
+    border-color: var(--mp-border);
+    border-radius: 2px;
+    background: #111216;
+    color: var(--mp-text-soft);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+}
+
+.mp-case .mp-status__dot {
+    background: var(--mp-status-success);
+    box-shadow: 0 0 12px rgba(69, 212, 131, 0.65);
+}
+
+/* Janela do vídeo */
+
+.mp-case .mp-preview {
+    border: 1px solid var(--mp-border);
+    border-radius: 3px;
+    background: #111216;
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.42);
+}
+
+.mp-case .mp-preview__bar {
+    min-height: 46px;
+    border-bottom-color: var(--mp-border);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.mp-case .mp-preview__bar p,
+.mp-case .mp-preview__caption {
+    color: var(--mp-text-muted);
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.05em;
+}
+
+.mp-case .mp-preview__caption {
+    border-top: 1px solid var(--mp-border);
+    background: #0d0e12;
+}
+
+/* Métricas */
+
+.mp-case .mp-metrics {
+    margin-top: 24px;
+    border-color: var(--mp-border);
+    border-radius: 2px;
+    background: #0d0e12;
+}
+
+.mp-case .mp-metric {
+    border-color: var(--mp-border);
+    background: transparent;
+}
+
+.mp-case .mp-metric dt {
+    color: var(--mp-accent);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.07em;
+}
+
+.mp-case .mp-metric dd {
+    color: var(--mp-text);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    line-height: 1.55;
+}
+
+@media (min-width: 901px) {
+    .site-header .navigation__toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mp-case .mp-hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-case .mp-preview {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .site-header {
+        min-height: 88px;
+        padding: 12px 16px;
+    }
+
+    .site-header .navigation {
+        width: 100%;
+    }
+
+    .site-header .navigation__toggle {
+        border-color: #2a2b31;
+        border-radius: 3px;
+        background: #18191f;
+    }
+
+    .site-header .navigation__menu {
+        border-color: #2a2b31;
+        border-radius: 3px;
+        background: #111216;
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-case .mp-hero {
+        padding: 24px 16px 40px;
+    }
+
+    .mp-case .mp-hero__panel {
+        padding: 24px 18px;
+    }
+
+    .mp-case .mp-hero__title {
+        font-size: clamp(4rem, 24vw, 6rem);
+    }
+
+    .mp-case .mp-metrics {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — TYPOGRAPHY BALANCE
+   ========================================================= */
+
+.mp-case .mp-hero__title {
+    font-size: clamp(4.75rem, 6.5vw, 7rem);
+    line-height: 0.82;
+}
+
+.mp-case .mp-section__title {
+    max-width: 1050px;
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+    line-height: 0.96;
+    text-wrap: balance;
+}
+
+.mp-case .mp-desktop-experience__content h2 {
+    font-size: clamp(2.75rem, 3.5vw, 3.6rem);
+    line-height: 0.96;
+    text-wrap: balance;
+}
+
+.mp-case .mp-more-projects__header h2 {
+    font-size: clamp(3.75rem, 5vw, 5.25rem);
+    line-height: 0.9;
+}
+
+.mp-case .mp-final-cta__panel h2 {
+    max-width: 850px;
+    font-size: clamp(3.25rem, 4.6vw, 4.75rem);
+    line-height: 0.94;
+    text-wrap: balance;
+}
+
+.mp-case .mp-section__header {
+    margin-bottom: 32px;
+}
+
+.mp-case .mp-section__eyebrow,
+.mp-case .mp-terminal-label,
+.mp-case .mp-final-cta__eyebrow,
+.mp-case .mp-more-projects__header > p {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+    .mp-case .mp-section__title {
+        font-size: clamp(2.8rem, 8vw, 4rem);
+    }
+
+    .mp-case .mp-desktop-experience__content h2 {
+        font-size: clamp(2.6rem, 8vw, 3.5rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-case .mp-hero__title {
+        font-size: clamp(4rem, 22vw, 5.5rem);
+    }
+
+    .mp-case .mp-section__title,
+    .mp-case .mp-desktop-experience__content h2,
+    .mp-case .mp-final-cta__panel h2 {
+        font-size: clamp(2.6rem, 12vw, 3.6rem);
+        line-height: 0.98;
+    }
+
+    .mp-case .mp-more-projects__header h2 {
+        font-size: clamp(3.2rem, 15vw, 4.5rem);
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — COMPACT TITLES
+   ========================================================= */
+
+.mp-case .mp-hero__title {
+    font-size: clamp(4rem, 5.5vw, 5.8rem);
+    line-height: 0.88;
+}
+
+.mp-case .mp-section__title {
+    max-width: 950px;
+    font-size: clamp(2.6rem, 3.5vw, 3.75rem);
+    line-height: 1;
+}
+
+.mp-case .mp-desktop-experience__content h2 {
+    font-size: clamp(2.3rem, 2.8vw, 3rem);
+    line-height: 1;
+}
+
+.mp-case .mp-more-projects__header h2 {
+    font-size: clamp(3rem, 4vw, 4.25rem);
+    line-height: 0.95;
+}
+
+.mp-case .mp-final-cta__panel h2 {
+    max-width: 760px;
+    font-size: clamp(2.75rem, 3.6vw, 3.9rem);
+    line-height: 1;
+}
+
+@media (max-width: 900px) {
+    .mp-case .mp-hero__title {
+        font-size: clamp(3.8rem, 11vw, 5rem);
+    }
+
+    .mp-case .mp-section__title {
+        font-size: clamp(2.5rem, 7vw, 3.4rem);
+    }
+
+    .mp-case .mp-desktop-experience__content h2 {
+        font-size: clamp(2.3rem, 7vw, 3rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .mp-case .mp-hero__title {
+        font-size: clamp(3.5rem, 18vw, 4.8rem);
+    }
+
+    .mp-case .mp-section__title,
+    .mp-case .mp-desktop-experience__content h2,
+    .mp-case .mp-final-cta__panel h2 {
+        font-size: clamp(2.2rem, 10vw, 3rem);
+        line-height: 1.02;
+    }
+
+    .mp-case .mp-more-projects__header h2 {
+        font-size: clamp(2.8rem, 13vw, 3.8rem);
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — ICONS AND RADII
+   ========================================================= */
+
+/* Todos os ícones do case study usam o mesmo roxo */
+
+.mp-case img[src*="assets/icons/"] {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(52%)
+        sepia(83%)
+        saturate(3286%)
+        hue-rotate(235deg)
+        brightness(101%)
+        contrast(101%);
+}
+
+/* Cards com cantos discretos, seguindo o tema Dev */
+
+.mp-case .mp-panel,
+.mp-case .mp-content-card,
+.mp-case .mp-feature-card,
+.mp-case .mp-roadmap__card,
+.mp-case .mp-thinking-card,
+.mp-case .mp-desktop-experience__content,
+.mp-case .mp-mobile-showcase__demo,
+.mp-case .mp-more-projects__project,
+.mp-case .mp-final-cta__panel,
+.mp-case .mp-preview,
+.mp-case .mp-metrics,
+.mp-case .mp-status,
+.mp-case .mp-tech-list li {
+    border-radius: 3px;
+}
+
+/* Imagens, vídeos e suas molduras */
+
+.mp-case .mp-preview__media,
+.mp-case .mp-preview__media video,
+.mp-case .mp-preview__media img,
+.mp-case .mp-mobile-showcase__demo,
+.mp-case .mp-mobile-showcase__demo img,
+.mp-case .mp-mobile-showcase__demo video,
+.mp-case .mp-desktop-experience__media,
+.mp-case .mp-desktop-experience__media img,
+.mp-case .mp-desktop-experience__media video,
+.mp-case .mp-more-projects__thumbnail,
+.mp-case .mp-more-projects__thumbnail img {
+    border-radius: 2px;
+}
+
+/* Overlay dos projetos acompanha o novo raio */
+
+.mp-case .mp-more-projects__details {
+    border-radius: 0 0 2px 2px;
+}
+
+/* Containers internos não criam cantos arredondados extras */
+
+.mp-case .mp-preview__bar {
+    border-radius: 2px 2px 0 0;
+}
+
+.mp-case .mp-preview__caption {
+    border-radius: 0 0 2px 2px;
+}
+/* =========================================================
+   MONEYPILOT DEV — SQUARE CARDS FIX
+   ========================================================= */
+
+.mp-case .mp-panel,
+.mp-case article,
+.mp-case [class*="card"],
+.mp-case [class*="panel"],
+.mp-case .mp-metrics,
+.mp-case .mp-metric,
+.mp-case .mp-status,
+.mp-case .mp-tech-list li,
+.mp-case .mp-preview,
+.mp-case .mp-mobile-showcase__demo,
+.mp-case .mp-desktop-experience__content,
+.mp-case .mp-more-projects__project,
+.mp-case .mp-more-projects__thumbnail,
+.mp-case .mp-final-cta__panel {
+    border-radius: 0 !important;
+}
+
+/* Imagens e vídeos acompanham o formato reto */
+
+.mp-case .mp-preview__media,
+.mp-case .mp-preview__media img,
+.mp-case .mp-preview__media video,
+.mp-case .mp-mobile-showcase__demo img,
+.mp-case .mp-mobile-showcase__demo video,
+.mp-case .mp-desktop-experience__media,
+.mp-case .mp-desktop-experience__media img,
+.mp-case .mp-desktop-experience__media video,
+.mp-case .mp-more-projects__thumbnail img {
+    border-radius: 0 !important;
+}
+
+/* Cabeçalho, legenda e overlay sem cantos arredondados */
+
+.mp-case .mp-preview__bar,
+.mp-case .mp-preview__caption,
+.mp-case .mp-more-projects__details {
+    border-radius: 0 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — PROCESS BAR SQUARE FIX
+   ========================================================= */
+
+.mp-case [class*="process"],
+.mp-case [class*="workflow"],
+.mp-case [class*="journey"],
+.mp-case [class*="steps"],
+.mp-case .mp-context__process,
+.mp-case .mp-project-process {
+    border-radius: 0 !important;
+}
+
+/* Garante que as etapas internas também fiquem retas */
+
+.mp-case [class*="process"] > *,
+.mp-case [class*="workflow"] > *,
+.mp-case [class*="journey"] > *,
+.mp-case [class*="steps"] > *,
+.mp-case .mp-context__process > *,
+.mp-case .mp-project-process > * {
+    border-radius: 0 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — UNIFIED BLACK CARDS
+   ========================================================= */
+
+/* Fundo preto uniforme para todos os cards */
+
+.mp-case article,
+.mp-case [class*="card"],
+.mp-case .mp-content-card,
+.mp-case .mp-feature-card,
+.mp-case .mp-roadmap__card,
+.mp-case .mp-thinking-card,
+.mp-case .mp-metric,
+.mp-case .mp-preview,
+.mp-case .mp-desktop-experience__content,
+.mp-case .mp-mobile-showcase__demo,
+.mp-case .mp-more-projects__project,
+.mp-case [class*="architecture"],
+.mp-case [class*="engineering"],
+.mp-case [class*="test"],
+.mp-case [class*="security"] {
+    background-color: #111216 !important;
+    background-image: none !important;
+}
+
+/* Painéis principais continuam pretos, sem tonalidade azul */
+
+.mp-case .mp-panel,
+.mp-case .mp-section__panel {
+    background-color: #0d0e12 !important;
+    background-image: none !important;
+}
+
+/* Mantém as bordas visíveis no fundo preto */
+
+.mp-case article,
+.mp-case [class*="card"],
+.mp-case [class*="architecture"],
+.mp-case [class*="engineering"],
+.mp-case [class*="test"],
+.mp-case [class*="security"] {
+    border-color: #2a2b31 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — PANEL AND CARD CONTRAST
+   ========================================================= */
+
+/* Fundo grande das seções */
+
+.mp-case .mp-section__panel {
+    background: #0a0a0c !important;
+    background-image: none !important;
+}
+
+/* Cards permanecem no preto levemente mais claro */
+
+.mp-case article,
+.mp-case [class*="card"],
+.mp-case .mp-content-card,
+.mp-case .mp-feature-card,
+.mp-case .mp-roadmap__card,
+.mp-case .mp-thinking-card,
+.mp-case .mp-metric,
+.mp-case [class*="architecture"],
+.mp-case [class*="test"],
+.mp-case [class*="security"] {
+    background: #111216 !important;
+    background-image: none !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — TRANSPARENT GRID GAPS
+   ========================================================= */
+
+/* Containers das grades não recebem cor própria */
+
+.mp-case .mp-engineering__grid,
+.mp-case .mp-engineering__stats,
+.mp-case .mp-context__grid,
+.mp-case .mp-roadmap__grid,
+.mp-case .mp-thinking__grid,
+.mp-case .mp-feature-grid,
+.mp-case [class*="engineering"][class*="grid"],
+.mp-case [class*="engineering"][class*="stats"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* O espaço dos gaps revela o preto principal */
+
+.mp-case .mp-section__panel {
+    background-color: #0a0a0c !important;
+}
+
+/* Somente os cards permanecem mais claros */
+
+.mp-case article,
+.mp-case .mp-content-card,
+.mp-case .mp-feature-card,
+.mp-case .mp-roadmap__card,
+.mp-case .mp-thinking-card,
+.mp-case .mp-metric {
+    background-color: #111216 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — ARCHITECTURE GAP FINAL FIX
+   ========================================================= */
+
+/* Containers responsáveis pelos espaços entre os cards */
+
+.mp-case .mp-architecture__grid,
+.mp-case .mp-architecture__metrics {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Somente os cards recebem o preto levemente mais claro */
+
+.mp-case .mp-architecture__main,
+.mp-case .mp-architecture__metric {
+    background: #111216 !important;
+    background-color: #111216 !important;
+    background-image: none !important;
+}
+
+/* O painel atrás dos cards permanece mais escuro */
+
+.mp-case .mp-architecture .mp-section__panel,
+.mp-case section[aria-labelledby="mp-architecture-title"] .mp-section__panel {
+    background: #0a0a0c !important;
+    background-color: #0a0a0c !important;
+    background-image: none !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — MAIN BACKGROUND AND ARCHITECTURE HOVER
+   ========================================================= */
+
+/* Restaura o preto principal da página */
+
+html,
+body,
+.mp-case,
+.mp-case .mp-section,
+.mp-case .mp-shell,
+.mp-case .mp-section__panel {
+    background-color: #0a0a0c !important;
+    background-image: none !important;
+}
+
+/* Os containers de grid continuam transparentes */
+
+.mp-case .mp-architecture__grid,
+.mp-case .mp-architecture__metrics {
+    background: transparent !important;
+}
+
+/* Cards de arquitetura */
+
+.mp-case .mp-architecture__main,
+.mp-case .mp-architecture__metric {
+    position: relative;
+    z-index: 1;
+    background: #111216 !important;
+    border-color: #2a2b31 !important;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+/* Movimento ao passar o mouse */
+
+.mp-case .mp-architecture__main:hover,
+.mp-case .mp-architecture__metric:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Acessibilidade pelo teclado */
+
+.mp-case .mp-architecture__main:focus-within,
+.mp-case .mp-architecture__metric:focus-within {
+    transform: translateY(-7px) scale(1.015);
+    border-color: #a970ff !important;
+}
+
+/* Remove movimento quando solicitado pelo sistema */
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-architecture__main,
+    .mp-case .mp-architecture__metric {
+        transition: none;
+    }
+
+    .mp-case .mp-architecture__main:hover,
+    .mp-case .mp-architecture__metric:hover,
+    .mp-case .mp-architecture__main:focus-within,
+    .mp-case .mp-architecture__metric:focus-within {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — STRATEGY ICONS AND HOVER
+   ========================================================= */
+
+/* Corrige os ícones Problem e Solution */
+
+.mp-case .mp-content-card .mp-card-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(52%)
+        sepia(83%)
+        saturate(3286%)
+        hue-rotate(235deg)
+        brightness(101%)
+        contrast(101%);
+}
+
+/* Mesmo hover utilizado nos cards de arquitetura */
+
+.mp-case .mp-content-card {
+    position: relative;
+    z-index: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+.mp-case .mp-content-card:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Pequeno movimento complementar no ícone */
+
+.mp-case .mp-content-card .mp-card-icon {
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mp-case .mp-content-card:hover .mp-card-icon {
+    transform: scale(1.12) rotate(4deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-content-card,
+    .mp-case .mp-content-card .mp-card-icon {
+        transition: none;
+    }
+
+    .mp-case .mp-content-card:hover,
+    .mp-case .mp-content-card:hover .mp-card-icon {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — FEATURE CARDS ICONS AND HOVER
+   ========================================================= */
+
+/* Remove a moldura que envolve os ícones */
+
+.mp-case .mp-feature-card__top > span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Padroniza o tamanho dos ícones */
+
+.mp-case .mp-feature-card__top img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Mesmo hover dos outros cards */
+
+.mp-case .mp-feature-card {
+    position: relative;
+    z-index: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+.mp-case .mp-feature-card:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Movimento complementar dos ícones */
+
+.mp-case .mp-feature-card:hover .mp-feature-card__top img {
+    transform: scale(1.14) rotate(5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-feature-card,
+    .mp-case .mp-feature-card__top img {
+        transition: none;
+    }
+
+    .mp-case .mp-feature-card:hover,
+    .mp-case .mp-feature-card:hover .mp-feature-card__top img {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — ROADMAP TITLES AND HOVER
+   ========================================================= */
+
+/* Todos os títulos dos cards ficam brancos */
+
+.mp-case .mp-roadmap__card h3,
+.mp-case .mp-roadmap__status span:last-child,
+.mp-case .mp-roadmap__status--complete span:last-child,
+.mp-case .mp-roadmap__status--progress span:last-child {
+    color: #f2eee7 !important;
+}
+
+/* Os números permanecem roxos */
+
+.mp-case .mp-roadmap__status span:first-child {
+    color: #a970ff !important;
+}
+
+/* Mesmo hover das seções anteriores */
+
+.mp-case .mp-roadmap__card {
+    position: relative;
+    z-index: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+.mp-case .mp-roadmap__card:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Número e status se movimentam discretamente */
+
+.mp-case .mp-roadmap__status {
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+    transform-origin: left center;
+}
+
+.mp-case .mp-roadmap__card:hover .mp-roadmap__status {
+    transform: translateX(5px) scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-roadmap__card,
+    .mp-case .mp-roadmap__status {
+        transition: none;
+    }
+
+    .mp-case .mp-roadmap__card:hover,
+    .mp-case .mp-roadmap__card:hover .mp-roadmap__status {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — CONTEXT GAP AND HOVER
+   ========================================================= */
+
+/* Os containers revelam o preto do painel principal */
+
+.mp-case .mp-context__cards,
+.mp-case .mp-context__process {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Somente os cards recebem o preto levemente mais claro */
+
+.mp-case .mp-context-card {
+    position: relative;
+    z-index: 1;
+    background: #111216 !important;
+    background-image: none !important;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+/* Hover dos cards */
+
+.mp-case .mp-context-card:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Ícones sem moldura */
+
+.mp-case .mp-context-card__header img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    object-fit: contain;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Movimento dos ícones */
+
+.mp-case .mp-context-card:hover .mp-context-card__header img {
+    transform: scale(1.14) rotate(5deg);
+}
+
+/* Cada etapa inferior mantém a cor dos cards */
+
+.mp-case .mp-context__process li {
+    background: #111216 !important;
+}
+
+/* Número roxo e título branco */
+
+.mp-case .mp-context__process li span {
+    color: #a970ff !important;
+}
+
+.mp-case .mp-context__process li strong {
+    color: #f2eee7 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-context-card,
+    .mp-case .mp-context-card__header img {
+        transition: none;
+    }
+
+    .mp-case .mp-context-card:hover,
+    .mp-case .mp-context-card:hover .mp-context-card__header img {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — THINKING CARDS HOVER
+   ========================================================= */
+
+.mp-case .mp-thinking__grid {
+    background: transparent !important;
+}
+
+/* Movimento dos cards */
+
+.mp-case .mp-thinking-card {
+    position: relative;
+    z-index: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+.mp-case .mp-thinking-card:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Ícones sem moldura */
+
+.mp-case .mp-thinking-card__header img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    object-fit: contain;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Movimento complementar dos ícones */
+
+.mp-case .mp-thinking-card:hover .mp-thinking-card__header img {
+    transform: scale(1.14) rotate(5deg);
+}
+
+/* Títulos permanecem brancos */
+
+.mp-case .mp-thinking-card h3 {
+    color: #f2eee7 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-thinking-card,
+    .mp-case .mp-thinking-card__header img {
+        transition: none;
+    }
+
+    .mp-case .mp-thinking-card:hover,
+    .mp-case .mp-thinking-card:hover .mp-thinking-card__header img {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — EXPERIENCE FEATURES GAP AND HOVER
+   ========================================================= */
+
+/* As duas colunas permanecem com a mesma altura */
+
+.mp-case .mp-experience__grid {
+    align-items: stretch;
+}
+
+/* O conjunto dos três cards acompanha a altura total do vídeo */
+
+.mp-case .mp-experience__features {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    height: 100%;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+/* Cards separados, mais compactos e com o mesmo fundo */
+
+.mp-case .mp-experience__feature {
+    position: relative;
+    z-index: 1;
+    min-height: 0;
+    padding: 24px 26px;
+    border: 1px solid #2a2b31 !important;
+    border-radius: 0 !important;
+    background: #111216 !important;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+    will-change: transform;
+}
+
+/* Mesmo hover utilizado nos outros cards */
+
+.mp-case .mp-experience__feature:hover {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: rgba(169, 112, 255, 0.78) !important;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+/* Remove completamente a moldura dos ícones */
+
+.mp-case .mp-experience__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Padroniza e anima os ícones */
+
+.mp-case .mp-experience__icon img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mp-case .mp-experience__feature:hover .mp-experience__icon img {
+    transform: scale(1.14) rotate(5deg);
+}
+
+/* Mobile: os cards voltam a usar altura natural */
+
+@media (max-width: 900px) {
+    .mp-case .mp-experience__features {
+        grid-template-rows: none;
+        height: auto;
+    }
+
+    .mp-case .mp-experience__feature {
+        min-height: 150px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-experience__feature,
+    .mp-case .mp-experience__icon img {
+        transition: none;
+    }
+
+    .mp-case .mp-experience__feature:hover,
+    .mp-case .mp-experience__feature:hover .mp-experience__icon img {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — EXPERIENCE ICON ALIGNMENT AND FULL HOVER
+   ========================================================= */
+
+/* Ícone alinhado ao lado do título */
+
+.mp-case .mp-experience__feature {
+    display: grid !important;
+    grid-template-columns: 30px minmax(0, 1fr);
+    align-items: start !important;
+    column-gap: 18px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #2a2b31 !important;
+}
+
+/* Remove a antiga linha decorativa inferior */
+
+.mp-case .mp-experience__feature::before,
+.mp-case .mp-experience__feature::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Posiciona o ícone na altura do título */
+
+.mp-case .mp-experience__icon {
+    align-self: start !important;
+    margin-top: 0 !important;
+}
+
+/* Remove margens que deslocam o título */
+
+.mp-case .mp-experience__feature h3 {
+    margin-top: 0 !important;
+}
+
+/* Hover roxo nas quatro bordas */
+
+.mp-case .mp-experience__feature:hover {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(169, 112, 255, 0.88) !important;
+    box-shadow:
+        inset 0 0 0 1px rgba(169, 112, 255, 0.18),
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.14) !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — EXPERIENCE FULL BORDER DEFINITIVE FIX
+   ========================================================= */
+
+/* Estado normal com borda completa */
+
+.mp-case .mp-experience__feature {
+    border-top: 1px solid #2a2b31 !important;
+    border-right: 1px solid #2a2b31 !important;
+    border-bottom: 1px solid #2a2b31 !important;
+    border-left: 1px solid #2a2b31 !important;
+    outline: 0 solid transparent;
+    outline-offset: -1px;
+}
+
+/* Hover garantido nos quatro lados */
+
+.mp-case .mp-experience__feature:hover {
+    border-top-color: #a970ff !important;
+    border-right-color: #a970ff !important;
+    border-bottom-color: #a970ff !important;
+    border-left-color: #a970ff !important;
+    outline: 1px solid #a970ff !important;
+    outline-offset: -1px !important;
+    box-shadow:
+        inset 1px 0 0 rgba(169, 112, 255, 0.7),
+        inset -1px 0 0 rgba(169, 112, 255, 0.7),
+        inset 0 1px 0 rgba(169, 112, 255, 0.7),
+        inset 0 -1px 0 rgba(169, 112, 255, 0.7),
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.14) !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — VIDEO INTERACTION
+   ========================================================= */
+
+.mp-case video {
+    cursor: pointer;
+}
+
+.mp-case video:focus-visible {
+    outline: 2px solid #a970ff !important;
+    outline-offset: 3px;
+}
+/* =========================================================
+   MONEYPILOT DEV — HERO VIDEO FULL FIT
+   ========================================================= */
+
+/* Mantém a proporção original 1920 × 864 sem cortar o vídeo */
+
+.mp-case .mp-preview__media {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 20 / 9;
+    object-fit: contain !important;
+    object-position: center !important;
+    background-color: #050608 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — HERO PREVIEW DARK FOOTER
+   ========================================================= */
+
+.mp-case .mp-preview,
+.mp-case .mp-preview__caption {
+    background-color: #050608 !important;
+    background-image: none !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — PURPLE REPOSITORY BUTTON
+   ========================================================= */
+
+.mp-case .mp-button--primary {
+    color: #0a0a0c !important;
+    background: #a970ff !important;
+    border-color: #a970ff !important;
+    box-shadow: none !important;
+    transition:
+        transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+        background-color 180ms ease,
+        border-color 180ms ease,
+        box-shadow 220ms ease;
+}
+
+.mp-case .mp-button--primary img {
+    filter: brightness(0) saturate(100%) !important;
+    transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mp-case .mp-button--primary:hover {
+    color: #0a0a0c !important;
+    background: #c09cff !important;
+    border-color: #c09cff !important;
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.38),
+        0 0 22px rgba(169, 112, 255, 0.22) !important;
+}
+
+.mp-case .mp-button--primary:hover img {
+    transform: translate(3px, -3px) rotate(4deg);
+}
+
+.mp-case .mp-button--primary:focus-visible {
+    outline: 2px solid #f2eee7 !important;
+    outline-offset: 3px;
+}
+/* =========================================================
+   MONEYPILOT DEV — MOBILE MOCKUPS WITHOUT RADIUS
+   ========================================================= */
+
+.mp-case .mp-mobile-showcase__image,
+.mp-case .mp-mobile-showcase__image img {
+    border-radius: 0 !important;
+}
+/* =========================================================
+   MONEYPILOT DEV — GITHUB BUTTONS AND ICONS
+   ========================================================= */
+
+/* Botões oficiais do repositório */
+
+.mp-case .mp-button--primary,
+.mp-case .mp-final-cta__button--primary {
+    color: #ffffff !important;
+    background: #2da44e !important;
+    border-color: #2da44e !important;
+}
+
+/* Ícones GitHub brancos */
+
+.mp-case .mp-button--primary img,
+.mp-case .mp-final-cta__button--primary img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1) !important;
+    transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hover verde mais escuro */
+
+.mp-case .mp-button--primary:hover,
+.mp-case .mp-final-cta__button--primary:hover {
+    color: #ffffff !important;
+    background: #238636 !important;
+    border-color: #238636 !important;
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.38),
+        0 0 22px rgba(45, 164, 78, 0.22) !important;
+}
+
+/* Movimento do ícone */
+
+.mp-case .mp-button--primary:hover img,
+.mp-case .mp-final-cta__button--primary:hover img {
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.mp-case .mp-button--primary:focus-visible,
+.mp-case .mp-final-cta__button--primary:focus-visible {
+    outline: 2px solid #f2eee7 !important;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mp-case .mp-button--primary,
+    .mp-case .mp-final-cta__button--primary,
+    .mp-case .mp-button--primary img,
+    .mp-case .mp-final-cta__button--primary img {
+        transition: none;
+    }
+
+    .mp-case .mp-button--primary:hover,
+    .mp-case .mp-final-cta__button--primary:hover,
+    .mp-case .mp-button--primary:hover img,
+    .mp-case .mp-final-cta__button--primary:hover img {
+        transform: none;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — HEADER SAME SIZE AS LANDING
+   ========================================================= */
+
+/* Mesmo espaçamento externo da Landing Page */
+
+body:has(.mp-case) > .site-header {
+    min-height: 0 !important;
+    padding: 24px !important;
+    border: 0 !important;
+    border-bottom: 0 !important;
+    background: #0a0a0c !important;
+    box-shadow: none !important;
+}
+
+/* Mesmas dimensões-base da navegação da Landing Page */
+
+body:has(.mp-case) > .site-header .navigation {
+    width: auto !important;
+    max-width: none !important;
+    min-height: 64px !important;
+    margin-inline: auto !important;
+    padding: 10px 10px 10px 18px !important;
+}
+
+/* Garante que nenhuma linha seja criada por pseudo-elementos */
+
+body:has(.mp-case) > .site-header::before,
+body:has(.mp-case) > .site-header::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Mantém o comportamento mobile da Landing Page */
+
+@media (max-width: 900px) {
+    body:has(.mp-case) > .site-header {
+        min-height: 0 !important;
+        padding: 16px !important;
+    }
+
+    body:has(.mp-case) > .site-header .navigation {
+        width: 100% !important;
+    }
+}
+/* =========================================================
+   MONEYPILOT DEV — REMOVE HERO DIVIDER
+   ========================================================= */
+
+.mp-case .mp-hero {
+    border-bottom: 0 !important;
+}
+
+.mp-case .mp-hero::before,
+.mp-case .mp-hero::after {
+    border-bottom: 0 !important;
+}

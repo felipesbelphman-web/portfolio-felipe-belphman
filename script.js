@@ -570,3 +570,83 @@ if (devSkillsStack && devSkillsStackList) {
 
 
 
+
+/* =========================================================
+   MONEYPILOT — VIDEO AUTOPLAY AND CLICK CONTROL
+   ========================================================= */
+
+(() => {
+    const initializeMoneyPilotVideos = () => {
+        const videos = document.querySelectorAll(".mp-case video");
+
+        videos.forEach((video) => {
+            if (video.dataset.clickControlReady === "true") {
+                return;
+            }
+
+            video.dataset.clickControlReady = "true";
+            video.dataset.userPaused = "false";
+
+            video.muted = true;
+            video.defaultMuted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.preload = "auto";
+
+            video.setAttribute("muted", "");
+            video.setAttribute("autoplay", "");
+            video.setAttribute("loop", "");
+            video.setAttribute("playsinline", "");
+            video.setAttribute("tabindex", "0");
+            video.setAttribute("role", "button");
+            video.setAttribute(
+                "aria-label",
+                `${video.getAttribute("aria-label") || "MoneyPilot video"}. Click to pause or play.`
+            );
+
+            const startVideo = () => {
+                if (video.dataset.userPaused !== "true") {
+                    video.play().catch(() => {
+                        /* O navegador poderá aguardar a primeira interação. */
+                    });
+                }
+            };
+
+            const togglePlayback = () => {
+                if (video.paused) {
+                    video.dataset.userPaused = "false";
+                    video.play().catch(() => {});
+                } else {
+                    video.dataset.userPaused = "true";
+                    video.pause();
+                }
+            };
+
+            video.addEventListener("loadeddata", startVideo);
+            video.addEventListener("canplay", startVideo);
+
+            video.addEventListener("click", togglePlayback);
+
+            video.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    togglePlayback();
+                }
+            });
+
+            startVideo();
+        });
+    };
+
+    if (document.readyState === "loading") {
+        document.addEventListener(
+            "DOMContentLoaded",
+            initializeMoneyPilotVideos,
+            { once: true }
+        );
+    } else {
+        initializeMoneyPilotVideos();
+    }
+
+    window.addEventListener("load", initializeMoneyPilotVideos, { once: true });
+})();
