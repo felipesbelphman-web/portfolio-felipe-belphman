@@ -21,6 +21,7 @@ const translations = {
     "en": {
         "nav": {
             "home": "Home",
+            "intro": "Intro",
             "work": "Work",
             "skills": "Skills",
             "about": "About",
@@ -79,12 +80,12 @@ const translations = {
             "buildingProjects": "Building MoneyPilot and Black Bull Steak House",
             "now": "Now",
             "openOpportunities": "Open to junior opportunities",
-            "summaryOneHighlight": "I’m a front-end developer based in Dublin,",
-            "summaryOneMuted": "focused on turning ideas and Figma designs into clear, responsive web experiences.",
-            "summaryTwoHighlight": "I learn by building products with a real purpose.",
-            "summaryTwoMuted": "MoneyPilot helps people understand their finances, while Black Bull explores a better digital restaurant experience.",
-            "summaryThreeHighlight": "I care about the small details and responsive layouts,",
-            "summaryThreeMuted": "accessible structure, clear components and maintainable code. My goal is to join a team where I can contribute, learn and grow."
+            "summaryOneHighlight": "My creative journey began with graphic design in 2019.",
+            "summaryOneMuted": "I learned Photoshop, Illustrator and branding — and discovered Figma.",
+            "summaryTwoHighlight": "In 2023, I started turning my designs into code.",
+            "summaryTwoMuted": "I started with HTML, CSS and JavaScript. After moving to Dublin, I committed to becoming a front-end developer.",
+            "summaryThreeHighlight": "Today, I combine design thinking with development.",
+            "summaryThreeMuted": "I build responsive, accessible products with JavaScript, TypeScript, React and Next.js — and I’m ready to contribute, learn and grow."
         },
         "workProcess": {
             "titleMuted": "From an idea.",
@@ -321,6 +322,145 @@ const translations = {
             "solution": {
                 "structure": "The solution uses clear visual hierarchy, reusable components, accessible navigation, and focused dashboards for transactions, budgets, insights, goals, and investments.",
                 "upcoming": "Additional project details, process images, and final mockups will be added as the case study develops."
+            },
+            "content": {
+                "heroSubtitle": "An AI-Assisted Financial Management Platform",
+                "technologiesUsed": "Technologies used",
+                "viewRepository": "View Repository",
+                "activeDevelopment": "Active development",
+                "previewFile": "product-preview.mp4",
+                "heroVideo": "MoneyPilot authentication and dashboard demonstration",
+                "previewCaption": "PRODUCT PREVIEW · AUTHENTICATION → DASHBOARD",
+                "role": "ROLE",
+                "type": "TYPE",
+                "status": "STATUS",
+                "focus": "FOCUS",
+                "focusValue": "FinTech · Data · AI",
+                "strategyEyebrow": "01 / PRODUCT STRATEGY",
+                "strategyTitle": "From financial information to confident decisions.",
+                "problemLabel": "THE PROBLEM",
+                "problemText": "Personal finance tools often show numbers without helping people understand what those numbers mean. Users are left with fragmented transactions, unclear spending patterns, and goals that feel disconnected from everyday decisions.",
+                "solutionLabel": "THE SOLUTION",
+                "solutionText": "MoneyPilot brings transactions, budgets, goals, investments, and AI-assisted observations into one clear system—helping people move from financial visibility to practical action.",
+                "mobileRegion": "MoneyPilot mobile experience",
+                "mobileEyebrow": "01 / RESPONSIVE EXPERIENCE",
+                "mobileTitle": "Mobile authentication flow",
+                "mobileVideo": "MoneyPilot mobile authentication walkthrough",
+                "mobilePlayback": "PLAY PRODUCT WALKTHROUGH",
+                "experienceEyebrow": "02 / PRODUCT EXPERIENCE",
+                "experienceTitle": "One financial workspace, designed for clarity.",
+                "dayTitle": "DAY + NIGHT",
+                "dayText": "A consistent interface adapts to different environments without changing the product hierarchy.",
+                "languagesTitle": "7 LANGUAGES",
+                "languagesText": "Designed for international users and future European expansion.",
+                "currencyTitle": "MULTI-CURRENCY",
+                "currencyText": "Financial information remains understandable across currencies and personal contexts.",
+                "experienceFile": "authentication-to-dashboard.mp4",
+                "experienceVideo": "MoneyPilot responsive product experience",
+                "liveWalkthrough": "LIVE PRODUCT WALKTHROUGH",
+                "authDashboard": "AUTHENTICATION → DASHBOARD",
+                "desktopEyebrow": "02 / DESKTOP EXPERIENCE",
+                "desktopTitle": "One workspace across every device.",
+                "desktopBody": "The MoneyPilot dashboard preserves financial clarity, hierarchy, and usability from mobile to desktop without sacrificing detail.",
+                "responsiveOverview": "Responsive financial overview",
+                "darkThemes": "Consistent light and dark themes",
+                "dataHierarchy": "Clear data hierarchy at larger scales",
+                "featuresEyebrow": "03 / CORE PRODUCT EXPERIENCE",
+                "featuresTitle": "A complete system for everyday financial decisions.",
+                "dashboardTitle": "Dashboard",
+                "dashboardText": "A decision-first overview of balances, income, expenses, cash flow, and progress.",
+                "transactionsTitle": "Transactions",
+                "transactionsText": "CSV import, categories, filters, and a clear history of financial activity.",
+                "budgetsTitle": "Budgets",
+                "budgetsText": "Spending limits and progress tracking that make financial plans visible.",
+                "insightsTitle": "AI Insights",
+                "insightsText": "Personalized observations designed to explain patterns and highlight better decisions.",
+                "goalsTitle": "Goals",
+                "goalsText": "Practical progress tracking for homes, travel, education, family, and other milestones.",
+                "investmentsTitle": "Investments",
+                "investmentsText": "A unified view of portfolio value, allocation, performance, and long-term growth.",
+                "architectureEyebrow": "04 / ENGINEERING + TRUST",
+                "architectureTitle": "Built as a real product, not a static dashboard.",
+                "architectureLabel": "PROJECT ARCHITECTURE",
+                "architectureTree": "MoneyPilot project architecture",
+                "localTests": "LOCAL TESTS",
+                "localTestsText": "Automated tests across product logic, contracts, and user-facing behavior.",
+                "remoteTests": "REMOTE RLS TESTS",
+                "remoteTestsText": "Row Level Security validates ownership and isolates each user's financial data.",
+                "secureModel": "SECURE DATA MODEL",
+                "secureModelText": "Hardened operations with ownership enforcement, validation, and sanitized errors.",
+                "roadmapEyebrow": "05 / DEVELOPMENT ROADMAP",
+                "roadmapTitle": "From interface foundation to intelligent financial guidance.",
+                "complete": "COMPLETE",
+                "inProgress": "IN PROGRESS",
+                "next": "NEXT",
+                "active": "ACTIVE",
+                "planned": "PLANNED",
+                "interfaceTitle": "Interface",
+                "interfaceText": "Landing, responsive screens, authentication UI, and dashboard foundations.",
+                "authenticationTitle": "Authentication",
+                "authenticationText": "Supabase registration, sessions, recovery, protected routes, and Google auth.",
+                "financialDataTitle": "Financial Data",
+                "financialDataText": "Income, expenses, transactions, categories, goals, and real dashboard data.",
+                "securityTitle": "Security + Testing",
+                "securityText": "RLS, data isolation, validation, permission tests, and production review.",
+                "pythonTitle": "Python Intelligence",
+                "pythonText": "Financial analysis, calculations, pattern detection, and automated summaries.",
+                "aiTitle": "AI Insights",
+                "aiText": "Personalized observations, recommendations, and assistant experience.",
+                "productionTitle": "Production",
+                "productionText": "Accessibility, performance, security audit, and final deployment.",
+                "contextEyebrow": "01 / PROJECT CONTEXT",
+                "contextTitle": "Why I built MoneyPilot and what I owned.",
+                "contextLabel": "PROJECT CONTEXT",
+                "contextText": "MoneyPilot is a personal finance product created to help people understand spending, organize financial data, and build practical plans for meaningful life goals.",
+                "contextMeta": "Personal product · 2026",
+                "roleLabel": "MY ROLE",
+                "roleText": "I own the product direction, UX/UI design, front-end development, design system, responsive implementation, Supabase integration, and product validation.",
+                "roleMeta": "Product Designer + Front-End Developer",
+                "goalsLabel": "GOALS + CONSTRAINTS",
+                "goalsText": "The MVP avoids bank APIs, prioritizes privacy, supports international users, and must remain understandable across currencies, languages, devices, and financial experience levels.",
+                "goalsMeta": "No bank connection required",
+                "processLabel": "MoneyPilot product process",
+                "discovery": "Discovery",
+                "productStrategy": "Product Strategy",
+                "uxUi": "UX + UI",
+                "engineering": "Engineering",
+                "validation": "Validation",
+                "thinkingEyebrow": "04 / PRODUCT THINKING",
+                "thinkingTitle": "Decisions behind the interface.",
+                "decisionLabel": "DESIGN DECISION",
+                "decisionTitle": "Decision-first hierarchy",
+                "decisionText": "Instead of presenting every financial metric at once, the dashboard prioritizes the information that helps users decide what to do next: current balance, cash flow, unusual spending, goal progress, and recommended actions.",
+                "accessibilityLabel": "ACCESSIBILITY",
+                "accessibilityTitle": "Clarity across themes and devices",
+                "accessibilityText": "Day and Night modes preserve hierarchy and contrast. Responsive layouts, visible focus states, understandable labels, reduced visual noise, and consistent interaction patterns support different devices and user needs.",
+                "challengeLabel": "CORE CHALLENGE",
+                "challengeTitle": "Complex data without complexity",
+                "challengeText": "The main challenge was combining transactions, budgets, goals, investments, and AI guidance without creating an interface that feels like professional accounting software. Progressive disclosure keeps advanced information available without overwhelming the user.",
+                "learningLabel": "KEY LEARNING",
+                "learningTitle": "Trust must be designed and engineered",
+                "learningText": "Financial products require more than polished screens. Clear language, predictable feedback, user-owned data, RLS policies, validation, error handling, and meaningful tests all contribute to the same product quality: trust.",
+                "moreEyebrow": "NEXT / EXPLORE MORE WORK",
+                "moreTitle": "More Projects",
+                "blackBullLink": "View Black Bull Restaurant project",
+                "blackBullAlt": "Black Bull Restaurant kitchen display system",
+                "blackBullTitle": "Black Bull Restaurant",
+                "blackBullType": "Restaurant Operations Platform",
+                "devConnectLink": "View DevConnect project",
+                "devConnectAlt": "DevConnect technology jobs platform",
+                "devConnectTitle": "DevConnect",
+                "devConnectType": "Technology Jobs Platform",
+                "viewProject": "View Project",
+                "viewAll": "View all my projects",
+                "ctaEyebrow": "MONEYPILOT / ACTIVE DEVELOPMENT",
+                "ctaTitle": "Building financial clarity into an intelligent product.",
+                "ctaText": "Follow the project on GitHub to explore the codebase, architecture, testing strategy, and upcoming product phases.",
+                "viewGithub": "View GitHub Repository",
+                "backProjects": "Back to Projects",
+                "mobileOneAlt": "MoneyPilot dashboard displayed on a smartphone",
+                "mobileTwoAlt": "MoneyPilot financial dashboard on a mobile device",
+                "desktopAlt": "MoneyPilot dashboard presented on a desktop computer"
             }
         },
         "petIdPage": {
@@ -579,6 +719,7 @@ const translations = {
     "pt-BR": {
         "nav": {
             "home": "Início",
+            "intro": "Intro",
             "work": "Projetos",
             "skills": "Habilidades",
             "about": "Sobre",
@@ -637,12 +778,12 @@ const translations = {
             "buildingProjects": "Desenvolvendo MoneyPilot e Black Bull Steak House",
             "now": "Agora",
             "openOpportunities": "Disponível para oportunidades júnior",
-            "summaryOneHighlight": "Sou desenvolvedor front-end em Dublin,",
-            "summaryOneMuted": "focado em transformar ideias e designs do Figma em experiências web claras e responsivas.",
-            "summaryTwoHighlight": "Aprendo desenvolvendo produtos com um propósito real.",
-            "summaryTwoMuted": "MoneyPilot ajuda as pessoas a entender suas finanças, enquanto Black Bull explora uma experiência digital melhor para restaurantes.",
-            "summaryThreeHighlight": "Valorizo os pequenos detalhes e os layouts responsivos,",
-            "summaryThreeMuted": "uma estrutura acessível, componentes claros e código de fácil manutenção. Meu objetivo é fazer parte de uma equipe na qual eu possa contribuir, aprender e crescer."
+            "summaryOneHighlight": "Minha jornada criativa começou com o design gráfico em 2019.",
+            "summaryOneMuted": "Aprendi Photoshop, Illustrator e criação de marcas — e conheci o Figma.",
+            "summaryTwoHighlight": "Em 2023, comecei a transformar meus designs em código.",
+            "summaryTwoMuted": "Comecei com HTML, CSS e JavaScript. Depois de me mudar para Dublin, decidi me tornar desenvolvedor front-end.",
+            "summaryThreeHighlight": "Hoje, combino design e desenvolvimento.",
+            "summaryThreeMuted": "Crio produtos responsivos e acessíveis com JavaScript, TypeScript, React e Next.js — e estou pronto para contribuir, aprender e evoluir."
         },
         "workProcess": {
             "titleMuted": "De uma ideia.",
@@ -879,6 +1020,17 @@ const translations = {
             "solution": {
                 "structure": "A solução usa uma hierarquia visual clara, componentes reutilizáveis, navegação acessível e painéis específicos para transações, orçamentos, análises, metas e investimentos.",
                 "upcoming": "Mais detalhes do projeto, imagens do processo e mockups finais serão adicionados conforme o case evoluir."
+            },
+            "content": {
+                "heroSubtitle": "Uma plataforma de gestão financeira com assistência de IA", "technologiesUsed": "Tecnologias utilizadas", "viewRepository": "Ver repositório", "activeDevelopment": "Em desenvolvimento ativo", "previewFile": "product-preview.mp4", "heroVideo": "Demonstração da autenticação e do painel do MoneyPilot", "previewCaption": "PRÉVIA DO PRODUTO · AUTENTICAÇÃO → PAINEL", "role": "FUNÇÃO", "type": "TIPO", "status": "STATUS", "focus": "FOCO", "focusValue": "FinTech · Dados · IA",
+                "strategyEyebrow": "01 / ESTRATÉGIA DO PRODUTO", "strategyTitle": "De informações financeiras a decisões mais seguras.", "problemLabel": "O PROBLEMA", "problemText": "Ferramentas de finanças pessoais muitas vezes exibem números sem ajudar as pessoas a entender o que eles significam. Os usuários ficam com transações fragmentadas, padrões de gastos pouco claros e metas desconectadas das decisões do dia a dia.", "solutionLabel": "A SOLUÇÃO", "solutionText": "O MoneyPilot reúne transações, orçamentos, metas, investimentos e observações assistidas por IA em um sistema claro, ajudando as pessoas a transformar visibilidade financeira em ação prática.",
+                "mobileRegion": "Experiência mobile do MoneyPilot", "mobileEyebrow": "01 / EXPERIÊNCIA RESPONSIVA", "mobileTitle": "Fluxo de autenticação mobile", "mobileVideo": "Demonstração da autenticação mobile do MoneyPilot", "mobilePlayback": "REPRODUZIR DEMONSTRAÇÃO DO PRODUTO", "experienceEyebrow": "02 / EXPERIÊNCIA DO PRODUTO", "experienceTitle": "Um espaço financeiro, criado para trazer clareza.", "dayTitle": "DIA + NOITE", "dayText": "Uma interface consistente se adapta a diferentes ambientes sem alterar a hierarquia do produto.", "languagesTitle": "7 IDIOMAS", "languagesText": "Criado para usuários internacionais e para uma futura expansão europeia.", "currencyTitle": "MULTIMOEDA", "currencyText": "As informações financeiras continuam compreensíveis em diferentes moedas e contextos pessoais.", "experienceFile": "authentication-to-dashboard.mp4", "experienceVideo": "Experiência responsiva do produto MoneyPilot", "liveWalkthrough": "DEMONSTRAÇÃO DO PRODUTO AO VIVO", "authDashboard": "AUTENTICAÇÃO → PAINEL",
+                "desktopEyebrow": "02 / EXPERIÊNCIA DESKTOP", "desktopTitle": "Um espaço de trabalho em todos os dispositivos.", "desktopBody": "O painel do MoneyPilot preserva clareza, hierarquia e usabilidade do mobile ao desktop sem sacrificar detalhes.", "responsiveOverview": "Visão financeira responsiva", "darkThemes": "Temas claro e escuro consistentes", "dataHierarchy": "Hierarquia de dados clara em telas maiores", "featuresEyebrow": "03 / EXPERIÊNCIA PRINCIPAL DO PRODUTO", "featuresTitle": "Um sistema completo para decisões financeiras do dia a dia.", "dashboardTitle": "Painel", "dashboardText": "Uma visão orientada à decisão sobre saldos, receitas, despesas, fluxo de caixa e progresso.", "transactionsTitle": "Transações", "transactionsText": "Importação de CSV, categorias, filtros e um histórico claro da atividade financeira.", "budgetsTitle": "Orçamentos", "budgetsText": "Limites de gastos e acompanhamento de progresso que tornam os planos financeiros visíveis.", "insightsTitle": "Insights de IA", "insightsText": "Observações personalizadas para explicar padrões e destacar decisões melhores.", "goalsTitle": "Metas", "goalsText": "Acompanhamento prático de progresso para casa, viagens, estudos, família e outros objetivos.", "investmentsTitle": "Investimentos", "investmentsText": "Uma visão unificada do valor da carteira, alocação, desempenho e crescimento de longo prazo.",
+                "architectureEyebrow": "04 / ENGENHARIA + CONFIANÇA", "architectureTitle": "Construído como um produto real, não como um painel estático.", "architectureLabel": "ARQUITETURA DO PROJETO", "architectureTree": "Arquitetura do projeto MoneyPilot", "localTests": "TESTES LOCAIS", "localTestsText": "Testes automatizados sobre a lógica do produto, contratos e comportamento voltado ao usuário.", "remoteTests": "TESTES RLS REMOTOS", "remoteTestsText": "A Row Level Security valida a propriedade e isola os dados financeiros de cada usuário.", "secureModel": "MODELO DE DADOS SEGURO", "secureModelText": "Operações protegidas com controle de propriedade, validação e erros higienizados.",
+                "roadmapEyebrow": "05 / ROADMAP DE DESENVOLVIMENTO", "roadmapTitle": "Da base da interface à orientação financeira inteligente.", "complete": "CONCLUÍDO", "inProgress": "EM ANDAMENTO", "next": "PRÓXIMO", "active": "ATIVO", "planned": "PLANEJADO", "interfaceTitle": "Interface", "interfaceText": "Landing page, telas responsivas, interface de autenticação e bases do painel.", "authenticationTitle": "Autenticação", "authenticationText": "Cadastro no Supabase, sessões, recuperação, rotas protegidas e autenticação do Google.", "financialDataTitle": "Dados financeiros", "financialDataText": "Receitas, despesas, transações, categorias, metas e dados reais do painel.", "securityTitle": "Segurança + testes", "securityText": "RLS, isolamento de dados, validação, testes de permissões e revisão para produção.", "pythonTitle": "Inteligência com Python", "pythonText": "Análise financeira, cálculos, detecção de padrões e resumos automatizados.", "aiTitle": "Insights de IA", "aiText": "Observações personalizadas, recomendações e experiência de assistente.", "productionTitle": "Produção", "productionText": "Acessibilidade, desempenho, auditoria de segurança e publicação final.",
+                "contextEyebrow": "01 / CONTEXTO DO PROJETO", "contextTitle": "Por que criei o MoneyPilot e o que desenvolvi.", "contextLabel": "CONTEXTO DO PROJETO", "contextText": "MoneyPilot é um produto de finanças pessoais criado para ajudar as pessoas a entender gastos, organizar dados financeiros e construir planos práticos para objetivos importantes.", "contextMeta": "Produto pessoal · 2026", "roleLabel": "MINHA FUNÇÃO", "roleText": "Sou responsável pela direção do produto, design de UX/UI, desenvolvimento front-end, sistema de design, implementação responsiva, integração com Supabase e validação do produto.", "roleMeta": "Product Designer + Desenvolvedor Front-end", "goalsLabel": "OBJETIVOS + RESTRIÇÕES", "goalsText": "O MVP evita APIs bancárias, prioriza privacidade, atende usuários internacionais e deve ser compreensível em diferentes moedas, idiomas, dispositivos e níveis de experiência financeira.", "goalsMeta": "Sem conexão bancária necessária", "processLabel": "Processo do produto MoneyPilot", "discovery": "Descoberta", "productStrategy": "Estratégia do produto", "uxUi": "UX + UI", "engineering": "Engenharia", "validation": "Validação",
+                "thinkingEyebrow": "04 / PENSAMENTO DE PRODUTO", "thinkingTitle": "Decisões por trás da interface.", "decisionLabel": "DECISÃO DE DESIGN", "decisionTitle": "Hierarquia orientada à decisão", "decisionText": "Em vez de apresentar todas as métricas financeiras de uma vez, o painel prioriza as informações que ajudam o usuário a decidir o próximo passo: saldo atual, fluxo de caixa, gastos incomuns, progresso das metas e ações recomendadas.", "accessibilityLabel": "ACESSIBILIDADE", "accessibilityTitle": "Clareza em temas e dispositivos", "accessibilityText": "Os modos Dia e Noite preservam hierarquia e contraste. Layouts responsivos, foco visível, labels compreensíveis, menos ruído visual e padrões consistentes de interação atendem a diferentes dispositivos e necessidades.", "challengeLabel": "DESAFIO PRINCIPAL", "challengeTitle": "Dados complexos sem complexidade", "challengeText": "O desafio principal foi combinar transações, orçamentos, metas, investimentos e orientação por IA sem criar uma interface que parecesse um software de contabilidade profissional. A divulgação progressiva mantém informações avançadas disponíveis sem sobrecarregar o usuário.", "learningLabel": "PRINCIPAL APRENDIZADO", "learningTitle": "Confiança precisa ser projetada e construída", "learningText": "Produtos financeiros exigem mais do que telas bem acabadas. Linguagem clara, feedback previsível, dados pertencentes ao usuário, políticas RLS, validação, tratamento de erros e testes relevantes contribuem para a mesma qualidade: confiança.",
+                "moreEyebrow": "PRÓXIMO / EXPLORE MAIS TRABALHOS", "moreTitle": "Mais projetos", "blackBullLink": "Ver projeto do restaurante Black Bull", "blackBullAlt": "Sistema de tela de cozinha do restaurante Black Bull", "blackBullTitle": "Black Bull Restaurant", "blackBullType": "Plataforma de operações para restaurantes", "devConnectLink": "Ver projeto DevConnect", "devConnectAlt": "Plataforma de vagas de tecnologia DevConnect", "devConnectTitle": "DevConnect", "devConnectType": "Plataforma de vagas em tecnologia", "viewProject": "Ver projeto", "viewAll": "Ver todos os meus projetos", "ctaEyebrow": "MONEYPILOT / DESENVOLVIMENTO ATIVO", "ctaTitle": "Criando clareza financeira em um produto inteligente.", "ctaText": "Acompanhe o projeto no GitHub para explorar o código, a arquitetura, a estratégia de testes e as próximas fases do produto.", "viewGithub": "Ver repositório no GitHub", "backProjects": "Voltar aos projetos", "mobileOneAlt": "Painel do MoneyPilot exibido em um smartphone", "mobileTwoAlt": "Painel financeiro do MoneyPilot em um dispositivo mobile", "desktopAlt": "Painel do MoneyPilot exibido em um computador desktop"
             }
         },
         "petIdPage": {
@@ -1137,6 +1289,7 @@ const translations = {
     "es": {
         "nav": {
             "home": "Inicio",
+            "intro": "Intro",
             "work": "Proyectos",
             "skills": "Habilidades",
             "about": "Sobre mí",
@@ -1195,12 +1348,12 @@ const translations = {
             "buildingProjects": "Desarrollando MoneyPilot y Black Bull Steak House",
             "now": "Ahora",
             "openOpportunities": "Disponible para oportunidades junior",
-            "summaryOneHighlight": "Soy desarrollador front-end y vivo en Dublín,",
-            "summaryOneMuted": "centrado en convertir ideas y diseños de Figma en experiencias web claras y adaptables.",
-            "summaryTwoHighlight": "Aprendo creando productos con un propósito real.",
-            "summaryTwoMuted": "MoneyPilot ayuda a las personas a comprender sus finanzas, mientras que Black Bull explora una mejor experiencia digital para restaurantes.",
-            "summaryThreeHighlight": "Cuido los pequeños detalles y los diseños adaptables,",
-            "summaryThreeMuted": "la estructura accesible, los componentes claros y el código fácil de mantener. Mi objetivo es unirme a un equipo en el que pueda contribuir, aprender y crecer."
+            "summaryOneHighlight": "Mi camino creativo comenzó con el diseño gráfico en 2019.",
+            "summaryOneMuted": "Aprendí Photoshop, Illustrator y creación de marcas — y descubrí Figma.",
+            "summaryTwoHighlight": "En 2023, empecé a convertir mis diseños en código.",
+            "summaryTwoMuted": "Empecé con HTML, CSS y JavaScript. Después de mudarme a Dublín, decidí convertirme en desarrollador front-end.",
+            "summaryThreeHighlight": "Hoy combino el diseño y el desarrollo.",
+            "summaryThreeMuted": "Creo productos responsivos y accesibles con JavaScript, TypeScript, React y Next.js — y estoy listo para aportar, aprender y crecer."
         },
         "workProcess": {
             "titleMuted": "De una idea.",
@@ -1437,6 +1590,17 @@ const translations = {
             "solution": {
                 "structure": "La solución utiliza una jerarquía visual clara, componentes reutilizables, navegación accesible y paneles específicos para transacciones, presupuestos, análisis, metas e inversiones.",
                 "upcoming": "Se añadirán más detalles del proyecto, imágenes del proceso y mockups finales a medida que avance el caso de estudio."
+            },
+            "content": {
+                "heroSubtitle": "Una plataforma de gestión financiera asistida por IA", "technologiesUsed": "Tecnologías utilizadas", "viewRepository": "Ver repositorio", "activeDevelopment": "Desarrollo activo", "previewFile": "product-preview.mp4", "heroVideo": "Demostración de autenticación y panel de MoneyPilot", "previewCaption": "VISTA PREVIA DEL PRODUCTO · AUTENTICACIÓN → PANEL", "role": "FUNCIÓN", "type": "TIPO", "status": "ESTADO", "focus": "ENFOQUE", "focusValue": "FinTech · Datos · IA",
+                "strategyEyebrow": "01 / ESTRATEGIA DEL PRODUCTO", "strategyTitle": "De la información financiera a decisiones seguras.", "problemLabel": "EL PROBLEMA", "problemText": "Las herramientas de finanzas personales suelen mostrar números sin ayudar a entender qué significan. Los usuarios terminan con transacciones fragmentadas, patrones de gasto poco claros y metas desconectadas de las decisiones cotidianas.", "solutionLabel": "LA SOLUCIÓN", "solutionText": "MoneyPilot reúne transacciones, presupuestos, metas, inversiones y observaciones asistidas por IA en un sistema claro que ayuda a pasar de la visibilidad financiera a la acción práctica.",
+                "mobileRegion": "Experiencia móvil de MoneyPilot", "mobileEyebrow": "01 / EXPERIENCIA ADAPTABLE", "mobileTitle": "Flujo de autenticación móvil", "mobileVideo": "Recorrido de autenticación móvil de MoneyPilot", "mobilePlayback": "REPRODUCIR RECORRIDO DEL PRODUCTO", "experienceEyebrow": "02 / EXPERIENCIA DEL PRODUCTO", "experienceTitle": "Un espacio financiero diseñado para la claridad.", "dayTitle": "DÍA + NOCHE", "dayText": "Una interfaz coherente se adapta a distintos entornos sin cambiar la jerarquía del producto.", "languagesTitle": "7 IDIOMAS", "languagesText": "Diseñada para usuarios internacionales y una futura expansión europea.", "currencyTitle": "MULTIMONEDA", "currencyText": "La información financiera sigue siendo comprensible en distintas monedas y contextos personales.", "experienceFile": "authentication-to-dashboard.mp4", "experienceVideo": "Experiencia adaptable del producto MoneyPilot", "liveWalkthrough": "RECORRIDO DEL PRODUCTO EN VIVO", "authDashboard": "AUTENTICACIÓN → PANEL",
+                "desktopEyebrow": "02 / EXPERIENCIA DE ESCRITORIO", "desktopTitle": "Un espacio de trabajo en todos los dispositivos.", "desktopBody": "El panel de MoneyPilot conserva la claridad, la jerarquía y la usabilidad del móvil al escritorio sin sacrificar detalles.", "responsiveOverview": "Resumen financiero adaptable", "darkThemes": "Temas claro y oscuro coherentes", "dataHierarchy": "Jerarquía de datos clara en pantallas grandes", "featuresEyebrow": "03 / EXPERIENCIA PRINCIPAL DEL PRODUCTO", "featuresTitle": "Un sistema completo para las decisiones financieras diarias.", "dashboardTitle": "Panel", "dashboardText": "Una vista centrada en decisiones sobre saldos, ingresos, gastos, flujo de caja y progreso.", "transactionsTitle": "Transacciones", "transactionsText": "Importación de CSV, categorías, filtros y un historial claro de la actividad financiera.", "budgetsTitle": "Presupuestos", "budgetsText": "Límites de gasto y seguimiento del progreso que hacen visibles los planes financieros.", "insightsTitle": "Insights de IA", "insightsText": "Observaciones personalizadas para explicar patrones y destacar mejores decisiones.", "goalsTitle": "Metas", "goalsText": "Seguimiento práctico del progreso de vivienda, viajes, educación, familia y otros objetivos.", "investmentsTitle": "Inversiones", "investmentsText": "Una vista unificada del valor de la cartera, la distribución, el rendimiento y el crecimiento a largo plazo.",
+                "architectureEyebrow": "04 / INGENIERÍA + CONFIANZA", "architectureTitle": "Construido como un producto real, no como un panel estático.", "architectureLabel": "ARQUITECTURA DEL PROYECTO", "architectureTree": "Arquitectura del proyecto MoneyPilot", "localTests": "PRUEBAS LOCALES", "localTestsText": "Pruebas automatizadas sobre la lógica del producto, los contratos y el comportamiento visible para el usuario.", "remoteTests": "PRUEBAS RLS REMOTAS", "remoteTestsText": "Row Level Security valida la propiedad y aísla los datos financieros de cada usuario.", "secureModel": "MODELO DE DATOS SEGURO", "secureModelText": "Operaciones reforzadas con control de propiedad, validación y errores saneados.",
+                "roadmapEyebrow": "05 / HOJA DE RUTA DE DESARROLLO", "roadmapTitle": "De la base de la interfaz a la orientación financiera inteligente.", "complete": "COMPLETADO", "inProgress": "EN CURSO", "next": "SIGUIENTE", "active": "ACTIVO", "planned": "PLANIFICADO", "interfaceTitle": "Interfaz", "interfaceText": "Landing, pantallas adaptables, interfaz de autenticación y bases del panel.", "authenticationTitle": "Autenticación", "authenticationText": "Registro en Supabase, sesiones, recuperación, rutas protegidas y autenticación de Google.", "financialDataTitle": "Datos financieros", "financialDataText": "Ingresos, gastos, transacciones, categorías, metas y datos reales del panel.", "securityTitle": "Seguridad + pruebas", "securityText": "RLS, aislamiento de datos, validación, pruebas de permisos y revisión para producción.", "pythonTitle": "Inteligencia con Python", "pythonText": "Análisis financiero, cálculos, detección de patrones y resúmenes automatizados.", "aiTitle": "Insights de IA", "aiText": "Observaciones personalizadas, recomendaciones y experiencia de asistente.", "productionTitle": "Producción", "productionText": "Accesibilidad, rendimiento, auditoría de seguridad y despliegue final.",
+                "contextEyebrow": "01 / CONTEXTO DEL PROYECTO", "contextTitle": "Por qué creé MoneyPilot y de qué me encargué.", "contextLabel": "CONTEXTO DEL PROYECTO", "contextText": "MoneyPilot es un producto de finanzas personales creado para ayudar a entender los gastos, organizar los datos financieros y elaborar planes prácticos para objetivos importantes.", "contextMeta": "Producto personal · 2026", "roleLabel": "MI FUNCIÓN", "roleText": "Me encargo de la dirección del producto, el diseño UX/UI, el desarrollo front-end, el sistema de diseño, la implementación adaptable, la integración con Supabase y la validación del producto.", "roleMeta": "Product Designer + Desarrollador Front-end", "goalsLabel": "OBJETIVOS + RESTRICCIONES", "goalsText": "El MVP evita las API bancarias, prioriza la privacidad, admite usuarios internacionales y debe ser comprensible en distintas monedas, idiomas, dispositivos y niveles de experiencia financiera.", "goalsMeta": "No requiere conexión bancaria", "processLabel": "Proceso del producto MoneyPilot", "discovery": "Descubrimiento", "productStrategy": "Estrategia del producto", "uxUi": "UX + UI", "engineering": "Ingeniería", "validation": "Validación",
+                "thinkingEyebrow": "04 / PENSAMIENTO DE PRODUCTO", "thinkingTitle": "Decisiones detrás de la interfaz.", "decisionLabel": "DECISIÓN DE DISEÑO", "decisionTitle": "Jerarquía centrada en decisiones", "decisionText": "En lugar de mostrar todas las métricas financieras a la vez, el panel prioriza la información que ayuda a decidir el siguiente paso: saldo actual, flujo de caja, gastos inusuales, progreso de metas y acciones recomendadas.", "accessibilityLabel": "ACCESIBILIDAD", "accessibilityTitle": "Claridad en temas y dispositivos", "accessibilityText": "Los modos Día y Noche conservan la jerarquía y el contraste. Los diseños adaptables, el foco visible, las etiquetas claras, el menor ruido visual y los patrones coherentes de interacción responden a distintas necesidades.", "challengeLabel": "DESAFÍO PRINCIPAL", "challengeTitle": "Datos complejos sin complejidad", "challengeText": "El desafío principal fue combinar transacciones, presupuestos, metas, inversiones y orientación de IA sin crear una interfaz que pareciera un software de contabilidad profesional. La divulgación progresiva mantiene disponible la información avanzada sin abrumar.", "learningLabel": "APRENDIZAJE CLAVE", "learningTitle": "La confianza debe diseñarse y construirse", "learningText": "Los productos financieros necesitan más que pantallas pulidas. El lenguaje claro, la respuesta predecible, los datos del usuario, las políticas RLS, la validación, el manejo de errores y las pruebas significativas aportan la misma calidad: confianza.",
+                "moreEyebrow": "SIGUIENTE / EXPLORA MÁS TRABAJOS", "moreTitle": "Más proyectos", "blackBullLink": "Ver proyecto del restaurante Black Bull", "blackBullAlt": "Sistema de pantalla de cocina del restaurante Black Bull", "blackBullTitle": "Black Bull Restaurant", "blackBullType": "Plataforma de operaciones para restaurantes", "devConnectLink": "Ver proyecto DevConnect", "devConnectAlt": "Plataforma de empleos tecnológicos DevConnect", "devConnectTitle": "DevConnect", "devConnectType": "Plataforma de empleos tecnológicos", "viewProject": "Ver proyecto", "viewAll": "Ver todos mis proyectos", "ctaEyebrow": "MONEYPILOT / DESARROLLO ACTIVO", "ctaTitle": "Creando claridad financiera en un producto inteligente.", "ctaText": "Sigue el proyecto en GitHub para explorar el código, la arquitectura, la estrategia de pruebas y las próximas fases del producto.", "viewGithub": "Ver repositorio en GitHub", "backProjects": "Volver a proyectos", "mobileOneAlt": "Panel de MoneyPilot mostrado en un teléfono inteligente", "mobileTwoAlt": "Panel financiero de MoneyPilot en un dispositivo móvil", "desktopAlt": "Panel de MoneyPilot presentado en un ordenador de escritorio"
             }
         },
         "petIdPage": {
@@ -1906,6 +2070,26 @@ languageOptions.forEach((option) => {
         applyLanguage(selectedLanguage);
         setLanguageMenuOpen(false);
         languageTrigger?.focus();
+    });
+
+    option.addEventListener("keydown", (event) => {
+        const optionIndex = Array.from(languageOptions).indexOf(option);
+
+        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+            event.preventDefault();
+
+            const direction = event.key === "ArrowDown" ? 1 : -1;
+            const nextIndex = (optionIndex + direction + languageOptions.length) % languageOptions.length;
+
+            languageOptions[nextIndex].focus();
+        }
+
+        if (event.key === "Home" || event.key === "End") {
+            event.preventDefault();
+
+            const nextIndex = event.key === "Home" ? 0 : languageOptions.length - 1;
+            languageOptions[nextIndex].focus();
+        }
     });
 });
 
