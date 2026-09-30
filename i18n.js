@@ -56,6 +56,32 @@ const translations = {
             "viewProject": "View Project",
             "viewAll": "View all my projects"
         },
+        "frontMentor": {
+            "eyebrow": "FRONTEND MENTOR / CHALLENGES",
+            "title": "Frontend Mentor",
+            "description": "A collection of 13 responsive challenge implementations.",
+            "credit": "Challenge designs by Frontend Mentor. Implemented and customized by Felipe Santos Belphman.",
+            "viewProject": "View project",
+            "viewCode": "View code",
+            "viewCollection": "Explore all 13 challenges",
+            "technologies": "Technologies used",
+            "previewAlt": "Screenshot of Felipe's Frontend Mentor implementation",
+            "projects": {
+                "tipCalculator": "Calculates the tip and total per person using preset or custom percentages.",
+                "timeTracking": "Shows activity summaries across daily, weekly, and monthly views.",
+                "newsletter": "Validates an email address and displays a sign-up success message.",
+                "codingBootcamp": "A responsive testimonial slider built with HTML, CSS, and JavaScript.",
+                "introSignup": "A responsive sign-up form component built with HTML, CSS, and JavaScript.",
+                "articlePreview": "A responsive article preview with an interactive share menu.",
+                "meet": "A responsive landing page for Meet, built with HTML and CSS.",
+                "testimonialsGrid": "A responsive testimonial layout built with CSS Grid.",
+                "fourCard": "A responsive feature section displaying four cards with CSS Grid.",
+                "recipe": "A responsive recipe page with semantic content and accessible layout.",
+                "socialLinks": "A responsive social links profile with custom icons and accessible interactions.",
+                "blogPreview": "A responsive blog preview card built with semantic HTML and CSS.",
+                "qrCode": "A responsive QR code component built with semantic HTML and CSS."
+            }
+        },
         "skills": {
             "titleLineOne": "Skills I use",
             "titleLineTwo": "to build useful",
@@ -754,6 +780,32 @@ const translations = {
             "viewProject": "Ver projeto",
             "viewAll": "Ver todos os projetos"
         },
+        "frontMentor": {
+            "eyebrow": "FRONTEND MENTOR / DESAFIOS",
+            "title": "Frontend Mentor",
+            "description": "Uma coleção de 13 implementações responsivas de desafios.",
+            "credit": "Designs dos desafios por Frontend Mentor. Implementação e personalizações por Felipe Santos Belphman.",
+            "viewProject": "Ver projeto",
+            "viewCode": "Ver código",
+            "viewCollection": "Ver os 13 desafios",
+            "technologies": "Tecnologias utilizadas",
+            "previewAlt": "Captura da implementação de um desafio Frontend Mentor por Felipe",
+            "projects": {
+                "tipCalculator": "Calcula a gorjeta e o total por pessoa com percentuais predefinidos ou personalizados.",
+                "timeTracking": "Apresenta resumos de atividades nas visualizações diária, semanal e mensal.",
+                "newsletter": "Valida um endereço de e-mail e exibe uma confirmação de inscrição.",
+                "codingBootcamp": "Slider responsivo de depoimentos desenvolvido com HTML, CSS e JavaScript.",
+                "introSignup": "Componente responsivo de cadastro desenvolvido com HTML, CSS e JavaScript.",
+                "articlePreview": "Prévia responsiva de artigo com menu interativo de compartilhamento.",
+                "meet": "Landing page responsiva do Meet, desenvolvida com HTML e CSS.",
+                "testimonialsGrid": "Layout responsivo de depoimentos desenvolvido com CSS Grid.",
+                "fourCard": "Seção responsiva de recursos com quatro cards organizados em CSS Grid.",
+                "recipe": "Página responsiva de receita com conteúdo semântico e layout acessível.",
+                "socialLinks": "Perfil responsivo de links sociais com ícones personalizados e interações acessíveis.",
+                "blogPreview": "Card responsivo de prévia de artigo, desenvolvido com HTML semântico e CSS.",
+                "qrCode": "Componente responsivo de QR code, desenvolvido com HTML semântico e CSS."
+            }
+        },
         "skills": {
             "titleLineOne": "Habilidades que uso",
             "titleLineTwo": "para criar produtos",
@@ -1323,6 +1375,32 @@ const translations = {
             "titleWordTwo": "recientes",
             "viewProject": "Ver proyecto",
             "viewAll": "Ver todos los proyectos"
+        },
+        "frontMentor": {
+            "eyebrow": "FRONTEND MENTOR / DESAFÍOS",
+            "title": "Frontend Mentor",
+            "description": "Una colección de 13 implementaciones adaptables de desafíos.",
+            "credit": "Diseños de los desafíos por Frontend Mentor. Implementación y personalizaciones por Felipe Santos Belphman.",
+            "viewProject": "Ver proyecto",
+            "viewCode": "Ver código",
+            "viewCollection": "Ver los 13 desafíos",
+            "technologies": "Tecnologías utilizadas",
+            "previewAlt": "Captura de la implementación de un desafío Frontend Mentor por Felipe",
+            "projects": {
+                "tipCalculator": "Calcula la propina y el total por persona con porcentajes predefinidos o personalizados.",
+                "timeTracking": "Muestra resúmenes de actividad en vistas diarias, semanales y mensuales.",
+                "newsletter": "Valida una dirección de correo electrónico y muestra una confirmación de suscripción.",
+                "codingBootcamp": "Slider adaptable de testimonios desarrollado con HTML, CSS y JavaScript.",
+                "introSignup": "Componente adaptable de registro desarrollado con HTML, CSS y JavaScript.",
+                "articlePreview": "Vista previa adaptable de un artículo con un menú interactivo para compartir.",
+                "meet": "Landing page adaptable de Meet, desarrollada con HTML y CSS.",
+                "testimonialsGrid": "Diseño adaptable de testimonios desarrollado con CSS Grid.",
+                "fourCard": "Sección adaptable de funciones con cuatro tarjetas organizadas mediante CSS Grid.",
+                "recipe": "Página adaptable de recetas con contenido semántico y diseño accesible.",
+                "socialLinks": "Perfil adaptable de enlaces sociales con iconos personalizados e interacciones accesibles.",
+                "blogPreview": "Tarjeta adaptable de vista previa de blog, desarrollada con HTML semántico y CSS.",
+                "qrCode": "Componente adaptable de código QR, desarrollado con HTML semántico y CSS."
+            }
         },
         "skills": {
             "titleLineOne": "Habilidades que uso",

@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="blackBullMobilePage.meta.title">Black Bull Mobile Case Study | Felipe S Bephman</title>
     <meta name="description" data-i18n-content="blackBullMobilePage.meta.description" content="A responsive kitchen display designed to help restaurant teams receive, organize, prepare, and complete digital orders more efficiently.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="black-bull-dev-theme.css">
 </head>
 
-<body>
+<body class="black-bull-terminal">
     <header class="site-header">
         <nav class="navigation" aria-label="Main navigation" data-i18n-aria-label="common.navigation.main">
             <a class="navigation__brand" href="./index.html#home">
@@ -22,11 +26,9 @@
                 <img src="assets/images/menu-icon.svg" alt="" aria-hidden="true">
             </button>
             <ul class="navigation__menu" id="navigation-menu">
-                <li><a href="./index.html#work" data-i18n="nav.work">Work</a></li>
+                <li><a href="./index.html#home" data-i18n="nav.intro">Intro</a></li>
                 <li><a href="./index.html#skills" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="./index.html#about" data-i18n="nav.about">About</a></li>
-                <li><a href="./index.html#how-i-work" data-i18n="nav.howIWork">How I Work</a></li>
-                <li><a href="./index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="./index.html#work" data-i18n="nav.work">Work</a></li>
                 <li class="language-switcher">
                     <button class="language-switcher__trigger" type="button" aria-label="Select language"
                         data-i18n-aria-label="language.select" aria-haspopup="true" aria-expanded="false"
@@ -103,81 +105,80 @@
             </button>
         </nav>
     </header>
-    <main class="case-study">
-    <section class="case-study__hero" aria-labelledby="case-study-title">
-        <div class="case-study__container">
-            <a class="case-study__back" href="./projects.html">
+    <main class="case-study bb-case bb-case--kitchen">
+        <section class="case-study__hero bb-hero" aria-labelledby="case-study-title">
+            <div class="case-study__container bb-shell">
+                <a class="case-study__back bb-back" href="./projects.html">
                 <span aria-hidden="true">←</span>
                 <span data-i18n="common.caseStudies.allProjects">All projects</span>
-            </a>
+                </a>
 
-            <p class="case-study__eyebrow" data-i18n="blackBullMobilePage.hero.eyebrow">
-                Restaurant technology — Kitchen display
-            </p>
+                <div class="bb-hero__grid">
+                    <div class="bb-hero__content">
+                        <p class="case-study__eyebrow bb-hero__eyebrow" data-i18n="blackBullMobilePage.hero.eyebrow">
+                            Restaurant technology — Kitchen display
+                        </p>
 
-            <h1 class="case-study__title" id="case-study-title">
-                Black Bull Mobile
-            </h1>
+                        <h1 class="case-study__title bb-hero__title" id="case-study-title">
+                            Black Bull Mobile
+                        </h1>
 
-            <p class="case-study__intro" data-i18n="blackBullMobilePage.hero.intro">
-                A responsive kitchen display designed to help restaurant
-                teams receive, organize, prepare, and complete digital
-                orders more efficiently.
-            </p>
+                        <p class="case-study__intro bb-hero__intro" data-i18n="blackBullMobilePage.hero.intro">
+                            A responsive kitchen display designed to help restaurant
+                            teams receive, organize, prepare, and complete digital
+                            orders more efficiently.
+                        </p>
+                    </div>
 
-            <dl class="case-study__meta">
-                <div>
-                    <dt data-i18n="common.caseStudies.role">Role</dt>
-                    <dd data-i18n="common.caseStudies.roleValue">Product Design &amp; Front-end Development</dd>
+                    <figure class="bb-hero__visual" aria-label="Black Bull Mobile project preview" data-i18n-aria-label="blackBullMobilePage.images.preview">
+                        <img src="assets/images/project-black-bull-mobile.png"
+                            alt="Black Bull kitchen display interface"
+                            data-i18n-alt="blackBullMobilePage.images.interface">
+                    </figure>
                 </div>
 
-                <div>
-                    <dt data-i18n="common.caseStudies.type">Type</dt>
-                    <dd data-i18n="blackBullMobilePage.details.type">Kitchen Display System</dd>
-                </div>
+                <dl class="case-study__meta bb-meta">
+                    <div>
+                        <dt data-i18n="common.caseStudies.role">Role</dt>
+                        <dd data-i18n="common.caseStudies.roleValue">Product Design &amp; Front-end Development</dd>
+                    </div>
 
-                <div>
-                    <dt data-i18n="common.caseStudies.stack">Stack</dt>
-                    <dd>Next.js, React, TypeScript, Tailwind</dd>
-                </div>
+                    <div>
+                        <dt data-i18n="common.caseStudies.type">Type</dt>
+                        <dd data-i18n="blackBullMobilePage.details.type">Kitchen Display System</dd>
+                    </div>
 
-                <div>
-                    <dt data-i18n="common.caseStudies.status">Status</dt>
-                    <dd data-i18n="common.caseStudies.mvp">MVP in development</dd>
-                </div>
-            </dl>
-        </div>
-    </section>
+                    <div>
+                        <dt data-i18n="common.caseStudies.stack">Stack</dt>
+                        <dd>Next.js, React, TypeScript, Tailwind</dd>
+                    </div>
 
-    <section class="case-study__cover" aria-label="Black Bull Mobile project preview" data-i18n-aria-label="blackBullMobilePage.images.preview">
-        <div class="case-study__container">
-            <div class="case-study__cover-frame">
-                <img
-                    src="assets/images/project-black-bull-mobile.png"
-                    alt="Black Bull kitchen display interface" data-i18n-alt="blackBullMobilePage.images.interface"
-                >
+                    <div>
+                        <dt data-i18n="common.caseStudies.status">Status</dt>
+                        <dd data-i18n="common.caseStudies.mvp">MVP in development</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="case-study__section">
-        <div class="case-study__container case-study__two-columns">
-            <h2 data-i18n="common.caseStudies.project">The project</h2>
+        <section class="case-study__section bb-section">
+            <div class="case-study__container case-study__two-columns bb-shell">
+                <h2 data-i18n="common.caseStudies.project">The project</h2>
 
-            <div class="case-study__copy">
-                <p data-i18n="blackBullMobilePage.project.overview">
-                    Black Bull Mobile connects the restaurant’s digital
-                    ordering experience with a dedicated kitchen workflow.
-                    New orders can be received and managed from one clear,
-                    responsive interface.
-                </p>
+                <div class="case-study__copy">
+                    <p data-i18n="blackBullMobilePage.project.overview">
+                        Black Bull Mobile connects the restaurant’s digital
+                        ordering experience with a dedicated kitchen workflow.
+                        New orders can be received and managed from one clear,
+                        responsive interface.
+                    </p>
 
-                <p data-i18n="blackBullMobilePage.project.environment">
-                    The display is designed for practical use in a busy
-                    restaurant environment, including tablet-sized screens.
-                </p>
+                    <p data-i18n="blackBullMobilePage.project.environment">
+                        The display is designed for practical use in a busy
+                        restaurant environment, including tablet-sized screens.
+                    </p>
+                </div>
             </div>
-        </div>
     </section>
 
     <section class="case-study__section case-study__section--muted">

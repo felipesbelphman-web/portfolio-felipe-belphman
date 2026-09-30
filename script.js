@@ -216,6 +216,194 @@ if (projectsTitle) {
 
     projectsTitleObserver.observe(projectsTitle);
 }
+
+const frontendMentorProjects = [
+    {
+        slug: "tip-calculator-app",
+        key: "tipCalculator",
+        name: "Tip Calculator",
+        image: "tip-calculator-app.png",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        featured: true
+    },
+    {
+        slug: "time-tracking-dashboard",
+        key: "timeTracking",
+        name: "Time Tracking Dashboard",
+        image: "time-tracking-dashboard.png",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        featured: true
+    },
+    {
+        slug: "newsletter-sign-up-with-success-message",
+        key: "newsletter",
+        name: "Newsletter Sign-up",
+        image: "newsletter-sign-up-with-success-message.png",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        featured: true
+    },
+    {
+        slug: "coding-bootcamp-testimonials-slider",
+        key: "codingBootcamp",
+        name: "Coding Bootcamp Testimonials Slider",
+        image: "coding-bootcamp-testimonials-slider.png",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        slug: "intro-component-with-signup-form",
+        key: "introSignup",
+        name: "Intro Component with Sign-up Form",
+        image: "intro-component-with-signup-form.png",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        slug: "article-preview-component",
+        key: "articlePreview",
+        name: "Article Preview Component",
+        image: "article-preview-component.png",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        slug: "meet-landing-page",
+        key: "meet",
+        name: "Meet Landing Page",
+        image: "meet-landing-page.png",
+        technologies: ["HTML", "CSS"]
+    },
+    {
+        slug: "testimonials-grid-section.",
+        key: "testimonialsGrid",
+        name: "Testimonials Grid Section",
+        image: "testimonials-grid-section.png",
+        technologies: ["HTML", "CSS", "CSS Grid"]
+    },
+    {
+        slug: "four-card-feature-section",
+        key: "fourCard",
+        name: "Four Card Feature Section",
+        image: "four-card-feature-section.png",
+        technologies: ["HTML", "CSS", "CSS Grid"]
+    },
+    {
+        slug: "recipe-page",
+        key: "recipe",
+        name: "Recipe Page",
+        image: "recipe-page.png",
+        technologies: ["HTML", "CSS"]
+    },
+    {
+        slug: "social-links-profile",
+        key: "socialLinks",
+        name: "Social Links Profile",
+        image: "social-links-profile.png",
+        technologies: ["HTML", "CSS"]
+    },
+    {
+        slug: "blog-preview-card",
+        key: "blogPreview",
+        name: "Blog Preview Card",
+        image: "blog-preview-card.png",
+        technologies: ["HTML", "CSS"]
+    },
+    {
+        slug: "qr-code-component",
+        key: "qrCode",
+        name: "QR Code Component",
+        image: "qr-code-component.png",
+        technologies: ["HTML", "CSS"]
+    }
+];
+
+function makeMentorElement(tagName, className, text) {
+    const element = document.createElement(tagName);
+
+    if (className) element.className = className;
+    if (text) element.textContent = text;
+
+    return element;
+}
+
+function setMentorTranslation(element, key, attribute) {
+    const language = document.documentElement.lang || "en";
+    const translation = window.portfolioI18n.getTranslation(language, key);
+
+    element.setAttribute(`data-i18n${attribute ? `-${attribute}` : ""}`, key);
+
+    if (translation !== null) {
+        if (attribute) {
+            element.setAttribute(attribute, translation);
+        } else {
+            element.textContent = translation;
+        }
+    }
+}
+
+function createFrontendMentorCard(project, index) {
+    const card = makeMentorElement("article", "project-card dev-project-card dev-project-card--mentor");
+    const meta = makeMentorElement("div", "dev-project-card__meta");
+    const number = makeMentorElement("span", "", `${String(index + 1).padStart(2, "0")} / 13`);
+    const category = makeMentorElement("span", "", "FRONTEND MENTOR");
+    const preview = makeMentorElement("div", "project-card__preview");
+    const image = makeMentorElement("img", "");
+    const footer = makeMentorElement("div", "project-card__footer");
+    const info = makeMentorElement("div", "dev-project-card__info");
+    const title = makeMentorElement("h3", "project-card__title", project.name);
+    const description = makeMentorElement("p", "dev-project-card__description");
+    const stack = makeMentorElement("div", "dev-project-card__stack");
+    const actions = makeMentorElement("div", "dev-project-card__actions");
+    const languageKey = `frontMentor.projects.${project.key}`;
+
+    setMentorTranslation(image, "frontMentor.previewAlt", "alt");
+    image.src = `assets/images/frontend-mentor/${project.image}`;
+    image.loading = "lazy";
+    image.decoding = "async";
+    preview.append(image);
+
+    setMentorTranslation(description, languageKey);
+    stack.setAttribute("aria-label", "Technologies used");
+    stack.setAttribute("data-i18n-aria-label", "frontMentor.technologies");
+    project.technologies.forEach((technology) => {
+        stack.append(makeMentorElement("span", "", technology));
+    });
+
+    info.append(title, description, stack);
+
+    [
+        ["frontMentor.viewProject", `https://felipesbelphman-web.github.io/${project.slug}/`],
+        ["frontMentor.viewCode", `https://github.com/felipesbelphman-web/${project.slug}`]
+    ].forEach(([translationKey, href]) => {
+        const link = makeMentorElement("a", "project-card__link");
+        const label = makeMentorElement("span", "");
+        const icon = makeMentorElement("img", "");
+
+        link.href = href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        setMentorTranslation(label, translationKey);
+        icon.src = "assets/images/arrow-up-right.svg";
+        icon.alt = "";
+        icon.setAttribute("aria-hidden", "true");
+        link.append(label, icon);
+        actions.append(link);
+    });
+
+    meta.append(number, category);
+    footer.append(info, actions);
+    card.append(meta, preview, footer);
+
+    return card;
+}
+
+document.querySelectorAll("[data-frontend-mentor-grid]").forEach((grid) => {
+    const isFeatured = grid.dataset.frontendMentorGrid === "featured";
+    const projects = isFeatured
+        ? frontendMentorProjects.filter((project) => project.featured)
+        : frontendMentorProjects;
+
+    projects.forEach((project) => {
+        grid.append(createFrontendMentorCard(project, frontendMentorProjects.indexOf(project)));
+    });
+});
 // DEV SKILLS — TECHNOLOGY STACK LOOP
 
 const devSkillsStack = document.querySelector(".dev-skills__stack");
