@@ -490,6 +490,8 @@ const translations = {
             }
         },
         "petIdPage": {
+            "viewLive": "View live project",
+            "viewDesign": "View design in Figma",
             "images": {
                 "interface": "Pet ID digital identification interface",
                 "preview": "Pet ID project preview"
@@ -504,7 +506,7 @@ const translations = {
             },
             "details": {
                 "type": "Digital Pet Identification",
-                "status": "Concept project"
+                "status": "Live version"
             },
             "project": {
                 "overview": "Pet ID explores a simple digital profile where important information about a pet can be presented clearly and accessed from different devices.",
@@ -1086,6 +1088,8 @@ const translations = {
             }
         },
         "petIdPage": {
+            "viewLive": "Ver projeto online",
+            "viewDesign": "Ver design no Figma",
             "images": {
                 "interface": "Interface de identificação digital Pet ID",
                 "preview": "Prévia do projeto Pet ID"
@@ -1100,7 +1104,7 @@ const translations = {
             },
             "details": {
                 "type": "Identificação digital de pets",
-                "status": "Projeto conceitual"
+                "status": "Versão online"
             },
             "project": {
                 "overview": "Pet ID explora um perfil digital simples, com informações importantes sobre um pet apresentadas de forma clara e acessíveis em diferentes dispositivos.",
@@ -1682,6 +1686,8 @@ const translations = {
             }
         },
         "petIdPage": {
+            "viewLive": "Ver proyecto online",
+            "viewDesign": "Ver diseño en Figma",
             "images": {
                 "interface": "Interfaz de identificación digital Pet ID",
                 "preview": "Vista previa del proyecto Pet ID"
@@ -1696,7 +1702,7 @@ const translations = {
             },
             "details": {
                 "type": "Identificación digital de mascotas",
-                "status": "Proyecto conceptual"
+                "status": "Versión online"
             },
             "project": {
                 "overview": "Pet ID explora un perfil digital sencillo donde la información importante de una mascota se presenta con claridad y es accesible desde distintos dispositivos.",

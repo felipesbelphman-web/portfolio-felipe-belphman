@@ -8295,3 +8295,36 @@ body.portfolio-terminal .navigation__contact-icon {
         height: 46px;
     }
 }
+
+/* SHARED PROJECT CONTACT FOOTER */
+.project-contact-footer{
+  margin:0;
+  background:#0a0a0c;
+  color:var(--dev-text-primary);
+  font-family:"JetBrains Mono",monospace;
+}
+.project-contact-footer .final-cta__buttons{
+  flex-wrap:wrap;
+}
+.project-contact-footer .final-cta__button{
+  min-height:48px;
+  height:auto;
+  max-width:100%;
+  padding-block:14px;
+  white-space:normal;
+  text-align:center;
+}
+.project-contact-footer .final-cta__location p{
+  flex-wrap:wrap;
+  min-width:0;
+}
+.project-contact-footer .final-cta__button:focus-visible{
+  outline:2px solid #a970ff;
+  outline-offset:4px;
+}
+@media(prefers-reduced-motion:reduce){
+  .project-contact-footer .final-cta__button{
+    transition:none;
+    transform:none;
+  }
+}

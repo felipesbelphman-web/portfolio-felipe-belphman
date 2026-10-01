@@ -1,0 +1,36 @@
+
+.pet-id-case .mp-hero__grid{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)}
+.pet-id-case .mp-hero__title{font-size:clamp(4.5rem,7vw,7rem);line-height:.95}
+.pet-id-case .mp-hero__summary{font-size:1rem;line-height:1.75}
+.pet-id-case .pet-id-preview{min-width:0;margin:0;align-self:center}
+.pet-id-case .pet-id-preview .mp-preview__media{display:block;aspect-ratio:auto;object-fit:contain}
+.pet-id-case .mp-metric dd{overflow-wrap:anywhere}
+.pet-id-case .mp-metric dt,.pet-id-case .mp-metric dd,.pet-id-case .mp-tech-list li,.pet-id-case .mp-status{font-size:.875rem}
+.pet-id-case .case-study__section{padding:0 24px 32px;border:0;background:var(--mp-background);scroll-margin-top:24px}
+.pet-id-case .case-study__container{width:min(1240px,100%);margin-inline:auto}
+.pet-id-case .case-study__two-columns{grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(24px,4vw,64px);padding:36px;border:1px solid var(--mp-border);background:var(--mp-surface)}
+.pet-id-case .case-study__section h2{color:var(--mp-text);font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.5rem,4vw,3.5rem);font-weight:800;line-height:1;letter-spacing:-.02em;text-transform:uppercase}
+.pet-id-case .case-study__copy p{color:var(--mp-text-soft);font-size:1rem;line-height:1.8}
+.pet-id-case .case-study__copy p+p{margin-top:20px}
+.pet-id-case .case-study__next{padding:48px 24px 64px;border:0;background:var(--mp-background)}
+.pet-id-case .case-study__next p{color:var(--mp-accent);font-size:.875rem}
+.pet-id-case .case-study__next a{color:var(--mp-text);font-family:"Barlow Condensed",sans-serif;font-size:clamp(3rem,6vw,5rem);font-weight:800;line-height:1;letter-spacing:-.02em;text-transform:uppercase}
+.pet-id-case .case-study__next a:focus-visible{outline:2px solid var(--mp-accent);outline-offset:6px}
+@media(max-width:980px){.pet-id-case .mp-hero__grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){.pet-id-case .case-study__section{padding:0 16px 24px}.pet-id-case .case-study__two-columns{grid-template-columns:minmax(0,1fr);gap:24px;padding:24px 20px}.pet-id-case .case-study__next{padding:24px 16px 48px}}
+@media(prefers-reduced-motion:reduce){.pet-id-case .case-study__next a span{transition:none}}
+
+/* Pet ID - Figma design link */
+.pet-id-case .pet-id-figma-button{
+  background:#a970ff;
+  color:#0a0a0c;
+  border:1px solid #a970ff;
+}
+.pet-id-case .pet-id-figma-button:hover{
+  background:#bd91ff;
+  border-color:#bd91ff;
+}
+.pet-id-case .pet-id-figma-button:focus-visible{
+  outline:2px solid #f2eee7;
+  outline-offset:4px;
+}
