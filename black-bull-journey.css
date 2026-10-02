@@ -1,0 +1,104 @@
+/* Nine stills from the hero walkthrough, scoped to the existing journey section. */
+.bbj-journey .bbj-guide {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    margin: 0 0 24px;
+    padding: 16px 0;
+    border-block: 1px solid var(--bbm-line);
+}
+
+.bbj-journey .bbj-guide p {
+    flex: 1 1 280px;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.bbj-journey .bbj-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.bbj-journey .bbj-index a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 9px 12px;
+    border: 1px solid var(--bbm-line);
+    border-radius: 4px;
+    background: var(--bb-surface);
+    color: var(--bbm-copy);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.bbj-journey .bbj-index a span:first-child { color: var(--bbm-violet); }
+.bbj-journey .bbj-index a:hover { border-color: var(--bbm-violet); color: var(--bb-text); }
+
+.bbj-journey .bbj-gallery {
+    display: grid;
+    gap: 28px;
+    padding: 0;
+    list-style: none;
+}
+
+.bbj-journey .bbj-step { min-width: 0; scroll-margin-top: 28px; }
+.bbj-journey .bbj-step figure {
+    overflow: hidden;
+    border: 1px solid var(--bbm-line);
+    border-radius: 6px;
+    background: #0b0b0b;
+}
+
+.bbj-journey .bbj-image-link { display: block; }
+.bbj-journey .bbj-image-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.bbj-journey .bbj-caption {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) 24px;
+    align-items: start;
+    gap: 18px;
+    padding: 24px;
+    background: var(--bb-surface);
+    letter-spacing: normal;
+}
+
+.bbj-journey .bbj-number {
+    padding-top: 3px;
+    color: var(--bbm-violet);
+    font-family: var(--bb-font-display);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.bbj-journey .bbj-caption h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bbj-journey .bbj-caption p { max-width: 88ch; font-size: 12px; }
+.bbj-journey .bbj-expand { color: var(--bbm-copy); font-size: 19px; line-height: 1.5; }
+.bbj-journey a:focus-visible { outline: 3px solid var(--bbm-violet); outline-offset: 4px; }
+.bbj-journey .bbj-image-link:focus-visible { outline-offset: -4px; }
+.bbj-journey .bbj-step:target figure { border-color: var(--bbm-violet); }
+
+@media (max-width: 600px) {
+    .bbj-journey .bbj-gallery { gap: 20px; }
+    .bbj-journey .bbj-caption { grid-template-columns: 30px minmax(0, 1fr); gap: 12px; padding: 18px 16px; }
+    .bbj-journey .bbj-caption h3 { font-size: 14px; }
+    .bbj-journey .bbj-caption p { font-size: 12px; }
+    .bbj-journey .bbj-number { font-size: 28px; }
+    .bbj-journey .bbj-expand { display: none; }
+}

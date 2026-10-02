@@ -239,11 +239,11 @@ const translations = {
         "blackBullMobilePage": {
             "meta": {
                 "title": "Black Bull Mobile Case Study | Felipe S Bephman",
-                "description": "A responsive kitchen display designed to help restaurant teams receive, organize, prepare, and complete digital orders more efficiently."
+                "description": "Black Bull Mobile: a detailed case study of a digital restaurant menu, mobile ordering interface and kitchen display by Felipe S Bephman."
             },
             "hero": {
                 "eyebrow": "Restaurant technology — Kitchen display",
-                "intro": "A responsive kitchen display designed to help restaurant teams receive, organize, prepare, and complete digital orders more efficiently."
+                "intro": "A mobile digital menu and kitchen display designed around one connected journey: discover the food, place an order and give the restaurant team a clear next step."
             },
             "details": {
                 "type": "Kitchen Display System"
@@ -264,6 +264,165 @@ const translations = {
             "solution": {
                 "workflow": "Orders are organized into clear stages such as new, preparing, and ready. Status indicators, timers, and focused order cards help the kitchen identify priorities and update progress.",
                 "upcoming": "Additional workflow details, device mockups, and final interface screens will be added as the case study develops."
+            },
+            "content": {
+                "heroEyebrow": "BLACK BULL / RESTAURANT TECHNOLOGY",
+                "subtitle": "A restaurant experience, from table to kitchen.",
+                "intro": "A mobile digital menu and kitchen display designed around one connected journey: discover the food, place an order and give the restaurant team a clear next step.",
+                "explore": "Explore the case study",
+                "kitchenLink": "See the kitchen workflow",
+                "heroCaption": "THE GUEST EXPERIENCE / MOBILE MENU",
+                "type": "Digital menu + kitchen display",
+                "focus": "FOCUS",
+                "focusValue": "Mobile UX · Restaurant operations",
+                "contents": "Inside this case study",
+                "navStrategy": "Overview",
+                "navJourney": "Guest journey",
+                "navDesign": "Visual design",
+                "navConfirmation": "Order feedback",
+                "navKitchen": "Kitchen display",
+                "navDevelopment": "Development",
+                "strategyLabel": "01 / PRODUCT STRATEGY",
+                "strategyTitle": "One restaurant. Two sides of the experience.",
+                "strategyIntro": "Black Bull brings the customer-facing menu and the kitchen workflow into the same product story. The design balances a strong steakhouse identity with the practical details of ordering and preparing food.",
+                "problemTitle": "THE DESIGN CHALLENGE",
+                "problemText": "A digital menu needs to be easy to browse on a small screen. At the other end of the journey, kitchen staff need to identify the table, read the items and understand the order status at a glance. Both experiences need clarity, but their priorities are different.",
+                "solutionTitle": "THE PRODUCT APPROACH",
+                "solutionText": "Use photography and familiar categories to guide guests through the menu. Make the confirmation screen explicit about what happened. Give the kitchen focused order cards and visible preparation states, keeping the Black Bull identity consistent throughout.",
+                "guestTitle": "For guests",
+                "guestText": "Recognizable categories, visual browsing and a clear confirmation.",
+                "teamTitle": "For the restaurant team",
+                "teamText": "Table context, readable order details and visible preparation stages.",
+                "journeyLabel": "02 / THE GUEST JOURNEY",
+                "journeyTitle": "From the first impression to the next order.",
+                "journeyIntro": "The proposed journey starts at the table through a QR code or NFC tag. The mobile interface then moves from brand introduction to menu discovery and order confirmation.",
+                "stepOneTitle": "Open the menu",
+                "stepOneText": "A food-led welcome screen introduces the steakhouse.",
+                "stepTwoTitle": "Explore categories",
+                "stepTwoText": "Photos and labels organize starters, salads, meats, pasta, desserts and drinks.",
+                "stepThreeTitle": "Confirm the order",
+                "stepThreeText": "A dedicated screen shows the order number, table, item count and total.",
+                "stepFourTitle": "Continue the visit",
+                "stepFourText": "A clear return action takes the guest back to the menu.",
+                "menuCaption": "MENU DISCOVERY / FOOD PHOTOGRAPHY + CATEGORY NAVIGATION",
+                "designLabel": "03 / VISUAL DESIGN",
+                "designTitle": "A bold identity. A familiar way to browse.",
+                "designIntro": "The interface takes its visual direction from the Black Bull brand: a dark backdrop, red accents, condensed headings and prominent food photography. The menu structure stays simple so the visual identity supports the task.",
+                "decisionOneTitle": "Food before extra navigation",
+                "decisionOneText": "Each category combines an image and a text label, giving guests two ways to recognize where they want to go.",
+                "decisionTwoTitle": "A consistent visual language",
+                "decisionTwoText": "The logo, dark surfaces and red actions connect the welcome screen, menu and confirmation.",
+                "decisionThreeTitle": "Clear ways to move around",
+                "decisionThreeText": "Back, Home and Popular actions give the menu recognizable navigation points.",
+                "layersCaption": "INTERFACE DETAIL / CATEGORY HIERARCHY",
+                "confirmationLabel": "04 / ORDER FEEDBACK",
+                "confirmationTitle": "Make the next moment feel clear.",
+                "confirmationIntro": "The confirmation screen answers the immediate question: was my order received? A prominent status message is followed by a compact summary and a direct route back to the menu.",
+                "confirmationOneCaption": "01 / EXPLICIT ORDER STATUS",
+                "confirmationTwoCaption": "02 / ORDER SUMMARY + RETURN ACTION",
+                "feedbackOneTitle": "Reassurance",
+                "feedbackOneText": "A success icon and a written status reinforce the confirmation together.",
+                "feedbackTwoTitle": "Useful context",
+                "feedbackTwoText": "Order number, table, items and total remain visible for a quick check.",
+                "feedbackThreeTitle": "A next step",
+                "feedbackThreeText": "The return-to-menu action keeps the guest from reaching a dead end.",
+                "kitchenLabel": "05 / THE KITCHEN EXPERIENCE",
+                "kitchenTitle": "The other side of the order.",
+                "kitchenIntro": "The kitchen display shifts the focus from food discovery to order preparation. Its cards group the table, service type, items, quantities and total, with a visible action for the next preparation stage.",
+                "kitchenCaption": "KITCHEN DISPLAY / ORDER CARDS + PREPARATION STATES",
+                "newTitle": "New",
+                "newText": "Identify the order and start preparation.",
+                "preparingTitle": "Preparing",
+                "preparingText": "Keep work in progress easy to recognize.",
+                "readyTitle": "Ready to serve",
+                "readyText": "Show when the order is ready for service.",
+                "completedTitle": "Completed",
+                "completedText": "Distinguish finished orders from active work.",
+                "kitchenNote": "Text labels accompany the status colors, so the meaning of each stage is written out as well as visually highlighted.",
+                "developmentLabel": "06 / DESIGN + DEVELOPMENT",
+                "developmentTitle": "Turning the interface into a product.",
+                "developmentIntro": "My role brings product design and front-end development together. The project is an MVP in development; this case study presents the interface direction and intended restaurant workflow.",
+                "designWorkTitle": "Product design",
+                "designWorkText": "Figma supports the screen layouts, visual hierarchy and mockup presentation. The guest and kitchen views share an identity while serving different tasks.",
+                "frontendTitle": "Front-end foundation",
+                "frontendText": "Next.js, React, TypeScript and Tailwind form the project stack. The implementation focus is a consistent, responsive interface across the menu and kitchen views.",
+                "nextWorkTitle": "Next validation steps",
+                "nextWorkText": "Test menu discovery and order clarity with guests and staff. Check keyboard access, contrast, touch targets and the handoff between order submission and kitchen status.",
+                "learningLabel": "07 / PRODUCT THINKING",
+                "learningTitle": "Clarity connects the whole experience.",
+                "learningText": "The central design lesson is that the customer journey continues beyond the menu. A clear confirmation helps the guest understand what happened, while a clear kitchen card helps the team decide what to do next. Designing both sides makes the handoff part of the product.",
+                "moreLabel": "KEEP EXPLORING",
+                "moreTitle": "More from my portfolio.",
+                "moneyPilotText": "Personal finance · Product design + front-end",
+                "blackBullText": "Explore the restaurant menu project",
+                "viewProject": "View project",
+                "backTop": "Back to top",
+                "heroAlt": "Hand holding a phone with the Black Bull welcome screen and steak photography",
+                "menuAlt": "Black Bull menu categories on a phone against a purple background",
+                "layersAlt": "Exploded mobile mockup highlighting Black Bull food categories on a blue background",
+                "confirmationAlt": "Black Bull order confirmation screen on a black smartphone",
+                "angledAlt": "Angled white phone showing the confirmed order, table, item count and total",
+                "kitchenAlt": "Laptop on a desk showing Black Bull kitchen order cards in different preparation stages",
+                "technologies": "Project tools and technologies",
+                "heroSubtitle": "A Connected Restaurant Ordering Experience",
+                    "heroSummary": "NFC access, a visual digital menu and clear order confirmation—connecting the guest experience with the kitchen and table service.",
+                    "heroVideoLabel": "Black Bull customer journey: NFC access, menu, order confirmation, kitchen and table service.",
+                    "heroVideoCaption": "PRODUCT WALKTHROUGH · NFC → MENU → KITCHEN → TABLE",
+                    "heroVideoFallback": "Download the Black Bull walkthrough",
+                    "visualJourney": {
+                        "title": "From the first tap to the first bite.",
+                        "intro": "Follow the proposed Black Bull experience in nine steps: arrive at the table, open the menu with an NFC tag, build an order and follow the handoff to the kitchen and table service.",
+                        "imageHint": "Select an image to open it at full size in a new tab.",
+                        "imageLanguage": "Walkthrough images are in English. Kitchen and table-service scenes illustrate the proposed workflow.",
+                        "navigationLabel": "Jump to a step in the customer journey",
+                        "steps": {
+                            "arrival": {
+                                "title": "Arrive at the table",
+                                "text": "The guest takes a seat and finds the NFC tag on the table: the starting point for the digital ordering experience.",
+                                "alt": "Arrival scene showing a guest beside Table 01 with an NFC tag."
+                            },
+                            "nfc": {
+                                "title": "Open the menu with NFC",
+                                "text": "The guest holds a phone near the NFC tag, then taps the notification to open the restaurant menu.",
+                                "alt": "A phone beside the table NFC tag, displaying a notification to open the Black Bull menu."
+                            },
+                            "dineIn": {
+                                "title": "Choose Dine In",
+                                "text": "The guest selects Dine In and continues to the menu for a meal at the restaurant.",
+                                "alt": "Black Bull service-selection screen with the Dine In option."
+                            },
+                            "categories": {
+                                "title": "Explore the categories",
+                                "text": "Food photos and clear category labels help the guest browse starters, salads, meats, pasta, desserts and drinks.",
+                                "alt": "Black Bull menu screen showing six food and drink categories on a phone."
+                            },
+                            "choose": {
+                                "title": "Choose the dishes",
+                                "text": "The guest browses dishes, reads their details and adds favourites to the order.",
+                                "alt": "Black Bull dish-browsing screen showing food photos and menu details on a phone."
+                            },
+                            "review": {
+                                "title": "Review the order",
+                                "text": "Before confirming, the guest checks the items and quantities and adds any special instructions.",
+                                "alt": "Black Bull Review Your Order screen with items, quantities and order details."
+                            },
+                            "confirmed": {
+                                "title": "Receive confirmation",
+                                "text": "The confirmation screen presents the order number, table and summary, making the next step clear to the guest.",
+                                "alt": "Black Bull Order Confirmed screen showing the order and table details."
+                            },
+                            "kitchen": {
+                                "title": "Prepare in the kitchen",
+                                "text": "In the proposed kitchen workflow, the team receives the order and moves it through New, Preparing and Ready while keeping the table visible.",
+                                "alt": "Illustrative kitchen board with New, Preparing and Ready columns and the order for Table 01."
+                            },
+                            "service": {
+                                "title": "Serve at the table",
+                                "text": "Once the dishes are ready, the team brings the meal to the correct table, completing the journey from phone to plate.",
+                                "alt": "Illustration of a covered dish served to a guest at Table 01."
+                            }
+                        }
+                    }
             }
         },
         "projectsPage": {
@@ -965,11 +1124,11 @@ const translations = {
         "blackBullMobilePage": {
             "meta": {
                 "title": "Case Black Bull Mobile — Felipe S Bephman",
-                "description": "Um painel de cozinha responsivo criado para ajudar equipes de restaurantes a receber, organizar, preparar e concluir pedidos digitais com mais eficiência."
+                "description": "Black Bull Mobile: estudo de caso detalhado de um cardápio digital, interface de pedidos mobile e painel de cozinha por Felipe S Bephman."
             },
             "hero": {
                 "eyebrow": "Tecnologia para restaurantes — Painel da cozinha",
-                "intro": "Um painel de cozinha responsivo criado para ajudar equipes de restaurantes a receber, organizar, preparar e concluir pedidos digitais com mais eficiência."
+                "intro": "Um cardápio digital mobile e um painel de cozinha pensados como uma jornada conectada: descobrir os pratos, fazer um pedido e dar à equipe do restaurante um próximo passo claro."
             },
             "details": {
                 "type": "Sistema de painel de cozinha"
@@ -990,6 +1149,165 @@ const translations = {
             "solution": {
                 "workflow": "Os pedidos são organizados em etapas claras, como novos, em preparo e prontos. Indicadores de status, temporizadores e cartões objetivos ajudam a cozinha a identificar prioridades e atualizar o andamento.",
                 "upcoming": "Mais detalhes do fluxo de trabalho, mockups de dispositivos e telas finais da interface serão adicionados conforme o case evoluir."
+            },
+            "content": {
+                "heroEyebrow": "BLACK BULL / TECNOLOGIA PARA RESTAURANTES",
+                "subtitle": "Uma experiência de restaurante, da mesa à cozinha.",
+                "intro": "Um cardápio digital mobile e um painel de cozinha pensados como uma jornada conectada: descobrir os pratos, fazer um pedido e dar à equipe do restaurante um próximo passo claro.",
+                "explore": "Explorar o estudo de caso",
+                "kitchenLink": "Ver o fluxo da cozinha",
+                "heroCaption": "A EXPERIÊNCIA DO CLIENTE / MENU MOBILE",
+                "type": "Cardápio digital + painel de cozinha",
+                "focus": "FOCO",
+                "focusValue": "UX mobile · Operação de restaurantes",
+                "contents": "Neste estudo de caso",
+                "navStrategy": "Visão geral",
+                "navJourney": "Jornada do cliente",
+                "navDesign": "Design visual",
+                "navConfirmation": "Confirmação",
+                "navKitchen": "Painel de cozinha",
+                "navDevelopment": "Desenvolvimento",
+                "strategyLabel": "01 / ESTRATÉGIA DE PRODUTO",
+                "strategyTitle": "Um restaurante. Dois lados da experiência.",
+                "strategyIntro": "O Black Bull reúne o cardápio do cliente e o fluxo da cozinha na mesma proposta de produto. O design combina a identidade marcante de uma steakhouse com os detalhes práticos de pedir e preparar uma refeição.",
+                "problemTitle": "O DESAFIO DE DESIGN",
+                "problemText": "Um cardápio digital precisa ser fácil de explorar em uma tela pequena. Na outra ponta da jornada, a cozinha precisa identificar a mesa, ler os itens e entender o status do pedido rapidamente. As duas experiências precisam de clareza, mas têm prioridades diferentes.",
+                "solutionTitle": "A PROPOSTA DO PRODUTO",
+                "solutionText": "Usar fotografias e categorias familiares para orientar o cliente pelo cardápio. Deixar explícito o que aconteceu na confirmação. Oferecer à cozinha cartões de pedido objetivos e estados de preparo visíveis, mantendo a identidade Black Bull em toda a experiência.",
+                "guestTitle": "Para os clientes",
+                "guestText": "Categorias reconhecíveis, navegação visual e confirmação clara.",
+                "teamTitle": "Para a equipe do restaurante",
+                "teamText": "Contexto da mesa, detalhes legíveis e etapas de preparo visíveis.",
+                "journeyLabel": "02 / A JORNADA DO CLIENTE",
+                "journeyTitle": "Da primeira impressão ao próximo pedido.",
+                "journeyIntro": "A jornada proposta começa na mesa, por um QR code ou uma tag NFC. A interface mobile segue da apresentação da marca à descoberta do cardápio e à confirmação do pedido.",
+                "stepOneTitle": "Abrir o cardápio",
+                "stepOneText": "Uma tela de entrada com a gastronomia em destaque apresenta a steakhouse.",
+                "stepTwoTitle": "Explorar categorias",
+                "stepTwoText": "Fotos e rótulos organizam entradas, saladas, carnes, massas, sobremesas e bebidas.",
+                "stepThreeTitle": "Confirmar o pedido",
+                "stepThreeText": "Uma tela dedicada mostra número do pedido, mesa, quantidade de itens e total.",
+                "stepFourTitle": "Continuar a experiência",
+                "stepFourText": "Uma ação de retorno clara leva o cliente de volta ao cardápio.",
+                "menuCaption": "DESCOBERTA DO MENU / FOTOGRAFIA + NAVEGAÇÃO POR CATEGORIAS",
+                "designLabel": "03 / DESIGN VISUAL",
+                "designTitle": "Identidade marcante. Navegação familiar.",
+                "designIntro": "A interface segue a direção visual da marca Black Bull: fundo escuro, detalhes vermelhos, títulos condensados e fotografias dos pratos em destaque. A estrutura do menu permanece simples para que a identidade visual apoie a navegação.",
+                "decisionOneTitle": "Os pratos em primeiro plano",
+                "decisionOneText": "Cada categoria combina imagem e texto, oferecendo duas formas de reconhecer o que o cliente procura.",
+                "decisionTwoTitle": "Uma linguagem visual consistente",
+                "decisionTwoText": "O logotipo, as superfícies escuras e as ações vermelhas conectam a entrada, o cardápio e a confirmação.",
+                "decisionThreeTitle": "Caminhos claros para navegar",
+                "decisionThreeText": "As ações Voltar, Início e Populares oferecem pontos de navegação reconhecíveis no cardápio.",
+                "layersCaption": "DETALHE DA INTERFACE / HIERARQUIA DE CATEGORIAS",
+                "confirmationLabel": "04 / CONFIRMAÇÃO DO PEDIDO",
+                "confirmationTitle": "Clareza também depois de pedir.",
+                "confirmationIntro": "A tela de confirmação responde à pergunta imediata: meu pedido foi recebido? Uma mensagem de status em destaque vem acompanhada de um resumo compacto e um caminho direto de volta ao cardápio.",
+                "confirmationOneCaption": "01 / STATUS EXPLÍCITO DO PEDIDO",
+                "confirmationTwoCaption": "02 / RESUMO DO PEDIDO + AÇÃO DE RETORNO",
+                "feedbackOneTitle": "Confiança",
+                "feedbackOneText": "Um ícone de sucesso e um status por escrito reforçam a confirmação juntos.",
+                "feedbackTwoTitle": "Contexto útil",
+                "feedbackTwoText": "Número do pedido, mesa, itens e total ficam visíveis para uma conferência rápida.",
+                "feedbackThreeTitle": "Um próximo passo",
+                "feedbackThreeText": "A ação de voltar ao cardápio evita que o cliente fique sem um caminho para continuar.",
+                "kitchenLabel": "05 / A EXPERIÊNCIA DA COZINHA",
+                "kitchenTitle": "O outro lado do pedido.",
+                "kitchenIntro": "O painel da cozinha muda o foco da descoberta dos pratos para o preparo dos pedidos. Os cartões agrupam mesa, tipo de atendimento, itens, quantidades e total, com uma ação visível para a próxima etapa do preparo.",
+                "kitchenCaption": "PAINEL DE COZINHA / CARTÕES DE PEDIDO + ESTADOS DE PREPARO",
+                "newTitle": "Novo",
+                "newText": "Identificar o pedido e iniciar o preparo.",
+                "preparingTitle": "Em preparo",
+                "preparingText": "Deixar o trabalho em andamento fácil de reconhecer.",
+                "readyTitle": "Pronto para servir",
+                "readyText": "Mostrar quando o pedido está pronto para o atendimento.",
+                "completedTitle": "Concluído",
+                "completedText": "Distinguir pedidos finalizados do trabalho ativo.",
+                "kitchenNote": "Rótulos acompanham as cores de status, deixando o significado de cada etapa explícito por escrito e em destaque visual.",
+                "developmentLabel": "06 / DESIGN + DESENVOLVIMENTO",
+                "developmentTitle": "Transformando a interface em produto.",
+                "developmentIntro": "Meu papel combina design de produto e desenvolvimento front-end. O projeto é um MVP em desenvolvimento; este estudo de caso apresenta a direção da interface e o fluxo proposto para o restaurante.",
+                "designWorkTitle": "Design de produto",
+                "designWorkText": "O Figma apoia os layouts, a hierarquia visual e a apresentação dos mockups. As telas do cliente e da cozinha compartilham uma identidade, atendendo a tarefas diferentes.",
+                "frontendTitle": "Base do front-end",
+                "frontendText": "Next.js, React, TypeScript e Tailwind formam a stack do projeto. O foco de implementação é uma interface consistente e responsiva entre o menu e o painel da cozinha.",
+                "nextWorkTitle": "Próximas validações",
+                "nextWorkText": "Testar a descoberta do menu e a clareza dos pedidos com clientes e equipe. Verificar acesso por teclado, contraste, áreas de toque e a passagem do envio do pedido ao status na cozinha.",
+                "learningLabel": "07 / PENSAMENTO DE PRODUTO",
+                "learningTitle": "A clareza conecta toda a experiência.",
+                "learningText": "O principal aprendizado de design é que a jornada do cliente continua além do cardápio. Uma confirmação clara ajuda o cliente a entender o que aconteceu, enquanto um cartão de cozinha claro ajuda a equipe a decidir o próximo passo. Projetar os dois lados torna essa passagem parte do produto.",
+                "moreLabel": "CONTINUE EXPLORANDO",
+                "moreTitle": "Mais do meu portfólio.",
+                "moneyPilotText": "Finanças pessoais · Design de produto + front-end",
+                "blackBullText": "Explore o projeto do cardápio do restaurante",
+                "viewProject": "Ver projeto",
+                "backTop": "Voltar ao topo",
+                "heroAlt": "Mão segurando um celular com a tela de entrada do Black Bull e fotografia de uma carne",
+                "menuAlt": "Categorias do cardápio Black Bull em um celular sobre fundo roxo",
+                "layersAlt": "Mockup mobile em camadas destacando as categorias de pratos Black Bull sobre fundo azul",
+                "confirmationAlt": "Tela de confirmação do pedido Black Bull em um smartphone preto",
+                "angledAlt": "Celular branco inclinado mostrando pedido confirmado, mesa, quantidade de itens e total",
+                "kitchenAlt": "Notebook sobre uma mesa exibindo cartões de pedidos Black Bull em diferentes etapas de preparo",
+                "technologies": "Ferramentas e tecnologias do projeto",
+                "heroSubtitle": "Uma experiência conectada de pedidos no restaurante",
+                    "heroSummary": "Acesso por NFC, cardápio digital visual e confirmação clara dos pedidos—conectando a experiência do cliente à cozinha e ao serviço de mesa.",
+                    "heroVideoLabel": "Jornada do cliente Black Bull: acesso por NFC, cardápio, confirmação do pedido, cozinha e serviço de mesa.",
+                    "heroVideoCaption": "DEMONSTRAÇÃO DO PRODUTO · NFC → CARDÁPIO → COZINHA → MESA",
+                    "heroVideoFallback": "Baixar a demonstração do Black Bull",
+                    "visualJourney": {
+                        "title": "Do primeiro toque à primeira mordida.",
+                        "intro": "Conheça a experiência proposta para o Black Bull em nove etapas: chegar à mesa, abrir o cardápio por uma tag NFC, montar o pedido e acompanhar o fluxo até a cozinha e o serviço à mesa.",
+                        "imageHint": "Selecione uma imagem para abri-la em tamanho completo em uma nova aba.",
+                        "imageLanguage": "As imagens da demonstração estão em inglês. As cenas da cozinha e do serviço à mesa ilustram o fluxo proposto.",
+                        "navigationLabel": "Ir para uma etapa da jornada do cliente",
+                        "steps": {
+                            "arrival": {
+                                "title": "Chegar à mesa",
+                                "text": "O cliente se acomoda e encontra a tag NFC na mesa: o ponto de partida para a experiência de pedido digital.",
+                                "alt": "Cena de chegada com um cliente ao lado da Mesa 01 e uma tag NFC."
+                            },
+                            "nfc": {
+                                "title": "Abrir o cardápio com NFC",
+                                "text": "O cliente aproxima o celular da tag NFC e toca na notificação para abrir o cardápio do restaurante.",
+                                "alt": "Celular próximo à tag NFC da mesa, exibindo uma notificação para abrir o cardápio Black Bull."
+                            },
+                            "dineIn": {
+                                "title": "Escolher Dine In",
+                                "text": "O cliente seleciona Dine In, a opção para comer no restaurante, e segue para o cardápio.",
+                                "alt": "Tela de seleção de serviço do Black Bull com a opção Dine In."
+                            },
+                            "categories": {
+                                "title": "Explorar as categorias",
+                                "text": "Fotos e nomes de categorias ajudam o cliente a encontrar entradas, saladas, carnes, massas, sobremesas e bebidas.",
+                                "alt": "Cardápio Black Bull no celular com seis categorias de comidas e bebidas."
+                            },
+                            "choose": {
+                                "title": "Escolher os pratos",
+                                "text": "O cliente explora os pratos, lê os detalhes e adiciona os favoritos ao pedido.",
+                                "alt": "Tela de pratos do Black Bull com fotografias e detalhes do cardápio no celular."
+                            },
+                            "review": {
+                                "title": "Revisar o pedido",
+                                "text": "Antes de confirmar, o cliente confere os itens e as quantidades e acrescenta instruções especiais, se necessário.",
+                                "alt": "Tela Review Your Order do Black Bull com itens, quantidades e detalhes do pedido."
+                            },
+                            "confirmed": {
+                                "title": "Receber a confirmação",
+                                "text": "A confirmação apresenta o número do pedido, a mesa e o resumo, deixando claro para o cliente o que acontece em seguida.",
+                                "alt": "Tela Order Confirmed do Black Bull com informações do pedido e da mesa."
+                            },
+                            "kitchen": {
+                                "title": "Preparar na cozinha",
+                                "text": "No fluxo proposto para a cozinha, a equipe recebe o pedido e atualiza as etapas Novo, Em preparo e Pronto, mantendo a identificação da mesa.",
+                                "alt": "Quadro ilustrativo da cozinha com colunas Novo, Em preparo e Pronto e o pedido da Mesa 01."
+                            },
+                            "service": {
+                                "title": "Servir à mesa",
+                                "text": "Com os pratos prontos, a equipe leva a refeição à mesa correta e completa a jornada do celular ao prato.",
+                                "alt": "Ilustração de uma refeição coberta sendo servida ao cliente na Mesa 01."
+                            }
+                        }
+                    }
             }
         },
         "projectsPage": {
@@ -1563,11 +1881,11 @@ const translations = {
         "blackBullMobilePage": {
             "meta": {
                 "title": "Caso de estudio Black Bull Mobile — Felipe S Bephman",
-                "description": "Un panel de cocina adaptable diseñado para ayudar a los equipos de restaurantes a recibir, organizar, preparar y completar pedidos digitales con mayor eficiencia."
+                "description": "Black Bull Mobile: caso de estudio detallado de un menú digital, interfaz de pedidos móvil y pantalla de cocina por Felipe S Bephman."
             },
             "hero": {
                 "eyebrow": "Tecnología para restaurantes — Panel de cocina",
-                "intro": "Un panel de cocina adaptable diseñado para ayudar a los equipos de restaurantes a recibir, organizar, preparar y completar pedidos digitales con mayor eficiencia."
+                "intro": "Un menú digital móvil y una pantalla de cocina pensados como un recorrido conectado: descubrir los platos, hacer un pedido y ofrecer al equipo un siguiente paso claro."
             },
             "details": {
                 "type": "Sistema de panel de cocina"
@@ -1588,6 +1906,165 @@ const translations = {
             "solution": {
                 "workflow": "Los pedidos se organizan en etapas claras, como nuevos, en preparación y listos. Los indicadores de estado, temporizadores y tarjetas concisas ayudan a la cocina a identificar prioridades y actualizar el progreso.",
                 "upcoming": "Se añadirán más detalles del flujo de trabajo, mockups de dispositivos y pantallas finales de la interfaz a medida que avance el caso de estudio."
+            },
+            "content": {
+                "heroEyebrow": "BLACK BULL / TECNOLOGÍA PARA RESTAURANTES",
+                "subtitle": "Una experiencia de restaurante, de la mesa a la cocina.",
+                "intro": "Un menú digital móvil y una pantalla de cocina pensados como un recorrido conectado: descubrir los platos, hacer un pedido y ofrecer al equipo un siguiente paso claro.",
+                "explore": "Explorar el caso de estudio",
+                "kitchenLink": "Ver el flujo de cocina",
+                "heroCaption": "LA EXPERIENCIA DEL CLIENTE / MENÚ MÓVIL",
+                "type": "Menú digital + pantalla de cocina",
+                "focus": "ENFOQUE",
+                "focusValue": "UX móvil · Operaciones de restaurantes",
+                "contents": "En este caso de estudio",
+                "navStrategy": "Visión general",
+                "navJourney": "Recorrido del cliente",
+                "navDesign": "Diseño visual",
+                "navConfirmation": "Confirmación",
+                "navKitchen": "Pantalla de cocina",
+                "navDevelopment": "Desarrollo",
+                "strategyLabel": "01 / ESTRATEGIA DE PRODUCTO",
+                "strategyTitle": "Un restaurante. Dos lados de la experiencia.",
+                "strategyIntro": "Black Bull reúne el menú del cliente y el flujo de cocina en una misma propuesta de producto. El diseño combina una identidad de steakhouse marcada con los detalles prácticos de pedir y preparar una comida.",
+                "problemTitle": "EL RETO DE DISEÑO",
+                "problemText": "Un menú digital debe ser fácil de explorar en una pantalla pequeña. Al otro lado del recorrido, el equipo de cocina necesita identificar la mesa, leer los artículos y entender el estado del pedido rápidamente. Ambas experiencias necesitan claridad, pero tienen prioridades distintas.",
+                "solutionTitle": "LA PROPUESTA DEL PRODUCTO",
+                "solutionText": "Usar fotografías y categorías familiares para guiar al cliente por el menú. Explicar lo ocurrido en la confirmación. Ofrecer a la cocina tarjetas de pedido claras y estados de preparación visibles, manteniendo la identidad Black Bull en toda la experiencia.",
+                "guestTitle": "Para los clientes",
+                "guestText": "Categorías reconocibles, navegación visual y confirmación clara.",
+                "teamTitle": "Para el equipo del restaurante",
+                "teamText": "Contexto de la mesa, detalles legibles y etapas de preparación visibles.",
+                "journeyLabel": "02 / EL RECORRIDO DEL CLIENTE",
+                "journeyTitle": "De la primera impresión al siguiente pedido.",
+                "journeyIntro": "El recorrido propuesto empieza en la mesa, mediante un código QR o una etiqueta NFC. La interfaz móvil pasa de la presentación de la marca al descubrimiento del menú y la confirmación del pedido.",
+                "stepOneTitle": "Abrir el menú",
+                "stepOneText": "Una pantalla de bienvenida centrada en la comida presenta la steakhouse.",
+                "stepTwoTitle": "Explorar categorías",
+                "stepTwoText": "Fotos y etiquetas organizan entrantes, ensaladas, carnes, pastas, postres y bebidas.",
+                "stepThreeTitle": "Confirmar el pedido",
+                "stepThreeText": "Una pantalla dedicada muestra número de pedido, mesa, cantidad de artículos y total.",
+                "stepFourTitle": "Continuar la visita",
+                "stepFourText": "Una acción de regreso clara lleva al cliente de vuelta al menú.",
+                "menuCaption": "DESCUBRIMIENTO DEL MENÚ / FOTOGRAFÍA + NAVEGACIÓN POR CATEGORÍAS",
+                "designLabel": "03 / DISEÑO VISUAL",
+                "designTitle": "Una identidad marcada. Una navegación familiar.",
+                "designIntro": "La interfaz sigue la dirección visual de Black Bull: fondo oscuro, acentos rojos, títulos condensados y fotografías destacadas de los platos. La estructura del menú se mantiene sencilla para que la identidad visual facilite la navegación.",
+                "decisionOneTitle": "Los platos en primer plano",
+                "decisionOneText": "Cada categoría combina imagen y texto, ofreciendo dos formas de reconocer lo que busca el cliente.",
+                "decisionTwoTitle": "Un lenguaje visual coherente",
+                "decisionTwoText": "El logotipo, las superficies oscuras y las acciones rojas conectan la bienvenida, el menú y la confirmación.",
+                "decisionThreeTitle": "Caminos claros para navegar",
+                "decisionThreeText": "Las acciones Volver, Inicio y Populares ofrecen puntos de navegación reconocibles en el menú.",
+                "layersCaption": "DETALLE DE INTERFAZ / JERARQUÍA DE CATEGORÍAS",
+                "confirmationLabel": "04 / CONFIRMACIÓN DEL PEDIDO",
+                "confirmationTitle": "Claridad también después de pedir.",
+                "confirmationIntro": "La pantalla de confirmación responde a la pregunta inmediata: ¿se ha recibido mi pedido? Un mensaje de estado destacado aparece junto a un resumen compacto y un camino directo de vuelta al menú.",
+                "confirmationOneCaption": "01 / ESTADO EXPLÍCITO DEL PEDIDO",
+                "confirmationTwoCaption": "02 / RESUMEN DEL PEDIDO + ACCIÓN DE REGRESO",
+                "feedbackOneTitle": "Confianza",
+                "feedbackOneText": "Un icono de éxito y un estado por escrito refuerzan juntos la confirmación.",
+                "feedbackTwoTitle": "Contexto útil",
+                "feedbackTwoText": "Número de pedido, mesa, artículos y total quedan visibles para una revisión rápida.",
+                "feedbackThreeTitle": "Un siguiente paso",
+                "feedbackThreeText": "La acción de volver al menú evita que el cliente se quede sin un camino para continuar.",
+                "kitchenLabel": "05 / LA EXPERIENCIA DE COCINA",
+                "kitchenTitle": "El otro lado del pedido.",
+                "kitchenIntro": "La pantalla de cocina cambia el foco del descubrimiento de platos a la preparación de pedidos. Sus tarjetas agrupan mesa, tipo de servicio, artículos, cantidades y total, con una acción visible para la siguiente etapa.",
+                "kitchenCaption": "PANTALLA DE COCINA / TARJETAS DE PEDIDO + ESTADOS DE PREPARACIÓN",
+                "newTitle": "Nuevo",
+                "newText": "Identificar el pedido e iniciar la preparación.",
+                "preparingTitle": "En preparación",
+                "preparingText": "Hacer que el trabajo en curso sea fácil de reconocer.",
+                "readyTitle": "Listo para servir",
+                "readyText": "Mostrar cuándo el pedido está listo para el servicio.",
+                "completedTitle": "Completado",
+                "completedText": "Distinguir los pedidos finalizados del trabajo activo.",
+                "kitchenNote": "Las etiquetas acompañan a los colores de estado, explicando cada etapa por escrito además de destacarla visualmente.",
+                "developmentLabel": "06 / DISEÑO + DESARROLLO",
+                "developmentTitle": "Transformar la interfaz en un producto.",
+                "developmentIntro": "Mi papel combina diseño de producto y desarrollo front-end. El proyecto es un MVP en desarrollo; este caso de estudio presenta la dirección de la interfaz y el flujo propuesto para el restaurante.",
+                "designWorkTitle": "Diseño de producto",
+                "designWorkText": "Figma sirve de apoyo para los diseños, la jerarquía visual y la presentación de mockups. Las vistas del cliente y la cocina comparten una identidad y atienden tareas diferentes.",
+                "frontendTitle": "Base del front-end",
+                "frontendText": "Next.js, React, TypeScript y Tailwind forman la base tecnológica del proyecto. La implementación se centra en una interfaz coherente y adaptable entre el menú y la pantalla de cocina.",
+                "nextWorkTitle": "Próximas validaciones",
+                "nextWorkText": "Probar el descubrimiento del menú y la claridad de los pedidos con clientes y personal. Revisar el acceso por teclado, el contraste, las zonas táctiles y el paso del envío del pedido al estado en cocina.",
+                "learningLabel": "07 / VISIÓN DE PRODUCTO",
+                "learningTitle": "La claridad conecta toda la experiencia.",
+                "learningText": "La principal lección de diseño es que el recorrido del cliente continúa más allá del menú. Una confirmación clara ayuda al cliente a entender qué ocurrió, mientras que una tarjeta de cocina clara ayuda al equipo a decidir el siguiente paso. Diseñar ambos lados integra esa transición en el producto.",
+                "moreLabel": "SIGUE EXPLORANDO",
+                "moreTitle": "Más de mi portafolio.",
+                "moneyPilotText": "Finanzas personales · Diseño de producto + front-end",
+                "blackBullText": "Explora el proyecto del menú del restaurante",
+                "viewProject": "Ver proyecto",
+                "backTop": "Volver al inicio",
+                "heroAlt": "Mano sosteniendo un teléfono con la pantalla de bienvenida de Black Bull y fotografía de carne",
+                "menuAlt": "Categorías del menú Black Bull en un teléfono sobre fondo morado",
+                "layersAlt": "Mockup móvil en capas que destaca las categorías de platos Black Bull sobre fondo azul",
+                "confirmationAlt": "Pantalla de confirmación del pedido Black Bull en un teléfono negro",
+                "angledAlt": "Teléfono blanco inclinado que muestra pedido confirmado, mesa, cantidad de artículos y total",
+                "kitchenAlt": "Portátil sobre una mesa que muestra tarjetas de pedidos Black Bull en distintas etapas de preparación",
+                "technologies": "Herramientas y tecnologías del proyecto",
+                "heroSubtitle": "Una experiencia conectada de pedidos en el restaurante",
+                    "heroSummary": "Acceso por NFC, un menú digital visual y una confirmación clara del pedido—conectando al cliente con la cocina y el servicio de mesa.",
+                    "heroVideoLabel": "Recorrido del cliente Black Bull: acceso por NFC, menú, confirmación del pedido, cocina y servicio de mesa.",
+                    "heroVideoCaption": "DEMOSTRACIÓN DEL PRODUCTO · NFC → MENÚ → COCINA → MESA",
+                    "heroVideoFallback": "Descargar la demostración de Black Bull",
+                    "visualJourney": {
+                        "title": "Del primer toque al primer bocado.",
+                        "intro": "Descubre la experiencia propuesta para Black Bull en nueve pasos: llegar a la mesa, abrir el menú con una etiqueta NFC, crear el pedido y seguir el recorrido hasta la cocina y el servicio en mesa.",
+                        "imageHint": "Selecciona una imagen para abrirla a tamaño completo en una pestaña nueva.",
+                        "imageLanguage": "Las imágenes de la demostración están en inglés. Las escenas de cocina y servicio en mesa ilustran el flujo propuesto.",
+                        "navigationLabel": "Ir a un paso del recorrido del cliente",
+                        "steps": {
+                            "arrival": {
+                                "title": "Llegar a la mesa",
+                                "text": "El cliente se sienta y encuentra la etiqueta NFC en la mesa: el punto de partida de la experiencia de pedido digital.",
+                                "alt": "Escena de llegada con un cliente junto a la Mesa 01 y una etiqueta NFC."
+                            },
+                            "nfc": {
+                                "title": "Abrir el menú con NFC",
+                                "text": "El cliente acerca el teléfono a la etiqueta NFC y toca la notificación para abrir el menú del restaurante.",
+                                "alt": "Teléfono junto a la etiqueta NFC de la mesa con una notificación para abrir el menú Black Bull."
+                            },
+                            "dineIn": {
+                                "title": "Elegir Dine In",
+                                "text": "El cliente selecciona Dine In, la opción para comer en el restaurante, y continúa al menú.",
+                                "alt": "Pantalla de selección de servicio de Black Bull con la opción Dine In."
+                            },
+                            "categories": {
+                                "title": "Explorar las categorías",
+                                "text": "Las fotos y los nombres de las categorías ayudan al cliente a encontrar entrantes, ensaladas, carnes, pasta, postres y bebidas.",
+                                "alt": "Menú Black Bull en un teléfono con seis categorías de comida y bebida."
+                            },
+                            "choose": {
+                                "title": "Elegir los platos",
+                                "text": "El cliente explora los platos, lee los detalles y añade sus favoritos al pedido.",
+                                "alt": "Pantalla de platos de Black Bull con fotos y detalles del menú en un teléfono."
+                            },
+                            "review": {
+                                "title": "Revisar el pedido",
+                                "text": "Antes de confirmar, el cliente revisa los artículos y las cantidades y añade instrucciones especiales si es necesario.",
+                                "alt": "Pantalla Review Your Order de Black Bull con artículos, cantidades y detalles del pedido."
+                            },
+                            "confirmed": {
+                                "title": "Recibir la confirmación",
+                                "text": "La confirmación muestra el número de pedido, la mesa y el resumen para que el cliente entienda el siguiente paso.",
+                                "alt": "Pantalla Order Confirmed de Black Bull con los detalles del pedido y de la mesa."
+                            },
+                            "kitchen": {
+                                "title": "Preparar en la cocina",
+                                "text": "En el flujo propuesto para la cocina, el equipo recibe el pedido y actualiza las etapas Nuevo, En preparación y Listo, manteniendo visible la mesa.",
+                                "alt": "Tablero ilustrativo de cocina con columnas Nuevo, En preparación y Listo y el pedido de la Mesa 01."
+                            },
+                            "service": {
+                                "title": "Servir en la mesa",
+                                "text": "Cuando los platos están listos, el equipo lleva la comida a la mesa correcta y completa el recorrido del teléfono al plato.",
+                                "alt": "Ilustración de un plato cubierto servido a un cliente en la Mesa 01."
+                            }
+                        }
+                    }
             }
         },
         "projectsPage": {

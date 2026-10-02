@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="blackBullMobilePage.meta.title">Black Bull Mobile Case Study | Felipe S Bephman</title>
-    <meta name="description" data-i18n-content="blackBullMobilePage.meta.description" content="A responsive kitchen display designed to help restaurant teams receive, organize, prepare, and complete digital orders more efficiently.">
+    <meta name="description" data-i18n-content="blackBullMobilePage.meta.description" content="Black Bull Mobile: a detailed case study of a digital restaurant menu, mobile ordering interface and kitchen display by Felipe S Bephman.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="black-bull-dev-theme.css">
+    <link rel="stylesheet" href="black-bull-mobile.css">
+    <link rel="stylesheet" href="black-bull-hero.css">
+    <link rel="stylesheet" href="black-bull-journey.css">
+    <link rel="stylesheet" href="black-bull-card-hover.css">
 </head>
 
 <body class="black-bull-terminal">
@@ -105,134 +109,469 @@
             </button>
         </nav>
     </header>
-    <main class="case-study bb-case bb-case--kitchen">
-        <section class="case-study__hero bb-hero" aria-labelledby="case-study-title">
-            <div class="case-study__container bb-shell">
-                <a class="case-study__back bb-back" href="./projects.html">
+    <main class="case-study bbm-case" id="top">
+        <div class="bbm-shell">
+            <a class="bbm-back" href="./projects.html">
                 <span aria-hidden="true">←</span>
                 <span data-i18n="common.caseStudies.allProjects">All projects</span>
-                </a>
-
-                <div class="bb-hero__grid">
-                    <div class="bb-hero__content">
-                        <p class="case-study__eyebrow bb-hero__eyebrow" data-i18n="blackBullMobilePage.hero.eyebrow">
-                            Restaurant technology — Kitchen display
-                        </p>
-
-                        <h1 class="case-study__title bb-hero__title" id="case-study-title">
-                            Black Bull Mobile
-                        </h1>
-
-                        <p class="case-study__intro bb-hero__intro" data-i18n="blackBullMobilePage.hero.intro">
-                            A responsive kitchen display designed to help restaurant
-                            teams receive, organize, prepare, and complete digital
-                            orders more efficiently.
-                        </p>
+            </a>
+            <section class="bbh-hero" aria-labelledby="case-study-title">
+                <div class="bbh-grid">
+                    <div class="bbh-copy">
+                        <p class="bbh-terminal">$ open project/black-bull-mobile</p>
+                        <h1 class="bbh-title" id="case-study-title">BLACK BULL</h1>
+                        <p class="bbh-subtitle" data-i18n="blackBullMobilePage.content.heroSubtitle">A Connected Restaurant Ordering Experience</p>
+                        <p class="bbh-summary" data-i18n="blackBullMobilePage.content.heroSummary">NFC access, a visual digital menu and clear order confirmation—connecting the guest experience with the kitchen and table service.</p>
+                        <ul class="bbh-tech" aria-label="Project tools and technologies" data-i18n-aria-label="blackBullMobilePage.content.technologies">
+                            <li>Next.js<img src="assets/icons/Next.js Icon.svg" alt="" aria-hidden="true"></li>
+                            <li>TypeScript<img src="assets/icons/TypeScript Icon.svg" alt="" aria-hidden="true"></li>
+                            <li>React<img src="assets/images/react-logo.svg" alt="" aria-hidden="true"></li>
+                            <li>Figma<img src="assets/icons/Figma Icon.svg" alt="" aria-hidden="true"></li>
+                        </ul>
+                        <div class="bbh-actions">
+                            <a class="bbh-button" href="#strategy">
+                                <span data-i18n="blackBullMobilePage.content.explore">Explore the case study</span>
+                                <span aria-hidden="true">↓</span>
+                            </a>
+                            <span class="bbh-status">
+                                <span class="bbh-status-dot" aria-hidden="true"></span>
+                                <span data-i18n="common.caseStudies.mvp">MVP in development</span>
+                            </span>
+                        </div>
                     </div>
-
-                    <figure class="bb-hero__visual" aria-label="Black Bull Mobile project preview" data-i18n-aria-label="blackBullMobilePage.images.preview">
-                        <img src="assets/images/project-black-bull-mobile.png"
-                            alt="Black Bull kitchen display interface"
-                            data-i18n-alt="blackBullMobilePage.images.interface">
+                    <figure class="bbh-preview">
+                        <div class="bbh-window-bar" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                            <p>black-bull-customer-journey.mp4</p>
+                        </div>
+                        <video class="bbh-video" controls muted loop playsinline preload="metadata"
+                            width="1920" height="1080"
+                            poster="assets/videos/black-bull/customer-journey-poster.webp"
+                            aria-label="Black Bull customer journey: NFC access, menu, order confirmation, kitchen and table service."
+                            data-i18n-aria-label="blackBullMobilePage.content.heroVideoLabel">
+                            <source src="assets/videos/black-bull/customer-journey.mp4" type="video/mp4">
+                            <a href="assets/videos/black-bull/customer-journey.mp4" data-i18n="blackBullMobilePage.content.heroVideoFallback">Download the Black Bull walkthrough</a>
+                        </video>
+                        <figcaption class="bbh-caption">
+                            <span data-i18n="blackBullMobilePage.content.heroVideoCaption">PRODUCT WALKTHROUGH · NFC → MENU → KITCHEN → TABLE</span>
+                            <span class="bbh-duration">01:15 · EN</span>
+                        </figcaption>
                     </figure>
                 </div>
-
-                <dl class="case-study__meta bb-meta">
-                    <div>
-                        <dt data-i18n="common.caseStudies.role">Role</dt>
+                <dl class="bbh-metrics">
+                    <div class="bbh-metric">
+                        <dt><img src="assets/icons/Role Icon.svg" alt="" aria-hidden="true"><span data-i18n="common.caseStudies.role">Role</span></dt>
                         <dd data-i18n="common.caseStudies.roleValue">Product Design &amp; Front-end Development</dd>
                     </div>
-
-                    <div>
-                        <dt data-i18n="common.caseStudies.type">Type</dt>
-                        <dd data-i18n="blackBullMobilePage.details.type">Kitchen Display System</dd>
+                    <div class="bbh-metric">
+                        <dt><img src="assets/icons/Project Type Icon.svg" alt="" aria-hidden="true"><span data-i18n="common.caseStudies.type">Type</span></dt>
+                        <dd data-i18n="blackBullMobilePage.content.type">Digital menu + kitchen display</dd>
                     </div>
-
-                    <div>
-                        <dt data-i18n="common.caseStudies.stack">Stack</dt>
-                        <dd>Next.js, React, TypeScript, Tailwind</dd>
-                    </div>
-
-                    <div>
-                        <dt data-i18n="common.caseStudies.status">Status</dt>
+                    <div class="bbh-metric">
+                        <dt><img src="assets/icons/Status Icon.svg" alt="" aria-hidden="true"><span data-i18n="common.caseStudies.status">Status</span></dt>
                         <dd data-i18n="common.caseStudies.mvp">MVP in development</dd>
                     </div>
+                    <div class="bbh-metric">
+                        <dt><img src="assets/icons/Focus Icon.svg" alt="" aria-hidden="true"><span data-i18n="blackBullMobilePage.content.focus">Focus</span></dt>
+                        <dd data-i18n="blackBullMobilePage.content.focusValue">Mobile UX · Restaurant operations</dd>
+                    </div>
                 </dl>
-            </div>
-        </section>
-
-        <section class="case-study__section bb-section">
-            <div class="case-study__container case-study__two-columns bb-shell">
-                <h2 data-i18n="common.caseStudies.project">The project</h2>
-
-                <div class="case-study__copy">
-                    <p data-i18n="blackBullMobilePage.project.overview">
-                        Black Bull Mobile connects the restaurant’s digital
-                        ordering experience with a dedicated kitchen workflow.
-                        New orders can be received and managed from one clear,
-                        responsive interface.
-                    </p>
-
-                    <p data-i18n="blackBullMobilePage.project.environment">
-                        The display is designed for practical use in a busy
-                        restaurant environment, including tablet-sized screens.
-                    </p>
+            </section>
+            <nav class="bbm-contents" aria-label="Inside this case study" data-i18n-aria-label="blackBullMobilePage.content.contents">
+                <a href="#strategy">
+                    <span aria-hidden="true">01</span>
+                    <span data-i18n="blackBullMobilePage.content.navStrategy">Overview</span>
+                </a>
+                <a href="#journey">
+                    <span aria-hidden="true">02</span>
+                    <span data-i18n="blackBullMobilePage.content.navJourney">Guest journey</span>
+                </a>
+                <a href="#design">
+                    <span aria-hidden="true">03</span>
+                    <span data-i18n="blackBullMobilePage.content.navDesign">Visual design</span>
+                </a>
+                <a href="#confirmation">
+                    <span aria-hidden="true">04</span>
+                    <span data-i18n="blackBullMobilePage.content.navConfirmation">Order feedback</span>
+                </a>
+                <a href="#kitchen">
+                    <span aria-hidden="true">05</span>
+                    <span data-i18n="blackBullMobilePage.content.navKitchen">Kitchen display</span>
+                </a>
+                <a href="#development">
+                    <span aria-hidden="true">06</span>
+                    <span data-i18n="blackBullMobilePage.content.navDevelopment">Development</span>
+                </a>
+            </nav>
+            <section class="bbm-section bbm-panel" id="strategy" aria-labelledby="strategy-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.strategyLabel">01 / PRODUCT STRATEGY</p>
+                    <h2 data-i18n="blackBullMobilePage.content.strategyTitle" id="strategy-title">One restaurant. Two sides of the experience.</h2>
+                    <p class="bbm-lead" data-i18n="blackBullMobilePage.content.strategyIntro">Black Bull brings the customer-facing menu and the kitchen workflow into the same product story. The design balances a strong steakhouse identity with the practical details of ordering and preparing food.</p>
+                </header>
+                <div class="bbm-grid-two">
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">01</span>
+                        <h3 data-i18n="blackBullMobilePage.content.problemTitle">THE DESIGN CHALLENGE</h3>
+                        <p data-i18n="blackBullMobilePage.content.problemText">A digital menu needs to be easy to browse on a small screen. At the other end of the journey, kitchen staff need to identify the table, read the items and understand the order status at a glance. Both experiences need clarity, but their priorities are different.</p>
+                    </article>
+                    <article class="bbm-card bbm-card-accent">
+                        <span class="bbm-card-number" aria-hidden="true">02</span>
+                        <h3 data-i18n="blackBullMobilePage.content.solutionTitle">THE PRODUCT APPROACH</h3>
+                        <p data-i18n="blackBullMobilePage.content.solutionText">Use photography and familiar categories to guide guests through the menu. Make the confirmation screen explicit about what happened. Give the kitchen focused order cards and visible preparation states, keeping the Black Bull identity consistent throughout.</p>
+                    </article>
                 </div>
-            </div>
-    </section>
-
-    <section class="case-study__section case-study__section--muted">
-        <div class="case-study__container case-study__two-columns">
-            <h2 data-i18n="common.caseStudies.challenge">The challenge</h2>
-
-            <div class="case-study__copy">
-                <p data-i18n="blackBullMobilePage.challenge.orders">
-                    Kitchen teams need to understand each order quickly
-                    without navigating through a complex system or losing
-                    track of its current preparation status.
-                </p>
-
-                <p data-i18n="blackBullMobilePage.challenge.interface">
-                    The interface needed strong visual hierarchy, clear
-                    order states, and controls that remain easy to use
-                    during fast-paced service.
-                </p>
-            </div>
+                <div class="bbm-audiences">
+                    <div>
+                        <h3 data-i18n="blackBullMobilePage.content.guestTitle">For guests</h3>
+                        <p data-i18n="blackBullMobilePage.content.guestText">Recognizable categories, visual browsing and a clear confirmation.</p>
+                    </div>
+                    <div>
+                        <h3 data-i18n="blackBullMobilePage.content.teamTitle">For the restaurant team</h3>
+                        <p data-i18n="blackBullMobilePage.content.teamText">Table context, readable order details and visible preparation stages.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bbm-section bbm-journey bbj-journey" id="journey" aria-labelledby="journey-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.journeyLabel">02 / THE GUEST JOURNEY</p>
+                    <h2 id="journey-title" data-i18n="blackBullMobilePage.content.visualJourney.title">From the first tap to the first bite.</h2>
+                    <p class="bbm-lead" data-i18n="blackBullMobilePage.content.visualJourney.intro">Follow the proposed Black Bull experience in nine steps: arrive at the table, open the menu with an NFC tag, build an order and follow the handoff to the kitchen and table service.</p>
+                </header>
+                <div class="bbj-guide">
+                    <p id="journey-image-hint" data-i18n="blackBullMobilePage.content.visualJourney.imageHint">Select an image to open it at full size in a new tab.</p>
+                    <p data-i18n="blackBullMobilePage.content.visualJourney.imageLanguage">Walkthrough images are in English. Kitchen and table-service scenes illustrate the proposed workflow.</p>
+                </div>
+                <nav class="bbj-index" aria-label="Jump to a step in the customer journey" data-i18n-aria-label="blackBullMobilePage.content.visualJourney.navigationLabel">
+                    <a href="#journey-01-arrival"><span aria-hidden="true">01</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.arrival.title">Arrive at the table</span></a>
+                    <a href="#journey-02-nfc-access"><span aria-hidden="true">02</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.nfc.title">Open the menu with NFC</span></a>
+                    <a href="#journey-03-dine-in"><span aria-hidden="true">03</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.dineIn.title">Choose Dine In</span></a>
+                    <a href="#journey-04-menu-categories"><span aria-hidden="true">04</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.categories.title">Explore the categories</span></a>
+                    <a href="#journey-05-choose-dishes"><span aria-hidden="true">05</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.choose.title">Choose the dishes</span></a>
+                    <a href="#journey-06-review-order"><span aria-hidden="true">06</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.review.title">Review the order</span></a>
+                    <a href="#journey-07-order-confirmed"><span aria-hidden="true">07</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.confirmed.title">Receive confirmation</span></a>
+                    <a href="#journey-08-kitchen-preparation"><span aria-hidden="true">08</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.kitchen.title">Prepare in the kitchen</span></a>
+                    <a href="#journey-09-table-service"><span aria-hidden="true">09</span><span data-i18n="blackBullMobilePage.content.visualJourney.steps.service.title">Serve at the table</span></a>
+                </nav>
+                <ol class="bbj-gallery" role="list">
+                    <li class="bbj-step" id="journey-01-arrival">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/01-arrival.webp" target="_blank" rel="noopener" aria-labelledby="journey-01-arrival-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/01-arrival.webp" width="1920" height="1080" alt="Arrival scene showing a guest beside Table 01 with an NFC tag." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.arrival.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">01</span>
+                                <div>
+                                    <h3 id="journey-01-arrival-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.arrival.title">Arrive at the table</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.arrival.text">The guest takes a seat and finds the NFC tag on the table: the starting point for the digital ordering experience.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-02-nfc-access">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/02-nfc-access.webp" target="_blank" rel="noopener" aria-labelledby="journey-02-nfc-access-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/02-nfc-access.webp" width="1920" height="1080" alt="A phone beside the table NFC tag, displaying a notification to open the Black Bull menu." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.nfc.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">02</span>
+                                <div>
+                                    <h3 id="journey-02-nfc-access-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.nfc.title">Open the menu with NFC</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.nfc.text">The guest holds a phone near the NFC tag, then taps the notification to open the restaurant menu.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-03-dine-in">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/03-dine-in.webp" target="_blank" rel="noopener" aria-labelledby="journey-03-dine-in-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/03-dine-in.webp" width="1920" height="1080" alt="Black Bull service-selection screen with the Dine In option." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.dineIn.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">03</span>
+                                <div>
+                                    <h3 id="journey-03-dine-in-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.dineIn.title">Choose Dine In</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.dineIn.text">The guest selects Dine In and continues to the menu for a meal at the restaurant.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-04-menu-categories">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/04-menu-categories.webp" target="_blank" rel="noopener" aria-labelledby="journey-04-menu-categories-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/04-menu-categories.webp" width="1920" height="1080" alt="Black Bull menu screen showing six food and drink categories on a phone." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.categories.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">04</span>
+                                <div>
+                                    <h3 id="journey-04-menu-categories-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.categories.title">Explore the categories</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.categories.text">Food photos and clear category labels help the guest browse starters, salads, meats, pasta, desserts and drinks.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-05-choose-dishes">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/05-choose-dishes.webp" target="_blank" rel="noopener" aria-labelledby="journey-05-choose-dishes-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/05-choose-dishes.webp" width="1920" height="1080" alt="Black Bull dish-browsing screen showing food photos and menu details on a phone." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.choose.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">05</span>
+                                <div>
+                                    <h3 id="journey-05-choose-dishes-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.choose.title">Choose the dishes</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.choose.text">The guest browses dishes, reads their details and adds favourites to the order.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-06-review-order">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/06-review-order.webp" target="_blank" rel="noopener" aria-labelledby="journey-06-review-order-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/06-review-order.webp" width="1920" height="1080" alt="Black Bull Review Your Order screen with items, quantities and order details." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.review.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">06</span>
+                                <div>
+                                    <h3 id="journey-06-review-order-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.review.title">Review the order</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.review.text">Before confirming, the guest checks the items and quantities and adds any special instructions.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-07-order-confirmed">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/07-order-confirmed.webp" target="_blank" rel="noopener" aria-labelledby="journey-07-order-confirmed-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/07-order-confirmed.webp" width="1920" height="1080" alt="Black Bull Order Confirmed screen showing the order and table details." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.confirmed.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">07</span>
+                                <div>
+                                    <h3 id="journey-07-order-confirmed-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.confirmed.title">Receive confirmation</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.confirmed.text">The confirmation screen presents the order number, table and summary, making the next step clear to the guest.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-08-kitchen-preparation">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/08-kitchen-preparation.webp" target="_blank" rel="noopener" aria-labelledby="journey-08-kitchen-preparation-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/08-kitchen-preparation.webp" width="1920" height="1080" alt="Illustrative kitchen board with New, Preparing and Ready columns and the order for Table 01." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.kitchen.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">08</span>
+                                <div>
+                                    <h3 id="journey-08-kitchen-preparation-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.kitchen.title">Prepare in the kitchen</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.kitchen.text">In the proposed kitchen workflow, the team receives the order and moves it through New, Preparing and Ready while keeping the table visible.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="bbj-step" id="journey-09-table-service">
+                        <figure>
+                            <a class="bbj-image-link" href="assets/images/black-bull-mobile/journey/09-table-service.webp" target="_blank" rel="noopener" aria-labelledby="journey-09-table-service-title" aria-describedby="journey-image-hint">
+                                <img src="assets/images/black-bull-mobile/journey/09-table-service.webp" width="1920" height="1080" alt="Illustration of a covered dish served to a guest at Table 01." data-i18n-alt="blackBullMobilePage.content.visualJourney.steps.service.alt" loading="lazy" decoding="async">
+                            </a>
+                            <figcaption class="bbj-caption">
+                                <span class="bbj-number" aria-hidden="true">09</span>
+                                <div>
+                                    <h3 id="journey-09-table-service-title" data-i18n="blackBullMobilePage.content.visualJourney.steps.service.title">Serve at the table</h3>
+                                    <p data-i18n="blackBullMobilePage.content.visualJourney.steps.service.text">Once the dishes are ready, the team brings the meal to the correct table, completing the journey from phone to plate.</p>
+                                </div>
+                                <span class="bbj-expand" aria-hidden="true">↗</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ol>
+            </section>
+            <section class="bbm-section bbm-panel bbm-design" id="design" aria-labelledby="design-title">
+                <div class="bbm-design-copy">
+                    <header class="bbm-section-heading">
+                        <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.designLabel">03 / VISUAL DESIGN</p>
+                        <h2 data-i18n="blackBullMobilePage.content.designTitle" id="design-title">A bold identity. A familiar way to browse.</h2>
+                        <p class="bbm-lead" data-i18n="blackBullMobilePage.content.designIntro">The interface takes its visual direction from the Black Bull brand: a dark backdrop, red accents, condensed headings and prominent food photography. The menu structure stays simple so the visual identity supports the task.</p>
+                    </header>
+                    <div class="bbm-decisions">
+                        <article>
+                            <span aria-hidden="true">01</span>
+                            <div>
+                                <h3 data-i18n="blackBullMobilePage.content.decisionOneTitle">Food before extra navigation</h3>
+                                <p data-i18n="blackBullMobilePage.content.decisionOneText">Each category combines an image and a text label, giving guests two ways to recognize where they want to go.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span aria-hidden="true">02</span>
+                            <div>
+                                <h3 data-i18n="blackBullMobilePage.content.decisionTwoTitle">A consistent visual language</h3>
+                                <p data-i18n="blackBullMobilePage.content.decisionTwoText">The logo, dark surfaces and red actions connect the welcome screen, menu and confirmation.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span aria-hidden="true">03</span>
+                            <div>
+                                <h3 data-i18n="blackBullMobilePage.content.decisionThreeTitle">Clear ways to move around</h3>
+                                <p data-i18n="blackBullMobilePage.content.decisionThreeText">Back, Home and Popular actions give the menu recognizable navigation points.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <figure class="bbm-media bbm-layers-photo">
+                    <img src="assets/images/black-bull-mobile/menu-layers.webp" width="1178" height="1510" alt="Exploded mobile mockup highlighting Black Bull food categories on a blue background" data-i18n-alt="blackBullMobilePage.content.layersAlt" loading="lazy" decoding="async">
+                    <figcaption data-i18n="blackBullMobilePage.content.layersCaption">INTERFACE DETAIL / CATEGORY HIERARCHY</figcaption>
+                </figure>
+            </section>
+            <section class="bbm-section" id="confirmation" aria-labelledby="confirmation-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.confirmationLabel">04 / ORDER FEEDBACK</p>
+                    <h2 data-i18n="blackBullMobilePage.content.confirmationTitle" id="confirmation-title">Make the next moment feel clear.</h2>
+                    <p class="bbm-lead" data-i18n="blackBullMobilePage.content.confirmationIntro">The confirmation screen answers the immediate question: was my order received? A prominent status message is followed by a compact summary and a direct route back to the menu.</p>
+                </header>
+                <div class="bbm-grid-two bbm-confirmation-grid">
+                    <figure class="bbm-media bbm-confirmation">
+                        <div class="bbm-device-stage">
+                            <img src="assets/images/black-bull-mobile/order-confirmation.webp" width="676" height="996" alt="Black Bull order confirmation screen on a black smartphone" data-i18n-alt="blackBullMobilePage.content.confirmationAlt" loading="lazy" decoding="async">
+                        </div>
+                        <figcaption data-i18n="blackBullMobilePage.content.confirmationOneCaption">01 / EXPLICIT ORDER STATUS</figcaption>
+                    </figure>
+                    <figure class="bbm-media bbm-confirmation bbm-confirmation-light">
+                        <div class="bbm-device-stage">
+                            <img src="assets/images/black-bull-mobile/order-confirmation-angled.webp" width="1006" height="1013" alt="Angled white phone showing the confirmed order, table, item count and total" data-i18n-alt="blackBullMobilePage.content.angledAlt" loading="lazy" decoding="async">
+                        </div>
+                        <figcaption data-i18n="blackBullMobilePage.content.confirmationTwoCaption">02 / ORDER SUMMARY + RETURN ACTION</figcaption>
+                    </figure>
+                </div>
+                <div class="bbm-grid-three bbm-feedback">
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">01</span>
+                        <h3 data-i18n="blackBullMobilePage.content.feedbackOneTitle">Reassurance</h3>
+                        <p data-i18n="blackBullMobilePage.content.feedbackOneText">A success icon and a written status reinforce the confirmation together.</p>
+                    </article>
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">02</span>
+                        <h3 data-i18n="blackBullMobilePage.content.feedbackTwoTitle">Useful context</h3>
+                        <p data-i18n="blackBullMobilePage.content.feedbackTwoText">Order number, table, items and total remain visible for a quick check.</p>
+                    </article>
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">03</span>
+                        <h3 data-i18n="blackBullMobilePage.content.feedbackThreeTitle">A next step</h3>
+                        <p data-i18n="blackBullMobilePage.content.feedbackThreeText">The return-to-menu action keeps the guest from reaching a dead end.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="bbm-section bbm-panel bbm-kitchen" id="kitchen" aria-labelledby="kitchen-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.kitchenLabel">05 / THE KITCHEN EXPERIENCE</p>
+                    <h2 data-i18n="blackBullMobilePage.content.kitchenTitle" id="kitchen-title">The other side of the order.</h2>
+                    <p class="bbm-lead" data-i18n="blackBullMobilePage.content.kitchenIntro">The kitchen display shifts the focus from food discovery to order preparation. Its cards group the table, service type, items, quantities and total, with a visible action for the next preparation stage.</p>
+                </header>
+                <figure class="bbm-media bbm-kitchen-photo">
+                    <img src="assets/images/black-bull-mobile/kitchen-display.webp" width="2048" height="1282" alt="Laptop on a desk showing Black Bull kitchen order cards in different preparation stages" data-i18n-alt="blackBullMobilePage.content.kitchenAlt" loading="lazy" decoding="async">
+                    <figcaption data-i18n="blackBullMobilePage.content.kitchenCaption">KITCHEN DISPLAY / ORDER CARDS + PREPARATION STATES</figcaption>
+                </figure>
+                <ol class="bbm-states">
+                    <li class="bbm-state bbm-state-new">
+                        <div>
+                            <span class="bbm-dot" aria-hidden="true">
+                            </span>
+                            <h3 data-i18n="blackBullMobilePage.content.newTitle">New</h3>
+                        </div>
+                        <p data-i18n="blackBullMobilePage.content.newText">Identify the order and start preparation.</p>
+                    </li>
+                    <li class="bbm-state bbm-state-preparing">
+                        <div>
+                            <span class="bbm-dot" aria-hidden="true">
+                            </span>
+                            <h3 data-i18n="blackBullMobilePage.content.preparingTitle">Preparing</h3>
+                        </div>
+                        <p data-i18n="blackBullMobilePage.content.preparingText">Keep work in progress easy to recognize.</p>
+                    </li>
+                    <li class="bbm-state bbm-state-ready">
+                        <div>
+                            <span class="bbm-dot" aria-hidden="true">
+                            </span>
+                            <h3 data-i18n="blackBullMobilePage.content.readyTitle">Ready to serve</h3>
+                        </div>
+                        <p data-i18n="blackBullMobilePage.content.readyText">Show when the order is ready for service.</p>
+                    </li>
+                    <li class="bbm-state bbm-state-completed">
+                        <div>
+                            <span class="bbm-dot" aria-hidden="true">
+                            </span>
+                            <h3 data-i18n="blackBullMobilePage.content.completedTitle">Completed</h3>
+                        </div>
+                        <p data-i18n="blackBullMobilePage.content.completedText">Distinguish finished orders from active work.</p>
+                    </li>
+                </ol>
+                <p class="bbm-note" data-i18n="blackBullMobilePage.content.kitchenNote">Text labels accompany the status colors, so the meaning of each stage is written out as well as visually highlighted.</p>
+            </section>
+            <section class="bbm-section" id="development" aria-labelledby="development-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.developmentLabel">06 / DESIGN + DEVELOPMENT</p>
+                    <h2 data-i18n="blackBullMobilePage.content.developmentTitle" id="development-title">Turning the interface into a product.</h2>
+                    <p class="bbm-lead" data-i18n="blackBullMobilePage.content.developmentIntro">My role brings product design and front-end development together. The project is an MVP in development; this case study presents the interface direction and intended restaurant workflow.</p>
+                </header>
+                <div class="bbm-grid-three">
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">01 / FIGMA</span>
+                        <h3 data-i18n="blackBullMobilePage.content.designWorkTitle">Product design</h3>
+                        <p data-i18n="blackBullMobilePage.content.designWorkText">Figma supports the screen layouts, visual hierarchy and mockup presentation. The guest and kitchen views share an identity while serving different tasks.</p>
+                    </article>
+                    <article class="bbm-card ">
+                        <span class="bbm-card-number" aria-hidden="true">02 / FRONT-END</span>
+                        <h3 data-i18n="blackBullMobilePage.content.frontendTitle">Front-end foundation</h3>
+                        <p data-i18n="blackBullMobilePage.content.frontendText">Next.js, React, TypeScript and Tailwind form the project stack. The implementation focus is a consistent, responsive interface across the menu and kitchen views.</p>
+                    </article>
+                    <article class="bbm-card bbm-card-accent">
+                        <span class="bbm-card-number" aria-hidden="true">03 / MVP</span>
+                        <h3 data-i18n="blackBullMobilePage.content.nextWorkTitle">Next validation steps</h3>
+                        <p data-i18n="blackBullMobilePage.content.nextWorkText">Test menu discovery and order clarity with guests and staff. Check keyboard access, contrast, touch targets and the handoff between order submission and kitchen status.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="bbm-section bbm-panel bbm-learning" aria-labelledby="learning-title">
+                <div>
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.learningLabel">07 / PRODUCT THINKING</p>
+                    <h2 data-i18n="blackBullMobilePage.content.learningTitle" id="learning-title">Clarity connects the whole experience.</h2>
+                </div>
+                <p class="bbm-lead" data-i18n="blackBullMobilePage.content.learningText">The central design lesson is that the customer journey continues beyond the menu. A clear confirmation helps the guest understand what happened, while a clear kitchen card helps the team decide what to do next. Designing both sides makes the handoff part of the product.</p>
+            </section>
+            <section class="bbm-section bbm-more" aria-labelledby="more-title">
+                <header class="bbm-section-heading">
+                    <p class="bbm-eyebrow" data-i18n="blackBullMobilePage.content.moreLabel">KEEP EXPLORING</p>
+                    <h2 data-i18n="blackBullMobilePage.content.moreTitle" id="more-title">More from my portfolio.</h2>
+                </header>
+                <div class="bbm-grid-two">
+                    <a class="bbm-related" href="./moneypilot.html">
+                        <span class="bbm-related-number" aria-hidden="true">01</span>
+                        <div>
+                            <h3>MoneyPilot</h3>
+                            <p data-i18n="blackBullMobilePage.content.moneyPilotText">Personal finance · Product design + front-end</p>
+                        </div>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="bbm-related" href="./black-bull.html">
+                        <span class="bbm-related-number" aria-hidden="true">02</span>
+                        <div>
+                            <h3>Black Bull</h3>
+                            <p data-i18n="blackBullMobilePage.content.blackBullText">Explore the restaurant menu project</p>
+                        </div>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <a class="bbm-text-link bbm-top-link" href="#top">
+                    <span data-i18n="blackBullMobilePage.content.backTop">Back to top</span>
+                    <span aria-hidden="true">↑</span>
+                </a>
+            </section>
         </div>
-    </section>
-
-    <section class="case-study__section">
-        <div class="case-study__container case-study__two-columns">
-            <h2 data-i18n="common.caseStudies.solution">The solution</h2>
-
-            <div class="case-study__copy">
-                <p data-i18n="blackBullMobilePage.solution.workflow">
-                    Orders are organized into clear stages such as new,
-                    preparing, and ready. Status indicators, timers, and
-                    focused order cards help the kitchen identify priorities
-                    and update progress.
-                </p>
-
-                <p data-i18n="blackBullMobilePage.solution.upcoming">
-                    Additional workflow details, device mockups, and final
-                    interface screens will be added as the case study
-                    develops.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <nav class="case-study__next" aria-label="Next project" data-i18n-aria-label="common.caseStudies.next">
-        <div class="case-study__container">
-            <p data-i18n="common.caseStudies.next">Next project</p>
-
-            <a href="./pet-id.html">
-                <span>Pet ID</span>
-                <span aria-hidden="true">↗</span>
-            </a>
-        </div>
-    </nav>
-</main>
+    </main>
 
 <footer class="portfolio-terminal project-contact-footer" data-shared-project-footer="true">
 <section class="final-cta" id="contact" aria-labelledby="final-cta-title">
@@ -446,6 +785,7 @@
     </div>
     <script src="i18n.js"></script>
     <script src="script.js"></script>
+    <script src="black-bull-hero.js"></script>
 </body>
 
 </html>

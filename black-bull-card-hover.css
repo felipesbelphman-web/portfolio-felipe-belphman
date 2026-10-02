@@ -1,0 +1,54 @@
+/* Match MoneyPilot's card hover without affecting the hero video or section panels. */
+.bbm-case :is(.bbm-card, .bbh-metric, .bbm-state, .bbm-media, .bbj-step > figure) {
+    position: relative;
+    z-index: 1;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 220ms ease,
+        box-shadow 280ms ease;
+}
+
+.bbm-case .bbh-metric dt img {
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Pointer-only hover avoids a persistent hover state on touch screens. */
+@media (hover: hover) and (pointer: fine) {
+    .bbm-case :is(.bbm-card, .bbh-metric, .bbm-state, .bbm-media, .bbj-step > figure):hover {
+        z-index: 2;
+        transform: translateY(-7px) scale(1.015);
+        border-color: rgba(169, 112, 255, 0.78);
+        box-shadow:
+            0 18px 38px rgba(0, 0, 0, 0.48),
+            0 0 24px rgba(169, 112, 255, 0.12);
+    }
+
+    .bbm-case .bbh-metric:hover dt img {
+        transform: scale(1.12) rotate(4deg);
+    }
+}
+
+/* Existing links receive the same treatment when reached by keyboard. */
+.bbm-case :is(.bbm-card, .bbh-metric, .bbm-state, .bbm-media, .bbj-step > figure):focus-within {
+    z-index: 2;
+    transform: translateY(-7px) scale(1.015);
+    border-color: #a970ff;
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.48),
+        0 0 24px rgba(169, 112, 255, 0.12);
+}
+
+.bbm-case .bbh-metric:focus-within dt img {
+    transform: scale(1.12) rotate(4deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bbm-case :is(.bbm-card, .bbh-metric, .bbm-state, .bbm-media, .bbj-step > figure),
+    .bbm-case :is(.bbm-card, .bbh-metric, .bbm-state, .bbm-media, .bbj-step > figure):is(:hover, :focus-within),
+    .bbm-case .bbh-metric dt img,
+    .bbm-case .bbh-metric:is(:hover, :focus-within) dt img {
+        transform: none;
+        transition: none;
+    }
+}
